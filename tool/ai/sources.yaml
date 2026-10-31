@@ -1,0 +1,54 @@
+# Text sources for the optional style/terminology corpus.
+#
+# licence must be one of: public-domain | unknown | copyrighted
+# Only `public-domain` entries are ever downloaded or used. When in doubt,
+# mark `unknown`; build_corpus.py will refuse it.
+#
+# Fill in `url` with a plain-text or HTML copy whose licence you have checked
+# (for example an archive.org scan of a pre-1930 edition, or a Sanskrit
+# e-text from a public-domain repository). Keep a note of how you verified it.
+
+sources:
+  - id: bphs-sanskrit
+    title: Brihat Parashara Hora Shastra (Sanskrit original)
+    language: sa
+    licence: public-domain
+    basis: Ancient text; the Sanskrit original is in the public domain.
+    url: ""   # add a verified Sanskrit e-text URL
+    notes: Do NOT use R. Santhanam's or G.C. Sharma's English translations (copyrighted).
+
+  - id: phaladeepika-sanskrit
+    title: Phaladeepika of Mantreswara (Sanskrit original)
+    language: sa
+    licence: public-domain
+    basis: 16th-century text.
+    url: ""
+    notes: Modern English translations (e.g. Sharma, Kapoor) are copyrighted.
+
+  - id: saravali-sanskrit
+    title: Saravali of Kalyanavarma (Sanskrit original)
+    language: sa
+    licence: public-domain
+    basis: Ancient text.
+    url: ""
+
+  - id: brihat-jataka-1905
+    title: Brihat Jataka of Varahamihira, tr. N. Chidambaram Iyer (1905)
+    language: en
+    licence: public-domain
+    basis: Published 1905; translator died well over 60 years ago.
+    url: ""   # verify the scan (e.g. archive.org) before adding
+
+  - id: jataka-parijata-1932
+    title: Jataka Parijata, tr. V. Subrahmanya Sastri (1932)
+    language: en
+    licence: unknown
+    basis: Translator's death year must be verified before use.
+    url: ""
+
+  - id: santhanam-bphs
+    title: BPHS, tr. R. Santhanam (1984)
+    language: en
+    licence: copyrighted
+    basis: Modern translation, copyrighted. Listed only so nobody adds it by mistake.
+    url: ""

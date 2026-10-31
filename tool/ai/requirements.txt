@@ -1,0 +1,13 @@
+# Training pipeline (run on Colab/Kaggle free GPUs). Not needed by the app.
+torch>=2.4
+transformers>=4.46
+peft>=0.13
+trl>=0.12
+datasets>=3.0
+accelerate>=1.0
+bitsandbytes>=0.44 ; platform_system == "Linux"
+pyyaml>=6.0
+requests>=2.32
+beautifulsoup4>=4.12
+llama-cpp-python>=0.3   # eval.py runs the exported GGUF
+gguf>=0.10

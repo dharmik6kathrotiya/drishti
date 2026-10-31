@@ -1,0 +1,14 @@
+{
+  "dashaComingNext": "Coming next",
+  "dashaMonthByMonth": "Month by month",
+  "dashaFromDate": "from {date}",
+  "dashaMonthNote": "Each line is a period running in that month: Mahadasha / Antardasha / Pratyantardasha. Tap 💡 for what it traditionally means.",
+  "@dashaFromDate": {
+    "description": "Start date of a coming period; word order differs by language.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  }
+}

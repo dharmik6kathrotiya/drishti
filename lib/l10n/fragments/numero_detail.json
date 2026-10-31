@@ -1,0 +1,129 @@
+{
+  "numeroTapForDetails": "Tap to see how it is calculated and what it means",
+  "numeroHowCalculated": "How it is calculated",
+  "numeroWhatItMeans": "What it means",
+  "numeroRepresents": "What this number represents",
+  "numeroStrengths": "Strengths",
+  "numeroChallenges": "Challenges",
+  "numeroGuidance": "Guidance",
+  "numeroPlanetLine": "Traditional planet: {planet}",
+  "@numeroPlanetLine": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroPartMonth": "Month",
+  "numeroPartDay": "Day",
+  "numeroPartYear": "Year",
+  "numeroPartCurrentYear": "Current year",
+  "numeroPartSum": "Add them",
+  "numeroPartDateDigits": "All digits of the date",
+  "numeroPartLetters": "All letters",
+  "numeroPartVowels": "Vowels (A, E, I, O, U)",
+  "numeroPartConsonants": "Consonants (Y is counted as a consonant)",
+  "numeroLetterTablePy": "Pythagorean letter values",
+  "numeroLetterTableCh": "Chaldean letter values",
+  "numeroMasterKept": "{number} is a master number, so it is kept as it is.",
+  "@numeroMasterKept": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "numeroAlwaysReduced": "This number is always reduced to a single digit; master numbers are not kept.",
+  "numeroResult": "Result: {number}",
+  "@numeroResult": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "numeroCombinations": "Combinations",
+  "numeroPairTitle": "Mulank and Bhagyank pair",
+  "numeroPairNumbers": "Mulank {mulank} ({mulankPlanet}) and Bhagyank {bhagyank} ({bhagyankPlanet})",
+  "@numeroPairNumbers": {
+    "placeholders": {
+      "mulank": {
+        "type": "int"
+      },
+      "mulankPlanet": {
+        "type": "String"
+      },
+      "bhagyank": {
+        "type": "int"
+      },
+      "bhagyankPlanet": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroViewLine": "{from} → {to}: {relation}",
+  "@numeroViewLine": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      },
+      "relation": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroRelFriend": "friend",
+  "numeroRelNeutral": "neutral",
+  "numeroRelEnemy": "enemy",
+  "numeroPairSame": "Same number",
+  "numeroPairFriendly": "Friendly",
+  "numeroPairNeutral": "Neutral",
+  "numeroPairChallenging": "Challenging",
+  "numeroLoShuTitle": "Lo Shu grid",
+  "numeroLoShuAddMB": "Add Mulank and Bhagyank (usual Indian practice)",
+  "numeroLoShuDigits": "Digits placed: {digits}",
+  "@numeroLoShuDigits": {
+    "placeholders": {
+      "digits": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroLoShuRepeated": "Repeated numbers",
+  "numeroLoShuMissing": "Missing numbers",
+  "numeroLoShuPlanes": "Complete planes",
+  "numeroLoShuNoRepeated": "No number repeats.",
+  "numeroLoShuNoMissing": "Every number from 1 to 9 is present.",
+  "numeroLoShuNoPlanes": "No row, column or diagonal is complete.",
+  "numeroCompoundTitle": "Chaldean compound number",
+  "numeroCompoundReduced": "Your total {total} is above 52, so its digits are added: {compound}.",
+  "@numeroCompoundReduced": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "compound": {
+        "type": "int"
+      }
+    }
+  },
+  "numeroCompoundNone": "This total does not give a compound number between 10 and 52, so only the single digit is read.",
+  "numeroPersonalTitle": "Personal year, month and day",
+  "numeroPersonalFor": "For {date}",
+  "@numeroPersonalFor": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroPersonalYear": "Personal year",
+  "numeroPersonalMonth": "Personal month",
+  "numeroPersonalDay": "Personal day",
+  "numeroAboutTitle": "About these methods",
+  "numeroNeedDate": "Enter a birth date to see the Lo Shu grid, the Mulank and Bhagyank pair and your personal cycles.",
+  "numeroNameLatinOnly": "Name numbers use the letters A to Z. Type the name in English letters to see them."
+}

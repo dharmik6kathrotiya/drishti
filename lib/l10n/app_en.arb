@@ -1,0 +1,1342 @@
+{
+  "@@locale": "en",
+  "navToday": "Today",
+  "navKundli": "Kundli",
+  "navPanchang": "Panchang",
+  "navMatch": "Match",
+  "navMore": "More",
+  "recommended": "Recommended",
+  "whatsThis": "What's this?",
+  "continueLabel": "Continue",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "save": "Save",
+  "edit": "Edit",
+  "share": "Share",
+  "clear": "Clear",
+  "reset": "Reset",
+  "automatic": "Automatic",
+  "notProvided": "Not provided",
+  "until": "until",
+  "day": "day",
+  "me": "Me",
+  "present": "Present",
+  "notPresent": "Not present",
+  "notRunning": "Not running",
+  "onboardingWelcomeTitle": "Welcome to Drishti",
+  "onboardingWelcomeBody": "Accurate, honest astrology. Free for everyone, and your data stays on your phone.",
+  "chooseLanguage": "Choose your language",
+  "ageTitle": "How old are you?",
+  "ageBody": "This keeps the app suitable for you.",
+  "age18plus": "18 or older",
+  "age13to17": "13 to 17",
+  "ageUnder13": "Under 13",
+  "teenModeInfo": "Teen mode hides marriage matching and adult topics, and shows only non-personalised ads.",
+  "under13Message": "Drishti is made for people aged 13 and above. Please ask a parent or guardian to use it with you.",
+  "systemTitle": "Which astrology do you follow?",
+  "systemBody": "You can switch at any time.",
+  "systemVedic": "Vedic (Jyotish)",
+  "systemVedicInfo": "Indian sidereal astrology: Kundli, Rashi, Nakshatra, Dasha, Panchang and Guna Milan.",
+  "systemWestern": "Western",
+  "systemWesternInfo": "Tropical zodiac astrology: Sun sign, birth chart wheel, aspects and transits.",
+  "changeLaterHint": "Every setting can be changed later in Settings.",
+  "themeTitle": "Pick a look",
+  "themeBody": "Choose the theme you like. You can change it any time.",
+  "profileIntroTitle": "Create your profile",
+  "profileIntroBody": "Add only what you know. Each detail unlocks more.",
+  "profileIntroName": "Name: numerology",
+  "profileIntroDate": "Date of birth: Moon sign, daily horoscope, dashas",
+  "profileIntroTime": "Time of birth: Ascendant, houses and the full Kundli",
+  "profileIntroPlace": "Place of birth: exact timezone and accurate houses",
+  "privacyPromiseTitle": "Your data stays with you",
+  "privacyPromise": "Everything is stored only on this phone. Nothing is uploaded unless you choose to share it.",
+  "createMyProfile": "Create my profile",
+  "skipForNow": "Skip for now",
+  "profilesTitle": "Profiles",
+  "addProfile": "Add profile",
+  "scanProfile": "Scan a profile",
+  "scanProfileSubtitle": "Add a friend's profile from their QR code",
+  "noProfilesTitle": "No profiles yet",
+  "noProfilesBody": "Create profiles for yourself, family and friends. Add only the details you have.",
+  "onlyName": "Name only",
+  "showOnToday": "Show on Today",
+  "newProfile": "New profile",
+  "editProfile": "Edit profile",
+  "deleteProfileTitle": "Delete profile?",
+  "deleteProfileBody": "{name} will be removed from this phone.",
+  "@deleteProfileBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "profileNotFound": "Profile not found",
+  "name": "Name",
+  "fullName": "Full name",
+  "nameRequired": "Please enter a name.",
+  "thisIsMe": "This is me",
+  "male": "Male",
+  "female": "Female",
+  "otherGender": "Other",
+  "optionalDetailsHint": "All details below are optional. Add what you have.",
+  "birthDate": "Date of birth",
+  "birthTime": "Time of birth",
+  "birthPlace": "Place of birth",
+  "timeExact": "Exact",
+  "timeApprox": "Approximate",
+  "timezoneAtBirth": "Timezone at birth",
+  "advanced": "Advanced",
+  "utcOffsetOverride": "Time zone correction",
+  "utcOffsetOverrideInfo": "Only needed for old records that used a local time (for example Bombay or Calcutta time before 1955). Leave it on Automatic otherwise.",
+  "whatYouGet": "What you'll get",
+  "unlockNameNumerology": "Name numerology",
+  "unlockDate": "Moon sign, nakshatra, dashas and daily horoscope",
+  "unlockPlace": "Correct timezone for your birth date",
+  "unlockFullChart": "Full Kundli: Lagna, houses, divisional charts and KP",
+  "unknownTimeNote": "Without a birth time we use a Moon-based chart at noon. The Ascendant and houses are not shown, and the Moon's position may be off by a few degrees.",
+  "noPlaceNote": "Without a birthplace we cannot calculate the Ascendant and houses.",
+  "searchPlaceHint": "Search city, town or village",
+  "searchPlaceHelp": "Type at least 2 letters. Add a comma to narrow it down, e.g. \"Aurangabad, Maharashtra\". Works offline.",
+  "noPlacesFound": "No places found. Try another spelling, or enter coordinates.",
+  "enterCoordinates": "Enter coordinates",
+  "latitude": "Latitude",
+  "longitude": "Longitude",
+  "tabChart": "Chart",
+  "tabPlanets": "Planets",
+  "tabDasha": "Dasha",
+  "tabYogas": "Yogas",
+  "tabDoshas": "Doshas",
+  "tabKp": "KP",
+  "needBirthDateTitle": "Add a birth date",
+  "needBirthDateBody": "A birth date is needed to calculate a chart. Add a time and place for the full Kundli.",
+  "addBirthDetails": "Add birth details",
+  "partialChartTitle": "Partial chart",
+  "chartStyle": "Chart style",
+  "keyFacts": "Key facts",
+  "lagna": "Lagna (Ascendant)",
+  "ascendant": "Ascendant",
+  "rashi": "Rashi (Moon sign)",
+  "sunSign": "Sun sign",
+  "moonSign": "Moon sign",
+  "sunSignSidereal": "Sun sign (sidereal)",
+  "nakshatra": "Nakshatra",
+  "nakshatraLord": "Nakshatra lord",
+  "pada": "Pada",
+  "ayanamsaLabel": "Ayanamsa",
+  "ayanamsaInfo": "The ayanamsa is the offset between the tropical and sidereal zodiac. Different traditions use slightly different values.",
+  "houseSystem": "House system",
+  "nodeType": "Rahu/Ketu calculation",
+  "birthDetails": "Birth details",
+  "house": "House",
+  "planet": "Planet",
+  "exalted": "Exalted",
+  "debilitated": "Debilitated",
+  "ownSign": "Own sign",
+  "retrograde": "retrograde",
+  "planetsFootnote": "Positions from Swiss Ephemeris (NASA JPL data). Speed is in degrees per day; negative speed means retrograde.",
+  "runningNow": "Running now",
+  "mahadasha": "Mahadasha",
+  "antardasha": "Antardasha",
+  "pratyantardasha": "Pratyantardasha",
+  "dashaApproxNote": "Birth time unknown: dasha dates may be off by several months, because the Moon moves about 13° a day.",
+  "doshaIntro": "Doshas are traditional indicators, not verdicts. Different schools judge them differently, and most texts also list many cancelling factors.",
+  "mitigatingFactors": "Softening factors found",
+  "sadeSati": "Sade Sati",
+  "sadeSatiRunning": "Running now: phase {phase} of 3, with Saturn in {sign}.",
+  "@sadeSatiRunning": {
+    "placeholders": {
+      "phase": {
+        "type": "int"
+      },
+      "sign": {
+        "type": "String"
+      }
+    }
+  },
+  "sadeSatiNotRunning": "Not running. Saturn is in {sign}, the {house}th sign from your Moon.",
+  "@sadeSatiNotRunning": {
+    "placeholders": {
+      "sign": {
+        "type": "String"
+      },
+      "house": {
+        "type": "int"
+      }
+    }
+  },
+  "sadeSatiPhase": "Phase {phase} of 3",
+  "@sadeSatiPhase": {
+    "placeholders": {
+      "phase": {
+        "type": "int"
+      }
+    }
+  },
+  "dhaiyaNote": "Saturn is transiting the {house}th from your Moon (Dhaiya, or small panoti), which tradition associates with extra responsibility.",
+  "@dhaiyaNote": {
+    "placeholders": {
+      "house": {
+        "type": "int"
+      }
+    }
+  },
+  "sadeSatiPeriods": "Sade Sati periods",
+  "sadeSatiSource": "Sade Sati is Saturn's transit through the 12th, 1st and 2nd signs from the natal Moon (about 7½ years). Tradition associates it with effort and maturity, not only difficulty.",
+  "yogasIntro": "Yogas are planetary combinations described in classical texts. Their effects depend on the strength of the planets involved and on the whole chart.",
+  "noYogasFound": "None of the yogas we check were found in this chart.",
+  "kpIntro": "Krishnamurti Paddhati (KP) uses the KP ayanamsa and Placidus cusps, and focuses on sub lords.",
+  "kpNeedsTime": "KP needs an exact birth time and place.",
+  "kpCusps": "Cusps",
+  "kpPlanets": "Planets",
+  "kpSignStarSubSub": "Sign · Star · Sub · Sub-sub",
+  "kpSignificators": "House significators",
+  "kpRulingPlanets": "Ruling planets now",
+  "kpRulingNote": "For this moment at {place}. Used in KP horary and to confirm birth time.",
+  "@kpRulingNote": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "tithi": "Tithi",
+  "yoga": "Yoga",
+  "karana": "Karana",
+  "lunarMonth": "Lunar month",
+  "amanta": "Amanta",
+  "purnimanta": "Purnimanta",
+  "samvat": "Samvat",
+  "sunMoon": "Sun and Moon",
+  "sunrise": "Sunrise",
+  "sunset": "Sunset",
+  "moonrise": "Moonrise",
+  "moonset": "Moonset",
+  "sunriseSunset": "Sunrise / Sunset",
+  "timings": "Auspicious and inauspicious times",
+  "abhijit": "Abhijit Muhurta",
+  "rahuKaal": "Rahu Kaal",
+  "yamaganda": "Yamaganda",
+  "gulika": "Gulika Kaal",
+  "dayChoghadiya": "Day Choghadiya",
+  "nightChoghadiya": "Night Choghadiya",
+  "hora": "Hora",
+  "changePlace": "Change place",
+  "todaysPanchang": "Today's Panchang",
+  "panchangNote": "Calculated on your phone for the chosen place using Swiss Ephemeris and the Lahiri ayanamsa (or your chosen one). Sunrise is taken when the Sun's upper edge appears, with standard refraction.",
+  "matchTitle": "Kundli Matching",
+  "matchIntro": "Choose two profiles. Matching uses the Moon positions of both people.",
+  "groom": "Groom",
+  "bride": "Bride",
+  "matchNeedProfilesTitle": "Add two profiles",
+  "matchNeedProfilesBody": "Matching needs at least two profiles with birth dates.",
+  "matchTeenTitle": "Available at 18+",
+  "matchTeenBody": "Marriage matching is shown only to adults. You can still explore your own chart.",
+  "kootaDetails": "Ashtakoot (8 kootas)",
+  "traditionalExceptions": "Traditional exceptions",
+  "manglikComparison": "Mangal dosha",
+  "manglikBalanced": "Both charts have the same Mangal dosha status, which is traditionally considered balanced.",
+  "manglikUnbalanced": "Only one chart has Mangal dosha. Many astrologers check further cancelling factors before drawing conclusions.",
+  "matchDisclaimer": "Guna Milan is one traditional tool, and point tables vary slightly between almanacs. It cannot predict the success of a relationship. Mutual respect, values and communication matter most.",
+  "matchApproxNote": "One or both birth times are unknown, so the result is approximate.",
+  "synastry": "Synastry",
+  "harmoniousAspects": "Harmonious aspects",
+  "challengingAspects": "Challenging aspects",
+  "conjunctions": "Conjunctions",
+  "aspectList": "Aspects between the charts",
+  "numerology": "Numerology",
+  "numerologySubtitle": "Life path, destiny, Mulank and Bhagyank",
+  "numerologyEmpty": "Enter a name or birth date.",
+  "numerologyNote": "Numerology is a traditional system of symbolic meanings for numbers. Read it as reflection, not prediction.",
+  "settings": "Settings",
+  "settingsSubtitle": "Language, theme, calculation options and privacy",
+  "appearance": "Appearance",
+  "language": "Language",
+  "theme": "Theme",
+  "astrology": "Astrology",
+  "astrologySystem": "Astrology system",
+  "notifications": "Notifications",
+  "notificationsInfo": "All notifications are off by default. Turn on only what you want.",
+  "privacyData": "Privacy and data",
+  "exportData": "Export my data",
+  "exportDataInfo": "Share a backup of all profiles and settings as text",
+  "importData": "Import from clipboard",
+  "importedProfiles": "{count} profiles imported",
+  "@importedProfiles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importFailed": "Could not read a backup from the clipboard.",
+  "deleteAllData": "Delete all data",
+  "deleteAllDataConfirm": "This permanently deletes all profiles and settings from this phone.",
+  "about": "About Drishti",
+  "aboutSubtitle": "Open-source licences and credits",
+  "aboutLegal": "Free and open source (AGPL-3.0). Astronomical calculations by Swiss Ephemeris {version} © Astrodienst AG. Places from GeoNames (CC BY 4.0).",
+  "@aboutLegal": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "shareProfileTitle": "Share profile",
+  "shareProfileBody": "Let a friend scan this code to add {name}'s birth details. The code goes directly from phone to phone; no server is involved.",
+  "@shareProfileBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shareAsText": "Share as a text code",
+  "shareText": "Birth details of {name} for the Drishti app:\n{code}",
+  "@shareText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "sharePrivacyNote": "Only the name and birth details are shared. Notes and life events are never included.",
+  "pasteCode": "Paste code",
+  "invalidCode": "That is not a valid Drishti profile code.",
+  "welcome": "Welcome",
+  "homeNoProfile": "Create your profile to see your personal horoscope, chart and dashas.",
+  "hello": "Namaste, {name}",
+  "@hello": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "switchProfile": "Switch profile",
+  "yourChart": "Your chart",
+  "currentDasha": "Current dasha",
+  "horoscopeTitle": "Your horoscope",
+  "pickSignForHoroscope": "Add a birth date for a personal reading, or pick a sign for a general one:",
+  "periodDay": "Today",
+  "periodWeek": "Week",
+  "periodMonth": "Month",
+  "periodYear": "Year",
+  "horoscopeUnavailable": "A horoscope cannot be made with the available details.",
+  "keyEvents": "Key sky events",
+  "whyThisReading": "Why this reading?",
+  "horoscopeApproxNote": "Some birth details are approximate, so parts of this reading are approximate too.",
+  "changeSign": "Change sign",
+  "notifPanchangTitle": "Today's Panchang · {vara}",
+  "@notifPanchangTitle": {
+    "placeholders": {
+      "vara": {
+        "type": "String"
+      }
+    }
+  },
+  "notifRahuKaalTitle": "Rahu Kaal begins soon",
+  "notifRahuKaalBody": "Rahu Kaal today: {start} – {end}. Traditionally avoided for starting new work.",
+  "@notifRahuKaalBody": {
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "notifHoroscopeTitle": "{name}, your day",
+  "@notifHoroscopeTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifTransitTitle": "Sky update",
+  "notifIngress": "{planet} enters {sign} today.",
+  "@notifIngress": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      },
+      "sign": {
+        "type": "String"
+      }
+    }
+  },
+  "notifRetro": "{planet} turns retrograde in {sign}.",
+  "@notifRetro": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      },
+      "sign": {
+        "type": "String"
+      }
+    }
+  },
+  "notifDirect": "{planet} turns direct in {sign}.",
+  "@notifDirect": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      },
+      "sign": {
+        "type": "String"
+      }
+    }
+  },
+  "notifFestivalTitle": "Tomorrow",
+  "notifFestivalBody": "{name} is tomorrow.",
+  "@notifFestivalBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "widgetOpenApp": "Open Drishti to refresh",
+  "notificationsDenied": "Notifications are blocked for Drishti. You can allow them in your phone's settings.",
+  "skyNewsTitle": "From the Drishti team",
+  "feedUpdated": "Updated {date}",
+  "@feedUpdated": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remedyTitle": "Remedies",
+  "remedySubtitle": "Mantras, charity, fasting and other traditional practices",
+  "remedyTabForYou": "For you",
+  "remedyTabPlanets": "Planets",
+  "remedyTabDoshas": "Doshas",
+  "remedyTabBooks": "Books",
+  "remedyDeity": "Deity",
+  "remedyDay": "Day",
+  "remedyColour": "Colour",
+  "remedyDirection": "Direction",
+  "remedyBeejMantra": "Beej mantra",
+  "remedyStotra": "Navagraha Stotra verse",
+  "remedyJapa": "Japa count",
+  "remedyCharity": "Charity (daan)",
+  "remedyFasting": "Fasting",
+  "remedyGemstone": "Gemstone (traditional association)",
+  "remedyUpratna": "Substitute stones (upratna)",
+  "remedyRudraksha": "Rudraksha",
+  "remedyYantra": "Yantra",
+  "remedyLifestyle": "Conduct and lifestyle",
+  "remedySignifies": "Signifies",
+  "remedyMeaning": "Meaning",
+  "remedyNeedProfile": "Add a profile with a birth date to see remedies traditionally linked with your chart.",
+  "remedyReasonDasha": "You are running the {planet} mahadasha.",
+  "@remedyReasonDasha": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      }
+    }
+  },
+  "remedyReasonAntardasha": "You are running the {planet} antardasha.",
+  "@remedyReasonAntardasha": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      }
+    }
+  },
+  "remedyReasonDebilitated": "{planet} is debilitated in your chart.",
+  "@remedyReasonDebilitated": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      }
+    }
+  },
+  "remedyReasonSadeSati": "Sade Sati is running (phase {phase} of 3).",
+  "@remedyReasonSadeSati": {
+    "placeholders": {
+      "phase": {
+        "type": "int"
+      }
+    }
+  },
+  "remedyReasonManglik": "Mangal dosha is present by the traditional rule.",
+  "remedyNoSuggestions": "No specific traditional remedies stand out for your chart right now. General practices such as kindness, discipline and prayer are always considered beneficial.",
+  "remedyOpenDetails": "Open details",
+  "remedySource": "Source",
+  "tarotTitle": "Tarot",
+  "tarotSubtitle": "Card of the day and reflective spreads",
+  "tarotDailyCard": "Card of the day",
+  "tarotTapToReveal": "Tap to reveal",
+  "tarotUpright": "Upright",
+  "tarotReversed": "Reversed",
+  "tarotSpreads": "Spreads",
+  "tarotSpreadThree": "Past, present, future",
+  "tarotSpreadThreeInfo": "Three cards for reflecting on how a situation has developed.",
+  "tarotSpreadCeltic": "Celtic Cross",
+  "tarotSpreadCelticInfo": "A ten-card spread for looking at a question in depth.",
+  "tarotSpreadRelationship": "Relationship",
+  "tarotSpreadRelationshipInfo": "Five cards about you, the other person and the connection between you.",
+  "tarotQuestionHint": "Your question (optional)",
+  "tarotDraw": "Shuffle and draw",
+  "tarotHistory": "Past readings",
+  "tarotNoHistory": "Your readings will be saved here, only on this phone.",
+  "tarotClearHistory": "Clear history",
+  "tarotAstrology": "Astrological attribution",
+  "tarotPositionPast": "Past",
+  "tarotPositionPresent": "Present",
+  "tarotPositionFuture": "Future",
+  "tarotPositionSituation": "The situation",
+  "tarotPositionChallenge": "The challenge",
+  "tarotPositionFoundation": "Foundation",
+  "tarotPositionRecentPast": "Recent past",
+  "tarotPositionPossibility": "What could be",
+  "tarotPositionNearFuture": "Near future",
+  "tarotPositionSelf": "You",
+  "tarotPositionEnvironment": "Surroundings",
+  "tarotPositionHopesFears": "Hopes and fears",
+  "tarotPositionOutcome": "Likely direction",
+  "tarotPositionYou": "You",
+  "tarotPositionThem": "The other person",
+  "tarotPositionConnection": "The connection",
+  "tarotPositionStrength": "Strength to build on",
+  "tarotPositionAdvice": "Advice",
+  "journalTitle": "Journal and mood",
+  "journalSubtitle": "Track your mood alongside the Moon's cycle",
+  "journalToday": "How are you today?",
+  "journalMood": "Mood",
+  "journalEnergy": "Energy",
+  "journalTags": "Tags",
+  "journalNote": "Note",
+  "journalNoteHint": "Anything on your mind?",
+  "journalSave": "Save entry",
+  "journalSaved": "Saved",
+  "journalEmpty": "No entries yet. Add one a day to see patterns over time.",
+  "journalHistory": "History",
+  "journalChart": "Mood over time",
+  "journalInsights": "Insights",
+  "journalInsightsNeedMore": "Insights appear after {count} entries. You have {have}.",
+  "@journalInsightsNeedMore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "have": {
+        "type": "int"
+      }
+    }
+  },
+  "journalInsightsNote": "These are simple averages from your own entries. A pattern here is a correlation, not proof that the Moon or anything else caused it.",
+  "journalAvgShukla": "Average mood in Shukla paksha (waxing Moon)",
+  "journalAvgKrishna": "Average mood in Krishna paksha (waning Moon)",
+  "journalAvgByElement": "Average mood by the Moon's element",
+  "journalAvgByWeekday": "Average mood by weekday",
+  "journalExport": "Export",
+  "journalDeleteAll": "Delete all entries",
+  "journalDeleteAllConfirm": "This permanently deletes all journal entries from this phone.",
+  "journalDeleteEntry": "Delete entry",
+  "journalSky": "Sky that day",
+  "journalPrivacy": "Your journal never leaves this phone unless you export it.",
+  "wellnessMeditationTitle": "Meditation and breathing",
+  "wellnessMeditationSubtitle": "Guided breathing, nadi shodhana and Om chanting",
+  "wellnessBreathIn": "Breathe in",
+  "wellnessBreathOut": "Breathe out",
+  "wellnessHold": "Hold",
+  "wellnessInLeft": "In through the left nostril",
+  "wellnessInRight": "In through the right nostril",
+  "wellnessOutLeft": "Out through the left nostril",
+  "wellnessOutRight": "Out through the right nostril",
+  "wellnessChant": "Chant Om",
+  "wellnessStart": "Start",
+  "wellnessStop": "Stop",
+  "wellnessMinutes": "{minutes} min",
+  "@wellnessMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "wellnessSessionDone": "Session complete. Notice how you feel.",
+  "wellnessPatternBox": "Box breathing (4-4-4-4)",
+  "wellnessPatternBoxInfo": "Equal counts of inhaling, holding, exhaling and holding. Steadies the mind.",
+  "wellnessPattern478": "4-7-8 breathing",
+  "wellnessPattern478Info": "Inhale for 4, hold for 7, exhale for 8. Often used to relax before sleep.",
+  "wellnessPatternNadi": "Nadi shodhana",
+  "wellnessPatternNadiInfo": "Alternate-nostril breathing from yoga. Close the right nostril with the right thumb to inhale on the left; close the left with the ring finger to exhale on the right; then reverse.",
+  "wellnessPatternOm": "Om chanting",
+  "wellnessPatternOmInfo": "Inhale deeply, then chant a long \"Ommm\" on the exhale, feeling the vibration.",
+  "wellnessDayTheme": "Today is ruled by {planet}: {theme}",
+  "@wellnessDayTheme": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      },
+      "theme": {
+        "type": "String"
+      }
+    }
+  },
+  "wellnessHealthNote": "Stop if you feel dizzy or uncomfortable. If you have a medical condition, check with a doctor before breath-holding practices.",
+  "palmTitle": "Palm reading guide",
+  "palmSubtitle": "A guided, honest self-reading of your hand",
+  "palmAddPhoto": "Add a photo of your palm (optional)",
+  "palmTakePhoto": "Camera",
+  "palmChoosePhoto": "Gallery",
+  "palmNext": "Next",
+  "palmBack": "Back",
+  "palmSeeReading": "See my reading",
+  "palmReadingTitle": "Your palm reading",
+  "palmStartOver": "Start over",
+  "palmStepOf": "Step {step} of {total}",
+  "@palmStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "advTabStrength": "Strength",
+  "advTabJaimini": "Jaimini",
+  "advTabLalKitab": "Lal Kitab",
+  "advTabForecast": "Forecast",
+  "advNeedsTime": "This needs an exact birth time and place.",
+  "advNone": "None",
+  "advTotal": "Total",
+  "advShadbala": "Shadbala (six-fold strength)",
+  "advShadbalaIntro": "Shadbala measures how able each planet is to deliver its results (BPHS ch. 27). The marker shows the classical minimum; a bar beyond it means the planet is considered strong.",
+  "advRupas": "{value} rupas",
+  "@advRupas": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "advRequired": "minimum {value}",
+  "@advRequired": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "advShadbalaParts": "Sthana {sthana} · Dig {dig} · Kala {kala} · Chesta {chesta} · Naisargika {nai} · Drik {drik}",
+  "@advShadbalaParts": {
+    "placeholders": {
+      "sthana": {
+        "type": "String"
+      },
+      "dig": {
+        "type": "String"
+      },
+      "kala": {
+        "type": "String"
+      },
+      "chesta": {
+        "type": "String"
+      },
+      "nai": {
+        "type": "String"
+      },
+      "drik": {
+        "type": "String"
+      }
+    }
+  },
+  "advShadbalaNote": "Calculated in virupas (60 = 1 rupa). Software differs in a few sub-parts (Chesta, Abda/Masa lords, Yuddha); our method choices are listed in the open-source code, so numbers may differ slightly from other programs.",
+  "advAshtakavarga": "Ashtakavarga",
+  "advAshtakavargaIntro": "Benefic points (bindus) each sign receives from the seven planets and the Lagna. Signs with 28 or more points in the Sarvashtakavarga are traditionally considered supportive for transits.",
+  "advSav": "Sarvashtakavarga",
+  "advBav": "Bhinnashtakavarga",
+  "advJaiminiIntro": "Jaimini astrology uses movable significators (chara karakas), arudha padas and sign-based dashas.",
+  "advKarakas": "Chara karakas",
+  "advKarakaScheme8": "8-karaka scheme (include Rahu)",
+  "advKarakamsa": "Karakamsa (navamsa of the Atmakaraka)",
+  "advArudhas": "Arudha padas",
+  "advArudhaLagna": "Arudha Lagna (AL)",
+  "advUpapada": "Upapada (UL)",
+  "advCharaDasha": "Chara dasha",
+  "advCharaDashaNote": "Method of K.N. Rao: the direction follows the 9th sign from the Lagna; years are counted from each sign to its lord. Other Chara dasha variants exist.",
+  "advYears": "{count} years",
+  "@advYears": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "advLalKitabIntro": "In Lal Kitab the signs are fixed to the houses (Aries = 1st house) and each planet sits in the house of its sign. Meanings below are short summaries of the Lal Kitab tradition.",
+  "advPakkaGhar": "In pakka ghar (permanent house)",
+  "advSleepingHouses": "Sleeping houses",
+  "advSleepingNote": "Simplified rule: an empty house that is not aspected from the opposite house. Lal Kitab commentators use further aspect rules.",
+  "advVarshphalNote": "Lal Kitab Varshphal (annual chart) is not included yet: we only publish tables we have verified against a primary source.",
+  "advHouseN": "House {house}",
+  "@advHouseN": {
+    "placeholders": {
+      "house": {
+        "type": "int"
+      }
+    }
+  },
+  "advProgressions": "Secondary progressions",
+  "advProgressionsNote": "A day after birth stands for a year of life. The MC is moved by the solar arc and the Ascendant derived from it.",
+  "advForDate": "For date",
+  "advSolarReturn": "Solar return",
+  "advSolarReturnNote": "The chart for the moment the Sun returns to its birth position each year, cast for the birthplace.",
+  "advYear": "Year",
+  "advReturnMoment": "Exact return: {time}",
+  "@advReturnMoment": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "advLunarReturn": "Next lunar return",
+  "advComposite": "Composite chart",
+  "advCompositeSubtitle": "Midpoint chart of a relationship",
+  "advCompositeIntro": "A composite chart places every planet at the midpoint between two people's positions. Western astrologers read it as the chart of the relationship itself.",
+  "advPersonA": "First person",
+  "advPersonB": "Second person",
+  "advCompositeNeedProfiles": "Add at least two profiles with birth dates to make a composite chart.",
+  "advPositions": "Positions",
+  "aiAskTitle": "Ask Drishti",
+  "aiAskSubtitle": "Questions about your chart, answered from its calculations",
+  "aiAskHint": "Ask about career, studies, relationships…",
+  "aiSend": "Send",
+  "aiStop": "Stop",
+  "aiBasedOn": "Based on",
+  "aiNotes": "Please note",
+  "aiImproveWith": "Make this more accurate",
+  "aiNoProfile": "Create a profile with a birth date to ask questions about a chart.",
+  "aiProfileFor": "Answers for {name}",
+  "@aiProfileFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aiRuleMode": "Answers come from Drishti's built-in rules, which work offline on every phone. Download the on-phone AI model for conversational answers.",
+  "aiModelMode": "Using the on-phone AI model. Every answer is checked against your calculated chart.",
+  "aiReplaced": "The AI's draft did not pass Drishti's safety and accuracy check, so the rule-based answer is shown instead.",
+  "aiLoadFailed": "The AI model could not be loaded on this phone, so rule-based answers are used.",
+  "aiExplain": "Explain",
+  "aiAskMore": "Ask more",
+  "aiSource": "Source",
+  "aiTryAsking": "Try asking",
+  "aiSuggestCareer": "How does my chart look for career?",
+  "aiSuggestPersonality": "What does my chart say about my nature?",
+  "aiSuggestPeriod": "What does my current dasha mean?",
+  "aiSuggestStudies": "When is a good period for studies?",
+  "aiHistory": "Previous questions",
+  "aiModelTitle": "On-phone AI model",
+  "aiModelSubtitle": "Download, use or remove the AI model",
+  "aiModelIntro": "The AI model runs entirely on your phone. Nothing you ask is sent anywhere. Without it, Drishti still answers using its built-in rules.",
+  "aiNotReleased": "Not released yet",
+  "aiDownload": "Download",
+  "aiDownloading": "Downloading… {percent}%",
+  "@aiDownloading": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "aiPause": "Pause",
+  "aiResume": "Resume",
+  "aiDelete": "Remove",
+  "aiInstalled": "Installed",
+  "aiUse": "Use this model",
+  "aiInUse": "In use",
+  "aiStopUsing": "Stop using",
+  "aiWifiOnly": "Download only on Wi‑Fi",
+  "aiMinRam": "Needs about {gb} GB of RAM",
+  "@aiMinRam": {
+    "placeholders": {
+      "gb": {
+        "type": "int"
+      }
+    }
+  },
+  "aiLicense": "Licence: {license}",
+  "@aiLicense": {
+    "placeholders": {
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "aiMemoryTitle": "AI memory",
+  "aiMemorySubtitle": "See or delete what Drishti remembers",
+  "aiMemoryEmpty": "Nothing remembered yet.",
+  "aiLifeFacts": "Things you told Drishti",
+  "aiLifeFactsInfo": "Optional notes (e.g. \"I work in teaching\") that help answers. Stored only on this phone.",
+  "aiAddLifeFact": "Add a note",
+  "aiLifeFactHint": "e.g. I am studying engineering",
+  "aiClearHistory": "Clear this profile's memory",
+  "aiClearAll": "Clear all AI memory",
+  "aiClearConfirm": "This deletes the remembered questions and notes from this phone.",
+  "aiCancel": "Cancel",
+  "aiConfirm": "Delete",
+  "aiAdd": "Add",
+  "rectTitle": "Birth time rectification",
+  "rectSubtitle": "Estimate an uncertain birth time from life events",
+  "rectIntro": "If you know your birth time only roughly, Drishti can check which times in a range fit your major life events best, using traditional dasha and transit rules.",
+  "rectNeedsDatePlace": "Rectification needs a birth date and birthplace in this profile.",
+  "rectChooseProfile": "Profile",
+  "rectWindow": "Possible birth time range",
+  "rectFrom": "From",
+  "rectTo": "To",
+  "rectEvents": "Life events",
+  "rectEventsInfo": "Add dated events you are sure about. Three or more give more meaningful results.",
+  "rectAddEvent": "Add event",
+  "rectNoEvents": "No events added yet.",
+  "rectEventType": "Event",
+  "rectEventDate": "Date",
+  "rectEventNote": "Note (optional)",
+  "rectSaveEvent": "Save event",
+  "rectRun": "Find consistent times",
+  "rectRunning": "Checking possible birth times…",
+  "rectResults": "Time ranges that fit best",
+  "rectScore": "Fit score {score}",
+  "@rectScore": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "rectLagnas": "Lagna {d1} · Navamsa {d9} · Dasamsa {d10}",
+  "@rectLagnas": {
+    "placeholders": {
+      "d1": {
+        "type": "String"
+      },
+      "d9": {
+        "type": "String"
+      },
+      "d10": {
+        "type": "String"
+      }
+    }
+  },
+  "rectApply": "Use {time}",
+  "@rectApply": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rectApplied": "Birth time set to {time} and marked approximate.",
+  "@rectApplied": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "rectCaveat": "Rectification is an estimate based on traditional rules, not a measurement. Different astrologers use different methods and may reach different times. Prefer a recorded birth time (hospital or family records) whenever you have one.",
+  "rectNoMatch": "No reasons found for this event at this time.",
+  "rectEventMarriage": "Marriage",
+  "rectEventChildBirth": "Birth of a child",
+  "rectEventJobStart": "Started a job",
+  "rectEventJobLoss": "Left or lost a job",
+  "rectEventRelocation": "Moved home or city",
+  "rectEventAccident": "Accident",
+  "rectEventIllness": "Illness",
+  "rectEventParentDeath": "Loss of a parent",
+  "rectEventEducation": "Education milestone",
+  "rectEventOther": "Other",
+  "festTitle": "Festivals & Vrats",
+  "festSubtitle": "Festivals, Ekadashis, sankrantis and eclipses for your place",
+  "festAll": "All",
+  "festFestivals": "Festivals",
+  "festVrats": "Vrats",
+  "festSankrantis": "Sankrantis",
+  "festEclipses": "Eclipses",
+  "festNoEventsDay": "No festivals or vrats on this day.",
+  "festNoEventsMonth": "Nothing matches this filter in this month.",
+  "festHowDecided": "How this date was decided",
+  "festRegionalNote": "Regional and family traditions",
+  "festTimings": "Timings",
+  "festTithiSpan": "Tithi: {start} to {end}",
+  "@festTithiSpan": {
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "festWindow": "Observance window: {start} to {end}",
+  "@festWindow": {
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "festMoment": "Exact moment: {time}",
+  "@festMoment": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "festCalculatedFor": "Calculated for {place}",
+  "@festCalculatedFor": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "festDisclaimer": "Dates follow the common North Indian (Smarta) panchang rules for the chosen place. Your family, temple or regional tradition may observe some days differently; both are valid.",
+  "festToday": "Today",
+  "festLoading": "Calculating the calendar on your phone…",
+  "festOpenMuhurat": "Muhurat finder",
+  "muhuratTitle": "Muhurat Finder",
+  "muhuratSubtitle": "Auspicious times for important beginnings",
+  "muhuratActivity": "Activity",
+  "muhuratFrom": "From",
+  "muhuratTo": "To",
+  "muhuratPersonalise": "Personalise for",
+  "muhuratGeneral": "General (no profile)",
+  "muhuratPersonaliseInfo": "With a profile, Tara Bala and Chandra Bala (how the day's Moon relates to the birth Moon) are added to the checks.",
+  "muhuratFind": "Find muhurats",
+  "muhuratSearching": "Searching day by day…",
+  "muhuratNoResults": "No window met all the rules in this range. Try a longer range or relax the seasonal rules.",
+  "muhuratResults": "{count, plural, =1{1 window found} other{{count} windows found}}",
+  "@muhuratResults": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "muhuratScore": "Score {score}/100",
+  "@muhuratScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "muhuratRangeTooLong": "Please choose a range of up to 180 days.",
+  "muhuratRulesMet": "Rules met",
+  "muhuratRulesMissed": "Rules not met",
+  "muhuratDisclaimer": "This follows general Panchang-shuddhi rules found in muhurta texts and popular panchangs. Lists of favourable days differ between traditions, and important ceremonies are often fixed together with a family priest or astrologer.",
+  "muhuratAvoidKharmas": "Avoid Kharmas",
+  "muhuratAvoidKharmasInfo": "When the Sun is in sidereal Sagittarius or Pisces (about mid-December to mid-January and mid-March to mid-April), many traditions pause weddings and similar ceremonies.",
+  "muhuratAvoidCombust": "Avoid Guru/Shukra asta",
+  "muhuratAvoidCombustInfo": "When Jupiter or Venus is too close to the Sun (combust), they are traditionally considered too weak for weddings and house-warming.",
+  "muhuratAvoidChaturmas": "Avoid Chaturmas",
+  "muhuratAvoidChaturmasInfo": "From Devshayani to Prabodhini Ekadashi, North Indian practice usually avoids weddings and house-warming. Many South Indian traditions do not follow this.",
+  "muhuratActMarriage": "Marriage",
+  "muhuratActGrihaPravesh": "Griha Pravesh (house-warming)",
+  "muhuratActVehicle": "Vehicle purchase",
+  "muhuratActProperty": "Property purchase",
+  "muhuratActBusiness": "Starting a business",
+  "muhuratActTravel": "Travel",
+  "muhuratActNaming": "Naming ceremony (Namakarana)",
+  "muhuratActMundan": "Mundan (first haircut)",
+  "muhuratActEducation": "Starting education (Vidyarambha)",
+  "muhuratChkNakshatra": "Favourable nakshatra: {value}",
+  "@muhuratChkNakshatra": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "muhuratChkTithi": "Favourable tithi: {value}",
+  "@muhuratChkTithi": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "muhuratChkVara": "Favourable weekday: {value}",
+  "@muhuratChkVara": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "muhuratChkYoga": "Yoga not on the avoid list: {value}",
+  "@muhuratChkYoga": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "muhuratChkVyatipata": "Not Vyatipata or Vaidhriti yoga",
+  "muhuratChkVishti": "Not Vishti (Bhadra) karana",
+  "muhuratChkRahuKaal": "Outside Rahu Kaal",
+  "muhuratChkYamaganda": "Outside Yamaganda",
+  "muhuratChkGulika": "Outside Gulika Kaal",
+  "muhuratChkEclipse": "Not an eclipse day",
+  "muhuratChkKharmas": "Not in Kharmas",
+  "muhuratChkCombustJupiter": "Jupiter not combust",
+  "muhuratChkCombustVenus": "Venus not combust",
+  "muhuratChkChaturmas": "Not in Chaturmas",
+  "muhuratChkTara": "Tara Bala: {value}",
+  "@muhuratChkTara": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "muhuratChkChandra": "Chandra Bala: Moon in house {value} from the birth Moon",
+  "@muhuratChkChandra": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "wellnessThemeSun": "steady confidence; try a sunrise practice",
+  "wellnessThemeMoon": "calm and soothing; try 4-7-8 breathing",
+  "wellnessThemeMars": "energy and courage; try box breathing",
+  "wellnessThemeMercury": "clarity and focus; try nadi shodhana",
+  "wellnessThemeJupiter": "gratitude and wisdom; try Om chanting",
+  "wellnessThemeVenus": "gentleness and harmony; try 4-7-8 breathing",
+  "wellnessThemeSaturn": "patience and grounding; try a longer box breathing session",
+  "untilDate": "until {date}",
+  "@untilDate": {
+    "description": "A time or date something lasts until; word order differs by language.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "advKarakaAK": "Atmakaraka",
+  "advKarakaAmK": "Amatyakaraka",
+  "advKarakaBK": "Bhratrikaraka",
+  "advKarakaMK": "Matrikaraka",
+  "advKarakaPiK": "Pitrikaraka",
+  "advKarakaPK": "Putrakaraka",
+  "advKarakaGK": "Gnatikaraka",
+  "advKarakaDK": "Darakaraka",
+  "fromTime": "From {time}",
+  "@fromTime": {
+    "description": "Start of a time range.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "toTime": "To {time}",
+  "@toTime": {
+    "description": "End of a time range.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "aiModelLanguages": "AI answers in: {languages}. In other languages Drishti uses its built-in explanations.",
+  "@aiModelLanguages": {
+    "placeholders": {
+      "languages": {
+        "type": "String"
+      }
+    }
+  },
+  "aiWifiOnlyInfo": "Large downloads start only on Wi‑Fi. On mobile data, Drishti asks you first.",
+  "aiNotOnWifiTitle": "Not on Wi‑Fi",
+  "aiNotOnWifiBody": "“Download only on Wi‑Fi” is on and this phone is not on Wi‑Fi. About {size} would use your mobile data. Download anyway?",
+  "aiDownloadAnyway": "Download anyway",
+  "@aiNotOnWifiBody": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "rewardTitle": "Watch a short ad?",
+  "rewardBody": "Drishti is free for everyone because of ads. Watch a short ad to continue. After that, there are no more of these for 10 minutes.",
+  "rewardWatch": "Watch ad",
+  "rewardNotNow": "Not now",
+  "rewardShowResult": "Show match result",
+  "aiMoreDetail": "More detail",
+  "aiWhy": "Why? (chart reasons)",
+  "dashaComingNext": "Coming next",
+  "dashaMonthByMonth": "Month by month",
+  "dashaFromDate": "from {date}",
+  "dashaMonthNote": "Each line is a period running in that month: Mahadasha / Antardasha / Pratyantardasha. Tap 💡 for what it traditionally means.",
+  "@dashaFromDate": {
+    "description": "Start date of a coming period; word order differs by language.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "matchWhatItMeans": "What it means for you",
+  "matchAreaVarna": "Values and outlook",
+  "matchAreaVashya": "Mutual attraction and influence",
+  "matchAreaTara": "Wellbeing and fortune together",
+  "matchAreaYoni": "Physical and intimate compatibility",
+  "matchAreaMaitri": "Friendship and understanding",
+  "matchAreaGana": "Temperament",
+  "matchAreaBhakoot": "Family welfare and growth",
+  "matchAreaNadi": "Health and children (traditional view)",
+  "matchLevelGood": "{area}: matches well by tradition.",
+  "matchLevelPart": "{area}: partly matches.",
+  "matchLevelLow": "{area}: tradition sees a gap here, so it asks for more understanding and effort.",
+  "@matchLevelGood": {
+    "description": "One life area of a kundli match and how well it matches.",
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  },
+  "@matchLevelPart": {
+    "description": "One life area of a kundli match and how well it matches.",
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  },
+  "@matchLevelLow": {
+    "description": "One life area of a kundli match and how well it matches.",
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroTapForDetails": "Tap to see how it is calculated and what it means",
+  "numeroHowCalculated": "How it is calculated",
+  "numeroWhatItMeans": "What it means",
+  "numeroRepresents": "What this number represents",
+  "numeroStrengths": "Strengths",
+  "numeroChallenges": "Challenges",
+  "numeroGuidance": "Guidance",
+  "numeroPlanetLine": "Traditional planet: {planet}",
+  "@numeroPlanetLine": {
+    "placeholders": {
+      "planet": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroPartMonth": "Month",
+  "numeroPartDay": "Day",
+  "numeroPartYear": "Year",
+  "numeroPartCurrentYear": "Current year",
+  "numeroPartSum": "Add them",
+  "numeroPartDateDigits": "All digits of the date",
+  "numeroPartLetters": "All letters",
+  "numeroPartVowels": "Vowels (A, E, I, O, U)",
+  "numeroPartConsonants": "Consonants (Y is counted as a consonant)",
+  "numeroLetterTablePy": "Pythagorean letter values",
+  "numeroLetterTableCh": "Chaldean letter values",
+  "numeroMasterKept": "{number} is a master number, so it is kept as it is.",
+  "@numeroMasterKept": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "numeroAlwaysReduced": "This number is always reduced to a single digit; master numbers are not kept.",
+  "numeroResult": "Result: {number}",
+  "@numeroResult": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "numeroCombinations": "Combinations",
+  "numeroPairTitle": "Mulank and Bhagyank pair",
+  "numeroPairNumbers": "Mulank {mulank} ({mulankPlanet}) and Bhagyank {bhagyank} ({bhagyankPlanet})",
+  "@numeroPairNumbers": {
+    "placeholders": {
+      "mulank": {
+        "type": "int"
+      },
+      "mulankPlanet": {
+        "type": "String"
+      },
+      "bhagyank": {
+        "type": "int"
+      },
+      "bhagyankPlanet": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroViewLine": "{from} → {to}: {relation}",
+  "@numeroViewLine": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      },
+      "relation": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroRelFriend": "friend",
+  "numeroRelNeutral": "neutral",
+  "numeroRelEnemy": "enemy",
+  "numeroPairSame": "Same number",
+  "numeroPairFriendly": "Friendly",
+  "numeroPairNeutral": "Neutral",
+  "numeroPairChallenging": "Challenging",
+  "numeroLoShuTitle": "Lo Shu grid",
+  "numeroLoShuAddMB": "Add Mulank and Bhagyank (usual Indian practice)",
+  "numeroLoShuDigits": "Digits placed: {digits}",
+  "@numeroLoShuDigits": {
+    "placeholders": {
+      "digits": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroLoShuRepeated": "Repeated numbers",
+  "numeroLoShuMissing": "Missing numbers",
+  "numeroLoShuPlanes": "Complete planes",
+  "numeroLoShuNoRepeated": "No number repeats.",
+  "numeroLoShuNoMissing": "Every number from 1 to 9 is present.",
+  "numeroLoShuNoPlanes": "No row, column or diagonal is complete.",
+  "numeroCompoundTitle": "Chaldean compound number",
+  "numeroCompoundReduced": "Your total {total} is above 52, so its digits are added: {compound}.",
+  "@numeroCompoundReduced": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "compound": {
+        "type": "int"
+      }
+    }
+  },
+  "numeroPersonalTitle": "Personal year, month and day",
+  "numeroPersonalFor": "For {date}",
+  "@numeroPersonalFor": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "numeroPersonalYear": "Personal year",
+  "numeroPersonalMonth": "Personal month",
+  "numeroPersonalDay": "Personal day",
+  "numeroAboutTitle": "About these methods",
+  "numeroNeedDate": "Enter a birth date to see the Lo Shu grid, the Mulank and Bhagyank pair and your personal cycles.",
+  "numeroNameLatinOnly": "Name numbers use the letters A to Z. Type the name in English letters to see them.",
+  "numeroCompoundNone": "This total does not give a compound number between 10 and 52, so only the single digit is read.",
+  "toolInfoTooltip": "About this tool",
+  "toolInfoWhat": "What it is",
+  "toolInfoWhy": "Why it is used",
+  "toolInfoHow": "How it works",
+  "toolInfoScience": "Math and science",
+  "toolInfoReferences": "References",
+  "kootaWhatItIs": "What it is",
+  "kootaYourResult": "Your result",
+  "kootaExceptionsChecked": "Classical exceptions checked",
+  "kootaApplies": "applies",
+  "kootaNotApplies": "does not apply",
+  "kootaTapHint": "Tap any line to see what it is, your result and why.",
+  "compConclusion": "What it means for you",
+  "compAspectsTitle": "Aspects in the composite chart",
+  "compSupportive": "supportive",
+  "compChallenging": "challenging",
+  "compNotCounted": "not counted",
+  "yogaWhatFor": "What it is for",
+  "palmTraceButton": "Trace the lines on my photo",
+  "palmTraceTitle": "Trace your palm lines",
+  "palmTapIndex": "Step 1 of 3: tap the base of your index finger (where it joins the palm).",
+  "palmTapLittle": "Step 2 of 3: tap the base of your little finger.",
+  "palmTapWrist": "Step 3 of 3: tap the middle of your wrist.",
+  "palmTraceLine": "Trace your {line} with one finger over the photo. The dotted line shows where it usually runs; follow your own line. Lift your finger where the line breaks.",
+  "palmUndo": "Undo",
+  "palmCantSee": "I can't see this line",
+  "palmUseTracing": "Use my tracing",
+  "palmTraceNote": "Drishti suggests the hand points and lines it finds in your photo. They can be wrong, so check each one and redraw any that does not match. The photo stays on your phone. Palmistry is a symbolic tradition, not a prediction.",
+  "palmSuggested": "Suggested from your tracing. Compare it with your hand and change it if it does not match.",
+  "@palmTraceLine": {
+    "description": "Instruction to trace one palm line; {line} is the line's name.",
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "palmDetecting": "Looking for your hand and palm lines in the photo…",
+  "palmHandNotFound": "Could not find a hand in this photo. Tap the three points yourself, or use a clear photo of an open palm in good light.",
+  "palmAutoLine": "Drishti found your {line} (shown in colour). Check that it follows the crease in your photo. If it does not, tap Undo or simply draw over it.",
+  "@palmAutoLine": {
+    "description": "A palm line found automatically; {line} is its name.",
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "palmAutoMissing": "Drishti could not find your {line} clearly. Trace it with one finger, or tap “I can't see this line”.",
+  "@palmAutoMissing": {
+    "description": "A palm line not found automatically; {line} is its name.",
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "childrenTitle": "Children (Santana)",
+  "childrenSubtitle": "Signs and timing for children, for one person or a couple",
+  "childrenIntro": "A traditional Vedic reading of children: the 5th house, Jupiter, the Saptamsha (D7) and the dasha periods. For a couple it adds the classical Beeja and Kshetra Sphuta.",
+  "childrenOne": "One person",
+  "childrenCouple": "Couple",
+  "childrenPerson": "Person",
+  "childrenFather": "Father-to-be",
+  "childrenMother": "Mother-to-be",
+  "childrenNeedProfiles": "Add a profile with a birth date first.",
+  "childrenNeedTwo": "Add a second profile to read a couple.",
+  "childrenAdultsOnly": "This reading is available for adults only.",
+  "childrenWindows": "Periods the method marks for children",
+  "childrenSharedWindows": "Periods marked for both of you",
+  "childrenApproxNote": "Without a birth time, houses are counted from the Moon sign and the Moon's position is approximate.",
+  "childrenTradTitle": "Boy or girl? What the old texts say",
+  "childrenTradSubtitle": "History and science, with no prediction",
+  "matchAdviceTitle": "Overall advice",
+  "matchAdviceStrengths": "What is strong",
+  "matchAdviceCautions": "What needs care",
+  "matchAdviceSteps": "What you can do",
+  "matchAdviceRemedies": "Traditional remedies (optional)"
+}

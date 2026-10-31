@@ -1,0 +1,10 @@
+{
+  "aiModelLanguages": "AI answers in: {languages}. In other languages Drishti uses its built-in explanations.",
+  "@aiModelLanguages": {
+    "placeholders": {
+      "languages": {
+        "type": "String"
+      }
+    }
+  }
+}

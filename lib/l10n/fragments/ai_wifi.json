@@ -1,0 +1,13 @@
+{
+  "aiWifiOnlyInfo": "Large downloads start only on Wi‑Fi. On mobile data, Drishti asks you first.",
+  "aiNotOnWifiTitle": "Not on Wi‑Fi",
+  "aiNotOnWifiBody": "“Download only on Wi‑Fi” is on and this phone is not on Wi‑Fi. About {size} would use your mobile data. Download anyway?",
+  "aiDownloadAnyway": "Download anyway",
+  "@aiNotOnWifiBody": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  }
+}

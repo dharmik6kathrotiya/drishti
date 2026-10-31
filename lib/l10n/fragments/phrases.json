@@ -1,0 +1,8 @@
+{
+  "untilDate": "until {date}",
+  "@untilDate": {"description": "A time or date something lasts until; word order differs by language.", "placeholders": {"date": {"type": "String"}}},
+  "fromTime": "From {time}",
+  "@fromTime": {"description": "Start of a time range.", "placeholders": {"time": {"type": "String"}}},
+  "toTime": "To {time}",
+  "@toTime": {"description": "End of a time range.", "placeholders": {"time": {"type": "String"}}}
+}

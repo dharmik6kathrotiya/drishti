@@ -1,0 +1,82 @@
+{
+  "aiAskTitle": "Ask Drishti",
+  "aiAskSubtitle": "Questions about your chart, answered from its calculations",
+  "aiAskHint": "Ask about career, studies, relationships…",
+  "aiSend": "Send",
+  "aiStop": "Stop",
+  "aiBasedOn": "Based on",
+  "aiNotes": "Please note",
+  "aiImproveWith": "Make this more accurate",
+  "aiNoProfile": "Create a profile with a birth date to ask questions about a chart.",
+  "aiProfileFor": "Answers for {name}",
+  "@aiProfileFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aiRuleMode": "Answers come from Drishti's built-in rules, which work offline on every phone. Download the on-phone AI model for conversational answers.",
+  "aiModelMode": "Using the on-phone AI model. Every answer is checked against your calculated chart.",
+  "aiReplaced": "The AI's draft did not pass Drishti's safety and accuracy check, so the rule-based answer is shown instead.",
+  "aiLoadFailed": "The AI model could not be loaded on this phone, so rule-based answers are used.",
+  "aiExplain": "Explain",
+  "aiAskMore": "Ask more",
+  "aiSource": "Source",
+  "aiTryAsking": "Try asking",
+  "aiSuggestCareer": "How does my chart look for career?",
+  "aiSuggestPersonality": "What does my chart say about my nature?",
+  "aiSuggestPeriod": "What does my current dasha mean?",
+  "aiSuggestStudies": "When is a good period for studies?",
+  "aiHistory": "Previous questions",
+  "aiModelTitle": "On-phone AI model",
+  "aiModelSubtitle": "Download, use or remove the AI model",
+  "aiModelIntro": "The AI model runs entirely on your phone. Nothing you ask is sent anywhere. Without it, Drishti still answers using its built-in rules.",
+  "aiNotReleased": "Not released yet",
+  "aiDownload": "Download",
+  "aiDownloading": "Downloading… {percent}%",
+  "@aiDownloading": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "aiPause": "Pause",
+  "aiResume": "Resume",
+  "aiDelete": "Remove",
+  "aiInstalled": "Installed",
+  "aiUse": "Use this model",
+  "aiInUse": "In use",
+  "aiStopUsing": "Stop using",
+  "aiWifiOnly": "Download only on Wi‑Fi",
+  "aiMinRam": "Needs about {gb} GB of RAM",
+  "@aiMinRam": {
+    "placeholders": {
+      "gb": {
+        "type": "int"
+      }
+    }
+  },
+  "aiLicense": "Licence: {license}",
+  "@aiLicense": {
+    "placeholders": {
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "aiMemoryTitle": "AI memory",
+  "aiMemorySubtitle": "See or delete what Drishti remembers",
+  "aiMemoryEmpty": "Nothing remembered yet.",
+  "aiLifeFacts": "Things you told Drishti",
+  "aiLifeFactsInfo": "Optional notes (e.g. \"I work in teaching\") that help answers. Stored only on this phone.",
+  "aiAddLifeFact": "Add a note",
+  "aiLifeFactHint": "e.g. I am studying engineering",
+  "aiClearHistory": "Clear this profile's memory",
+  "aiClearAll": "Clear all AI memory",
+  "aiClearConfirm": "This deletes the remembered questions and notes from this phone.",
+  "aiCancel": "Cancel",
+  "aiConfirm": "Delete",
+  "aiAdd": "Add"
+}

@@ -1,0 +1,14 @@
+{
+  "matchWhatItMeans": "आपके लिए इसका अर्थ",
+  "matchAreaVarna": "मूल्य और दृष्टिकोण",
+  "matchAreaVashya": "आपसी आकर्षण और प्रभाव",
+  "matchAreaTara": "साथ में कल्याण और भाग्य",
+  "matchAreaYoni": "शारीरिक और अंतरंग अनुकूलता",
+  "matchAreaMaitri": "मित्रता और समझ",
+  "matchAreaGana": "स्वभाव",
+  "matchAreaBhakoot": "परिवार का कल्याण और उन्नति",
+  "matchAreaNadi": "स्वास्थ्य और संतान (पारंपरिक दृष्टि)",
+  "matchLevelGood": "{area}: परंपरा के अनुसार अच्छा मेल।",
+  "matchLevelPart": "{area}: आंशिक मेल।",
+  "matchLevelLow": "{area}: परंपरा यहाँ अंतर देखती है, इसलिए अधिक समझ और प्रयास की ज़रूरत है।"
+}

@@ -1,0 +1,55 @@
+# Free daily content feed and the project website (privacy policy) on
+# GitHub Pages. No server: the feed is computed by the app's own engine.
+name: Daily feed and website
+
+on:
+  schedule:
+    - cron: '30 18 * * *' # 00:00 in India
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['docs/privacy-policy.md', 'tool/feed/**', '.github/workflows/pages.yml']
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.6'
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Generate the feed
+        run: flutter test tool/feed/generate_feed_test.dart --dart-define=FEED_DATE=$(TZ=Asia/Kolkata date +%F)
+      - name: Assemble the site
+        run: |
+          mkdir -p site/feed
+          cp feed/*.json site/feed/
+          cp docs/privacy-policy.md site/privacy-policy.md
+          printf '# Drishti\n\nA free, open-source astrology app.\n\n- [Privacy policy](privacy-policy.html)\n- [Source code](https://github.com/dharmik6kathrotiya/drishti)\n' > site/index.md
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: site
+          destination: _site
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

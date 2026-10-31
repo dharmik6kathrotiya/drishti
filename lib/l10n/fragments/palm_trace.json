@@ -1,0 +1,41 @@
+{
+  "palmTraceButton": "Trace the lines on my photo",
+  "palmTraceTitle": "Trace your palm lines",
+  "palmTapIndex": "Step 1 of 3: tap the base of your index finger (where it joins the palm).",
+  "palmTapLittle": "Step 2 of 3: tap the base of your little finger.",
+  "palmTapWrist": "Step 3 of 3: tap the middle of your wrist.",
+  "palmTraceLine": "Trace your {line} with one finger over the photo. The dotted line shows where it usually runs; follow your own line. Lift your finger where the line breaks.",
+  "palmUndo": "Undo",
+  "palmCantSee": "I can't see this line",
+  "palmUseTracing": "Use my tracing",
+  "palmTraceNote": "Drishti suggests the hand points and lines it finds in your photo. They can be wrong, so check each one and redraw any that does not match. The photo stays on your phone. Palmistry is a symbolic tradition, not a prediction.",
+  "palmSuggested": "Suggested from your tracing. Compare it with your hand and change it if it does not match.",
+  "@palmTraceLine": {
+    "description": "Instruction to trace one palm line; {line} is the line's name.",
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "palmDetecting": "Looking for your hand and palm lines in the photo…",
+  "palmHandNotFound": "Could not find a hand in this photo. Tap the three points yourself, or use a clear photo of an open palm in good light.",
+  "palmAutoLine": "Drishti found your {line} (shown in colour). Check that it follows the crease in your photo. If it does not, tap Undo or simply draw over it.",
+  "@palmAutoLine": {
+    "description": "A palm line found automatically; {line} is its name.",
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "palmAutoMissing": "Drishti could not find your {line} clearly. Trace it with one finger, or tap “I can't see this line”.",
+  "@palmAutoMissing": {
+    "description": "A palm line not found automatically; {line} is its name.",
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  }
+}

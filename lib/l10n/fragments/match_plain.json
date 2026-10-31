@@ -1,0 +1,38 @@
+{
+  "matchWhatItMeans": "What it means for you",
+  "matchAreaVarna": "Values and outlook",
+  "matchAreaVashya": "Mutual attraction and influence",
+  "matchAreaTara": "Wellbeing and fortune together",
+  "matchAreaYoni": "Physical and intimate compatibility",
+  "matchAreaMaitri": "Friendship and understanding",
+  "matchAreaGana": "Temperament",
+  "matchAreaBhakoot": "Family welfare and growth",
+  "matchAreaNadi": "Health and children (traditional view)",
+  "matchLevelGood": "{area}: matches well by tradition.",
+  "matchLevelPart": "{area}: partly matches.",
+  "matchLevelLow": "{area}: tradition sees a gap here, so it asks for more understanding and effort.",
+  "@matchLevelGood": {
+    "description": "One life area of a kundli match and how well it matches.",
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  },
+  "@matchLevelPart": {
+    "description": "One life area of a kundli match and how well it matches.",
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  },
+  "@matchLevelLow": {
+    "description": "One life area of a kundli match and how well it matches.",
+    "placeholders": {
+      "area": {
+        "type": "String"
+      }
+    }
+  }
+}
