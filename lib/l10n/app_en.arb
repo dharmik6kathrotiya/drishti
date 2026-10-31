@@ -1338,5 +1338,8 @@
   "matchAdviceStrengths": "What is strong",
   "matchAdviceCautions": "What needs care",
   "matchAdviceSteps": "What you can do",
-  "matchAdviceRemedies": "Traditional remedies (optional)"
+  "matchAdviceRemedies": "Traditional remedies (optional)",
+  "exitTitle": "Exit the app?",
+  "exitBody": "Are you sure you want to close the app?",
+  "exitConfirm": "Exit"
 }

@@ -10,6 +10,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/providers.dart';
+import '../../app/shell_back.dart';
 import '../../core/astro/constants.dart';
 import '../../core/astro/settings.dart';
 import '../../core/astro/vedic/doshas.dart';
@@ -37,6 +38,27 @@ class _MatchingScreenState extends ConsumerState<MatchingScreen> {
   /// The pair whose result was unlocked with a rewarded ad.
   String? _shownPair;
 
+  /// A result is on screen, so back returns to the form first.
+  bool _resultVisible = false;
+
+  bool _back() {
+    if (!_resultVisible) return false;
+    setState(() => _shownPair = null);
+    return true;
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    ShellBack.add(3, _back); // the Match tab
+  }
+
+  @override
+  void dispose() {
+    ShellBack.remove(_back);
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -44,6 +66,7 @@ class _MatchingScreenState extends ConsumerState<MatchingScreen> {
     final profiles = ref.watch(profilesProvider).where((p) => p.hasDate).toList();
 
     Widget body;
+    _resultVisible = false;
     if (settings.isTeen) {
       body = EmptyState(icon: Icons.favorite_border, title: l.matchTeenTitle, message: l.matchTeenBody);
     } else if (profiles.length < 2) {
@@ -56,6 +79,7 @@ class _MatchingScreenState extends ConsumerState<MatchingScreen> {
     } else {
       final boy = profiles.where((p) => p.id == _boyId).firstOrNull;
       final girl = profiles.where((p) => p.id == _girlId).firstOrNull;
+      _resultVisible = boy != null && girl != null && _shownPair == '${boy.id}|${girl.id}';
       body = ListView(
         padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
         children: [

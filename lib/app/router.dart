@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -19,6 +20,7 @@ import '../ui/theme/app_themes.dart';
 import '../ui/widgets/common.dart';
 import 'feature_registry.dart';
 import 'providers.dart';
+import 'shell_back.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final onboarded = ref.read(settingsProvider).onboardingDone;
@@ -81,38 +83,62 @@ class _Shell extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final theme = ref.watch(settingsProvider.select((s) => s.theme));
-    return Scaffold(
-      body: StarryBackground(enabled: AppThemes.isStarry(theme), child: shell),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: shell.currentIndex,
-        onDestinationSelected: (i) => shell.goBranch(i, initialLocation: i == shell.currentIndex),
-        destinations: [
-          NavigationDestination(
-            icon: const Icon(Icons.wb_sunny_outlined),
-            selectedIcon: const Icon(Icons.wb_sunny),
-            label: l.navToday,
+    // Back: the open tab may use it first (closing a result), then it goes to
+    // Today, and on Today it asks before closing the app.
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, _) async {
+        if (didPop || ShellBack.handle(shell.currentIndex)) return;
+        if (shell.currentIndex != 0) {
+          shell.goBranch(0);
+          return;
+        }
+        final exit = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text(l.exitTitle),
+            content: Text(l.exitBody),
+            actions: [
+              TextButton(onPressed: () => Navigator.pop(context, false), child: Text(l.cancel)),
+              FilledButton(onPressed: () => Navigator.pop(context, true), child: Text(l.exitConfirm)),
+            ],
           ),
-          NavigationDestination(
-            icon: const Icon(Icons.grid_view_outlined),
-            selectedIcon: const Icon(Icons.grid_view),
-            label: l.navKundli,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.calendar_month_outlined),
-            selectedIcon: const Icon(Icons.calendar_month),
-            label: l.navPanchang,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.favorite_outline),
-            selectedIcon: const Icon(Icons.favorite),
-            label: l.navMatch,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.apps_outlined),
-            selectedIcon: const Icon(Icons.apps),
-            label: l.navMore,
-          ),
-        ],
+        );
+        if (exit ?? false) await SystemNavigator.pop();
+      },
+      child: Scaffold(
+        body: StarryBackground(enabled: AppThemes.isStarry(theme), child: shell),
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: shell.currentIndex,
+          onDestinationSelected: (i) => shell.goBranch(i, initialLocation: i == shell.currentIndex),
+          destinations: [
+            NavigationDestination(
+              icon: const Icon(Icons.wb_sunny_outlined),
+              selectedIcon: const Icon(Icons.wb_sunny),
+              label: l.navToday,
+            ),
+            NavigationDestination(
+              icon: const Icon(Icons.grid_view_outlined),
+              selectedIcon: const Icon(Icons.grid_view),
+              label: l.navKundli,
+            ),
+            NavigationDestination(
+              icon: const Icon(Icons.calendar_month_outlined),
+              selectedIcon: const Icon(Icons.calendar_month),
+              label: l.navPanchang,
+            ),
+            NavigationDestination(
+              icon: const Icon(Icons.favorite_outline),
+              selectedIcon: const Icon(Icons.favorite),
+              label: l.navMatch,
+            ),
+            NavigationDestination(
+              icon: const Icon(Icons.apps_outlined),
+              selectedIcon: const Icon(Icons.apps),
+              label: l.navMore,
+            ),
+          ],
+        ),
       ),
     );
   }

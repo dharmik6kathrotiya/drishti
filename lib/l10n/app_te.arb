@@ -742,5 +742,8 @@
   "matchAdviceStrengths": "బలమైనవి ఏమిటి",
   "matchAdviceCautions": "శ్రద్ధ అవసరమైనవి",
   "matchAdviceSteps": "మీరు చేయగలిగినవి",
-  "matchAdviceRemedies": "సంప్రదాయ పరిహారాలు (ఐచ్ఛికం)"
+  "matchAdviceRemedies": "సంప్రదాయ పరిహారాలు (ఐచ్ఛికం)",
+  "exitTitle": "యాప్ మూసివేయాలా?",
+  "exitBody": "మీరు నిజంగా యాప్‌ను మూసివేయాలనుకుంటున్నారా?",
+  "exitConfirm": "మూసివేయి"
 }

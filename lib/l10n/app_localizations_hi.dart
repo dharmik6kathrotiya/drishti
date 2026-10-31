@@ -121,16 +121,19 @@ class AppLocalizationsHi extends AppLocalizations {
   String get systemVedic => 'वैदिक (ज्योतिष)';
 
   @override
-  String get systemVedicInfo => 'भारतीय निरयन ज्योतिष: कुंडली, राशि, नक्षत्र, दशा, पंचांग और गुण मिलान।';
+  String get systemVedicInfo =>
+      'भारतीय निरयन ज्योतिष: कुंडली, राशि, नक्षत्र, दशा, पंचांग और गुण मिलान।';
 
   @override
   String get systemWestern => 'पाश्चात्य';
 
   @override
-  String get systemWesternInfo => 'सायन राशिचक्र ज्योतिष: सूर्य राशि, जन्म कुंडली चक्र, दृष्टियाँ और गोचर।';
+  String get systemWesternInfo =>
+      'सायन राशिचक्र ज्योतिष: सूर्य राशि, जन्म कुंडली चक्र, दृष्टियाँ और गोचर।';
 
   @override
-  String get changeLaterHint => 'हर सेटिंग बाद में सेटिंग्स में बदली जा सकती है।';
+  String get changeLaterHint =>
+      'हर सेटिंग बाद में सेटिंग्स में बदली जा सकती है।';
 
   @override
   String get themeTitle => 'एक रूप चुनें';
@@ -142,7 +145,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get profileIntroTitle => 'अपनी प्रोफ़ाइल बनाएँ';
 
   @override
-  String get profileIntroBody => 'जो पता है बस वही जोड़ें। हर जानकारी से और नतीजे खुलते हैं।';
+  String get profileIntroBody =>
+      'जो पता है बस वही जोड़ें। हर जानकारी से और नतीजे खुलते हैं।';
 
   @override
   String get profileIntroName => 'नाम: अंक ज्योतिष';
@@ -179,13 +183,15 @@ class AppLocalizationsHi extends AppLocalizations {
   String get scanProfile => 'प्रोफ़ाइल स्कैन करें';
 
   @override
-  String get scanProfileSubtitle => 'किसी मित्र के QR कोड से उनकी प्रोफ़ाइल जोड़ें';
+  String get scanProfileSubtitle =>
+      'किसी मित्र के QR कोड से उनकी प्रोफ़ाइल जोड़ें';
 
   @override
   String get noProfilesTitle => 'अभी कोई प्रोफ़ाइल नहीं';
 
   @override
-  String get noProfilesBody => 'अपने, परिवार और मित्रों के लिए प्रोफ़ाइल बनाएँ। जो जानकारी है, बस वही जोड़ें।';
+  String get noProfilesBody =>
+      'अपने, परिवार और मित्रों के लिए प्रोफ़ाइल बनाएँ। जो जानकारी है, बस वही जोड़ें।';
 
   @override
   String get onlyName => 'केवल नाम';
@@ -232,7 +238,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get otherGender => 'अन्य';
 
   @override
-  String get optionalDetailsHint => 'नीचे की सभी जानकारी वैकल्पिक है। जो है, वही जोड़ें।';
+  String get optionalDetailsHint =>
+      'नीचे की सभी जानकारी वैकल्पिक है। जो है, वही जोड़ें।';
 
   @override
   String get birthDate => 'जन्म तिथि';
@@ -282,7 +289,8 @@ class AppLocalizationsHi extends AppLocalizations {
       'जन्म समय के बिना हम दोपहर 12 बजे की चंद्र-आधारित कुंडली बनाते हैं। लग्न और भाव नहीं दिखाए जाते, और चंद्रमा की स्थिति कुछ अंश अलग हो सकती है।';
 
   @override
-  String get noPlaceNote => 'जन्म स्थान के बिना लग्न और भावों की गणना नहीं हो सकती।';
+  String get noPlaceNote =>
+      'जन्म स्थान के बिना लग्न और भावों की गणना नहीं हो सकती।';
 
   @override
   String get searchPlaceHint => 'शहर, कस्बा या गाँव खोजें';
@@ -292,7 +300,8 @@ class AppLocalizationsHi extends AppLocalizations {
       'कम से कम 2 अक्षर लिखें। खोज सीमित करने के लिए कॉमा लगाएँ, जैसे \"Aurangabad, Maharashtra\"। बिना इंटरनेट के भी काम करता है।';
 
   @override
-  String get noPlacesFound => 'कोई स्थान नहीं मिला। दूसरी वर्तनी आज़माएँ या निर्देशांक दर्ज करें।';
+  String get noPlacesFound =>
+      'कोई स्थान नहीं मिला। दूसरी वर्तनी आज़माएँ या निर्देशांक दर्ज करें।';
 
   @override
   String get enterCoordinates => 'निर्देशांक दर्ज करें';
@@ -325,7 +334,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get needBirthDateTitle => 'जन्म तिथि जोड़ें';
 
   @override
-  String get needBirthDateBody => 'कुंडली बनाने के लिए जन्म तिथि चाहिए। पूरी कुंडली के लिए समय और स्थान भी जोड़ें।';
+  String get needBirthDateBody =>
+      'कुंडली बनाने के लिए जन्म तिथि चाहिए। पूरी कुंडली के लिए समय और स्थान भी जोड़ें।';
 
   @override
   String get addBirthDetails => 'जन्म विवरण जोड़ें';
@@ -462,7 +472,8 @@ class AppLocalizationsHi extends AppLocalizations {
       'योग शास्त्रीय ग्रंथों में बताए गए ग्रह-संयोग हैं। इनका फल संबंधित ग्रहों की शक्ति और पूरी कुंडली पर निर्भर करता है।';
 
   @override
-  String get noYogasFound => 'हम जिन योगों की जाँच करते हैं, उनमें से कोई इस कुंडली में नहीं मिला।';
+  String get noYogasFound =>
+      'हम जिन योगों की जाँच करते हैं, उनमें से कोई इस कुंडली में नहीं मिला।';
 
   @override
   String get kpIntro =>
@@ -568,7 +579,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get matchTitle => 'कुंडली मिलान';
 
   @override
-  String get matchIntro => 'दो प्रोफ़ाइल चुनें। मिलान दोनों व्यक्तियों की चंद्र स्थिति से होता है।';
+  String get matchIntro =>
+      'दो प्रोफ़ाइल चुनें। मिलान दोनों व्यक्तियों की चंद्र स्थिति से होता है।';
 
   @override
   String get groom => 'वर';
@@ -580,13 +592,15 @@ class AppLocalizationsHi extends AppLocalizations {
   String get matchNeedProfilesTitle => 'दो प्रोफ़ाइल जोड़ें';
 
   @override
-  String get matchNeedProfilesBody => 'मिलान के लिए जन्म तिथि वाली कम से कम दो प्रोफ़ाइल चाहिए।';
+  String get matchNeedProfilesBody =>
+      'मिलान के लिए जन्म तिथि वाली कम से कम दो प्रोफ़ाइल चाहिए।';
 
   @override
   String get matchTeenTitle => '18+ के लिए उपलब्ध';
 
   @override
-  String get matchTeenBody => 'विवाह मिलान केवल वयस्कों को दिखाया जाता है। आप अपनी कुंडली ज़रूर देख सकते हैं।';
+  String get matchTeenBody =>
+      'विवाह मिलान केवल वयस्कों को दिखाया जाता है। आप अपनी कुंडली ज़रूर देख सकते हैं।';
 
   @override
   String get kootaDetails => 'अष्टकूट (8 कूट)';
@@ -610,7 +624,8 @@ class AppLocalizationsHi extends AppLocalizations {
       'गुण मिलान एक पारंपरिक साधन है, और अलग-अलग पंचांगों में अंक-तालिकाएँ थोड़ी भिन्न होती हैं। यह किसी रिश्ते की सफलता का अनुमान नहीं लगा सकता। आपसी सम्मान, मूल्य और बातचीत सबसे ज़्यादा मायने रखते हैं।';
 
   @override
-  String get matchApproxNote => 'एक या दोनों के जन्म समय अज्ञात हैं, इसलिए परिणाम अनुमानित है।';
+  String get matchApproxNote =>
+      'एक या दोनों के जन्म समय अज्ञात हैं, इसलिए परिणाम अनुमानित है।';
 
   @override
   String get synastry => 'सिनैस्ट्री';
@@ -665,7 +680,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get notifications => 'सूचनाएँ';
 
   @override
-  String get notificationsInfo => 'सभी सूचनाएँ शुरू में बंद रहती हैं। केवल वही चालू करें जो आप चाहते हैं।';
+  String get notificationsInfo =>
+      'सभी सूचनाएँ शुरू में बंद रहती हैं। केवल वही चालू करें जो आप चाहते हैं।';
 
   @override
   String get privacyData => 'गोपनीयता और डेटा';
@@ -674,7 +690,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get exportData => 'मेरा डेटा निर्यात करें';
 
   @override
-  String get exportDataInfo => 'सभी प्रोफ़ाइलों और सेटिंग्स का बैकअप टेक्स्ट के रूप में शेयर करें';
+  String get exportDataInfo =>
+      'सभी प्रोफ़ाइलों और सेटिंग्स का बैकअप टेक्स्ट के रूप में शेयर करें';
 
   @override
   String get importData => 'क्लिपबोर्ड से आयात करें';
@@ -691,7 +708,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get deleteAllData => 'सारा डेटा हटाएँ';
 
   @override
-  String get deleteAllDataConfirm => 'इससे इस फ़ोन से सभी प्रोफ़ाइलें और सेटिंग्स स्थायी रूप से हट जाएँगी।';
+  String get deleteAllDataConfirm =>
+      'इससे इस फ़ोन से सभी प्रोफ़ाइलें और सेटिंग्स स्थायी रूप से हट जाएँगी।';
 
   @override
   String get about => 'दृष्टि के बारे में';
@@ -721,7 +739,8 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get sharePrivacyNote => 'केवल नाम और जन्म विवरण शेयर होते हैं। नोट्स और जीवन की घटनाएँ कभी शामिल नहीं होतीं।';
+  String get sharePrivacyNote =>
+      'केवल नाम और जन्म विवरण शेयर होते हैं। नोट्स और जीवन की घटनाएँ कभी शामिल नहीं होतीं।';
 
   @override
   String get pasteCode => 'कोड पेस्ट करें';
@@ -733,7 +752,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get welcome => 'स्वागत है';
 
   @override
-  String get homeNoProfile => 'अपना व्यक्तिगत राशिफल, कुंडली और दशाएँ देखने के लिए अपनी प्रोफ़ाइल बनाएँ।';
+  String get homeNoProfile =>
+      'अपना व्यक्तिगत राशिफल, कुंडली और दशाएँ देखने के लिए अपनी प्रोफ़ाइल बनाएँ।';
 
   @override
   String hello(String name) {
@@ -778,7 +798,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get whyThisReading => 'यह फल क्यों?';
 
   @override
-  String get horoscopeApproxNote => 'कुछ जन्म विवरण अनुमानित हैं, इसलिए इस फल के कुछ हिस्से भी अनुमानित हैं।';
+  String get horoscopeApproxNote =>
+      'कुछ जन्म विवरण अनुमानित हैं, इसलिए इस फल के कुछ हिस्से भी अनुमानित हैं।';
 
   @override
   String get changeSign => 'राशि बदलें';
@@ -831,7 +852,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get widgetOpenApp => 'ताज़ा करने के लिए दृष्टि खोलें';
 
   @override
-  String get notificationsDenied => 'दृष्टि के लिए सूचनाएँ बंद हैं। आप इन्हें फ़ोन की सेटिंग्स में चालू कर सकते हैं।';
+  String get notificationsDenied =>
+      'दृष्टि के लिए सूचनाएँ बंद हैं। आप इन्हें फ़ोन की सेटिंग्स में चालू कर सकते हैं।';
 
   @override
   String get skyNewsTitle => 'दृष्टि टीम की ओर से';
@@ -932,7 +954,8 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get remedyReasonManglik => 'पारंपरिक नियम के अनुसार मंगल दोष मौजूद है।';
+  String get remedyReasonManglik =>
+      'पारंपरिक नियम के अनुसार मंगल दोष मौजूद है।';
 
   @override
   String get remedyNoSuggestions =>
@@ -969,19 +992,22 @@ class AppLocalizationsHi extends AppLocalizations {
   String get tarotSpreadThree => 'भूत, वर्तमान, भविष्य';
 
   @override
-  String get tarotSpreadThreeInfo => 'कोई स्थिति कैसे विकसित हुई, इस पर चिंतन के लिए तीन कार्ड।';
+  String get tarotSpreadThreeInfo =>
+      'कोई स्थिति कैसे विकसित हुई, इस पर चिंतन के लिए तीन कार्ड।';
 
   @override
   String get tarotSpreadCeltic => 'केल्टिक क्रॉस';
 
   @override
-  String get tarotSpreadCelticInfo => 'किसी प्रश्न को गहराई से देखने के लिए दस कार्ड का स्प्रेड।';
+  String get tarotSpreadCelticInfo =>
+      'किसी प्रश्न को गहराई से देखने के लिए दस कार्ड का स्प्रेड।';
 
   @override
   String get tarotSpreadRelationship => 'रिश्ता';
 
   @override
-  String get tarotSpreadRelationshipInfo => 'आपके, दूसरे व्यक्ति और आपके बीच के संबंध के बारे में पाँच कार्ड।';
+  String get tarotSpreadRelationshipInfo =>
+      'आपके, दूसरे व्यक्ति और आपके बीच के संबंध के बारे में पाँच कार्ड।';
 
   @override
   String get tarotQuestionHint => 'आपका प्रश्न (वैकल्पिक)';
@@ -993,7 +1019,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get tarotHistory => 'पिछली रीडिंग';
 
   @override
-  String get tarotNoHistory => 'आपकी रीडिंग यहाँ केवल इसी फ़ोन पर सहेजी जाएँगी।';
+  String get tarotNoHistory =>
+      'आपकी रीडिंग यहाँ केवल इसी फ़ोन पर सहेजी जाएँगी।';
 
   @override
   String get tarotClearHistory => 'इतिहास साफ़ करें';
@@ -1086,7 +1113,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get journalSaved => 'सहेजा गया';
 
   @override
-  String get journalEmpty => 'अभी कोई प्रविष्टि नहीं। समय के साथ पैटर्न देखने के लिए रोज़ एक प्रविष्टि जोड़ें।';
+  String get journalEmpty =>
+      'अभी कोई प्रविष्टि नहीं। समय के साथ पैटर्न देखने के लिए रोज़ एक प्रविष्टि जोड़ें।';
 
   @override
   String get journalHistory => 'इतिहास';
@@ -1125,7 +1153,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get journalDeleteAll => 'सभी प्रविष्टियाँ हटाएँ';
 
   @override
-  String get journalDeleteAllConfirm => 'इससे इस फ़ोन से सभी डायरी प्रविष्टियाँ स्थायी रूप से हट जाएँगी।';
+  String get journalDeleteAllConfirm =>
+      'इससे इस फ़ोन से सभी डायरी प्रविष्टियाँ स्थायी रूप से हट जाएँगी।';
 
   @override
   String get journalDeleteEntry => 'प्रविष्टि हटाएँ';
@@ -1134,13 +1163,15 @@ class AppLocalizationsHi extends AppLocalizations {
   String get journalSky => 'उस दिन का आकाश';
 
   @override
-  String get journalPrivacy => 'जब तक आप निर्यात न करें, आपकी डायरी इस फ़ोन से बाहर नहीं जाती।';
+  String get journalPrivacy =>
+      'जब तक आप निर्यात न करें, आपकी डायरी इस फ़ोन से बाहर नहीं जाती।';
 
   @override
   String get wellnessMeditationTitle => 'ध्यान और श्वास';
 
   @override
-  String get wellnessMeditationSubtitle => 'निर्देशित श्वास, नाड़ी शोधन और ॐ जप';
+  String get wellnessMeditationSubtitle =>
+      'निर्देशित श्वास, नाड़ी शोधन और ॐ जप';
 
   @override
   String get wellnessBreathIn => 'साँस लें';
@@ -1178,13 +1209,15 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get wellnessSessionDone => 'सत्र पूरा हुआ। देखें कि आप कैसा महसूस कर रहे हैं।';
+  String get wellnessSessionDone =>
+      'सत्र पूरा हुआ। देखें कि आप कैसा महसूस कर रहे हैं।';
 
   @override
   String get wellnessPatternBox => 'बॉक्स ब्रीदिंग (4-4-4-4)';
 
   @override
-  String get wellnessPatternBoxInfo => 'साँस लेने, रोकने, छोड़ने और फिर रोकने की बराबर गिनती। मन को स्थिर करता है।';
+  String get wellnessPatternBoxInfo =>
+      'साँस लेने, रोकने, छोड़ने और फिर रोकने की बराबर गिनती। मन को स्थिर करता है।';
 
   @override
   String get wellnessPattern478 => '4-7-8 श्वास';
@@ -1204,7 +1237,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get wellnessPatternOm => 'ॐ जप';
 
   @override
-  String get wellnessPatternOmInfo => 'गहरी साँस लें, फिर छोड़ते हुए लंबा \"ओम्म्म\" बोलें और कंपन को महसूस करें।';
+  String get wellnessPatternOmInfo =>
+      'गहरी साँस लें, फिर छोड़ते हुए लंबा \"ओम्म्म\" बोलें और कंपन को महसूस करें।';
 
   @override
   String wellnessDayTheme(String planet, String theme) {
@@ -1219,7 +1253,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get palmTitle => 'हस्तरेखा मार्गदर्शिका';
 
   @override
-  String get palmSubtitle => 'अपने हाथ को ख़ुद पढ़ने की एक निर्देशित, ईमानदार विधि';
+  String get palmSubtitle =>
+      'अपने हाथ को ख़ुद पढ़ने की एक निर्देशित, ईमानदार विधि';
 
   @override
   String get palmAddPhoto => 'अपनी हथेली की फ़ोटो जोड़ें (वैकल्पिक)';
@@ -1289,7 +1324,14 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String advShadbalaParts(String sthana, String dig, String kala, String chesta, String nai, String drik) {
+  String advShadbalaParts(
+    String sthana,
+    String dig,
+    String kala,
+    String chesta,
+    String nai,
+    String drik,
+  ) {
     return 'स्थान $sthana · दिग् $dig · काल $kala · चेष्टा $chesta · नैसर्गिक $nai · दृक् $drik';
   }
 
@@ -1311,7 +1353,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get advBav => 'भिन्नाष्टकवर्ग';
 
   @override
-  String get advJaiminiIntro => 'जैमिनी ज्योतिष चर कारकों, आरूढ़ पदों और राशि-आधारित दशाओं का उपयोग करता है।';
+  String get advJaiminiIntro =>
+      'जैमिनी ज्योतिष चर कारकों, आरूढ़ पदों और राशि-आधारित दशाओं का उपयोग करता है।';
 
   @override
   String get advKarakas => 'चर कारक';
@@ -1411,7 +1454,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get advPersonB => 'दूसरा व्यक्ति';
 
   @override
-  String get advCompositeNeedProfiles => 'कम्पोज़िट कुंडली के लिए जन्म तिथि वाली कम से कम दो प्रोफ़ाइल जोड़ें।';
+  String get advCompositeNeedProfiles =>
+      'कम्पोज़िट कुंडली के लिए जन्म तिथि वाली कम से कम दो प्रोफ़ाइल जोड़ें।';
 
   @override
   String get advPositions => 'स्थितियाँ';
@@ -1420,7 +1464,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get aiAskTitle => 'दृष्टि से पूछें';
 
   @override
-  String get aiAskSubtitle => 'अपनी कुंडली के बारे में सवाल, उसकी गणनाओं के आधार पर जवाब';
+  String get aiAskSubtitle =>
+      'अपनी कुंडली के बारे में सवाल, उसकी गणनाओं के आधार पर जवाब';
 
   @override
   String get aiAskHint => 'करियर, पढ़ाई, रिश्तों के बारे में पूछें…';
@@ -1441,7 +1486,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get aiImproveWith => 'इसे और सटीक बनाएँ';
 
   @override
-  String get aiNoProfile => 'कुंडली के बारे में सवाल पूछने के लिए जन्म तिथि वाली प्रोफ़ाइल बनाएँ।';
+  String get aiNoProfile =>
+      'कुंडली के बारे में सवाल पूछने के लिए जन्म तिथि वाली प्रोफ़ाइल बनाएँ।';
 
   @override
   String aiProfileFor(String name) {
@@ -1461,7 +1507,8 @@ class AppLocalizationsHi extends AppLocalizations {
       'AI का मसौदा दृष्टि की सुरक्षा और सटीकता जाँच में पास नहीं हुआ, इसलिए नियम-आधारित जवाब दिखाया गया है।';
 
   @override
-  String get aiLoadFailed => 'इस फ़ोन पर AI मॉडल लोड नहीं हो सका, इसलिए नियम-आधारित जवाब उपयोग हो रहे हैं।';
+  String get aiLoadFailed =>
+      'इस फ़ोन पर AI मॉडल लोड नहीं हो सका, इसलिए नियम-आधारित जवाब उपयोग हो रहे हैं।';
 
   @override
   String get aiExplain => 'समझाएँ';
@@ -1479,7 +1526,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get aiSuggestCareer => 'करियर के लिए मेरी कुंडली कैसी है?';
 
   @override
-  String get aiSuggestPersonality => 'मेरी कुंडली मेरे स्वभाव के बारे में क्या कहती है?';
+  String get aiSuggestPersonality =>
+      'मेरी कुंडली मेरे स्वभाव के बारे में क्या कहती है?';
 
   @override
   String get aiSuggestPeriod => 'मेरी वर्तमान दशा का क्या अर्थ है?';
@@ -1574,7 +1622,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get aiClearAll => 'सारी AI मेमोरी साफ़ करें';
 
   @override
-  String get aiClearConfirm => 'इससे इस फ़ोन से याद रखे गए सवाल और नोट हट जाएँगे।';
+  String get aiClearConfirm =>
+      'इससे इस फ़ोन से याद रखे गए सवाल और नोट हट जाएँगे।';
 
   @override
   String get aiCancel => 'रद्द करें';
@@ -1596,7 +1645,8 @@ class AppLocalizationsHi extends AppLocalizations {
       'अगर आपको अपना जन्म समय मोटे तौर पर ही पता है, तो दृष्टि पारंपरिक दशा और गोचर नियमों से जाँच सकता है कि किसी अवधि में कौन-से समय आपकी मुख्य जीवन घटनाओं से सबसे ज़्यादा मेल खाते हैं।';
 
   @override
-  String get rectNeedsDatePlace => 'शोधन के लिए इस प्रोफ़ाइल में जन्म तिथि और जन्म स्थान होना चाहिए।';
+  String get rectNeedsDatePlace =>
+      'शोधन के लिए इस प्रोफ़ाइल में जन्म तिथि और जन्म स्थान होना चाहिए।';
 
   @override
   String get rectChooseProfile => 'प्रोफ़ाइल';
@@ -1705,7 +1755,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get festTitle => 'त्योहार और व्रत';
 
   @override
-  String get festSubtitle => 'आपके स्थान के लिए त्योहार, एकादशी, संक्रांति और ग्रहण';
+  String get festSubtitle =>
+      'आपके स्थान के लिए त्योहार, एकादशी, संक्रांति और ग्रहण';
 
   @override
   String get festAll => 'सभी';
@@ -1807,7 +1858,12 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String muhuratResults(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count समय मिले', one: '1 समय मिला');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count समय मिले',
+      one: '1 समय मिला',
+    );
     return '$_temp0';
   }
 
@@ -1938,7 +1994,8 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get wellnessThemeSun => 'स्थिर आत्मविश्वास; सूर्योदय के समय अभ्यास करके देखें';
+  String get wellnessThemeSun =>
+      'स्थिर आत्मविश्वास; सूर्योदय के समय अभ्यास करके देखें';
 
   @override
   String get wellnessThemeMoon => 'शांत और सुकून भरा; 4-7-8 श्वास आज़माएँ';
@@ -1956,7 +2013,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get wellnessThemeVenus => 'कोमलता और सामंजस्य; 4-7-8 श्वास आज़माएँ';
 
   @override
-  String get wellnessThemeSaturn => 'धैर्य और स्थिरता; थोड़ा लंबा बॉक्स ब्रीदिंग सत्र आज़माएँ';
+  String get wellnessThemeSaturn =>
+      'धैर्य और स्थिरता; थोड़ा लंबा बॉक्स ब्रीदिंग सत्र आज़माएँ';
 
   @override
   String untilDate(String date) {
@@ -2003,7 +2061,8 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get aiWifiOnlyInfo => 'बड़े डाउनलोड केवल वाई-फ़ाई पर शुरू होते हैं। मोबाइल डेटा पर दृष्टि पहले आपसे पूछेगा।';
+  String get aiWifiOnlyInfo =>
+      'बड़े डाउनलोड केवल वाई-फ़ाई पर शुरू होते हैं। मोबाइल डेटा पर दृष्टि पहले आपसे पूछेगा।';
 
   @override
   String get aiNotOnWifiTitle => 'वाई-फ़ाई पर नहीं';
@@ -2160,7 +2219,8 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get numeroAlwaysReduced => 'इस अंक को हमेशा एक अंक तक घटाया जाता है; मास्टर अंक नहीं रखे जाते।';
+  String get numeroAlwaysReduced =>
+      'इस अंक को हमेशा एक अंक तक घटाया जाता है; मास्टर अंक नहीं रखे जाते।';
 
   @override
   String numeroResult(int number) {
@@ -2174,7 +2234,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get numeroPairTitle => 'मूलांक और भाग्यांक की जोड़ी';
 
   @override
-  String numeroPairNumbers(int mulank, String mulankPlanet, int bhagyank, String bhagyankPlanet) {
+  String numeroPairNumbers(
+    int mulank,
+    String mulankPlanet,
+    int bhagyank,
+    String bhagyankPlanet,
+  ) {
     return 'मूलांक $mulank ($mulankPlanet) और भाग्यांक $bhagyank ($bhagyankPlanet)';
   }
 
@@ -2208,7 +2273,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get numeroLoShuTitle => 'लो शू ग्रिड';
 
   @override
-  String get numeroLoShuAddMB => 'मूलांक और भाग्यांक जोड़ें (प्रचलित भारतीय पद्धति)';
+  String get numeroLoShuAddMB =>
+      'मूलांक और भाग्यांक जोड़ें (प्रचलित भारतीय पद्धति)';
 
   @override
   String numeroLoShuDigits(String digits) {
@@ -2307,7 +2373,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get kootaNotApplies => 'लागू नहीं होता';
 
   @override
-  String get kootaTapHint => 'यह क्या है, आपका परिणाम और क्यों, देखने के लिए किसी भी पंक्ति पर टैप करें।';
+  String get kootaTapHint =>
+      'यह क्या है, आपका परिणाम और क्यों, देखने के लिए किसी भी पंक्ति पर टैप करें।';
 
   @override
   String get compConclusion => 'आपके लिए इसका अर्थ';
@@ -2334,7 +2401,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get palmTraceTitle => 'अपनी हथेली की रेखाएँ खींचें';
 
   @override
-  String get palmTapIndex => 'चरण 1/3: अपनी तर्जनी उँगली के आधार पर टैप करें (जहाँ वह हथेली से मिलती है)।';
+  String get palmTapIndex =>
+      'चरण 1/3: अपनी तर्जनी उँगली के आधार पर टैप करें (जहाँ वह हथेली से मिलती है)।';
 
   @override
   String get palmTapLittle => 'चरण 2/3: अपनी छोटी उँगली के आधार पर टैप करें।';
@@ -2361,10 +2429,12 @@ class AppLocalizationsHi extends AppLocalizations {
       'दृष्टि आपकी फ़ोटो में मिले हाथ के बिंदु और रेखाएँ सुझाता है। ये गलत भी हो सकती हैं, इसलिए हर एक को जाँचें और जो मेल न खाए उसे दोबारा खींचें। फ़ोटो आपके फ़ोन पर ही रहती है। हस्तरेखा एक प्रतीकात्मक परंपरा है, भविष्यवाणी नहीं।';
 
   @override
-  String get palmSuggested => 'आपकी खींची रेखा से सुझाया गया। इसे अपने हाथ से मिलाएँ और मेल न खाए तो बदल दें।';
+  String get palmSuggested =>
+      'आपकी खींची रेखा से सुझाया गया। इसे अपने हाथ से मिलाएँ और मेल न खाए तो बदल दें।';
 
   @override
-  String get palmDetecting => 'फ़ोटो में आपका हाथ और हथेली की रेखाएँ खोजी जा रही हैं…';
+  String get palmDetecting =>
+      'फ़ोटो में आपका हाथ और हथेली की रेखाएँ खोजी जा रही हैं…';
 
   @override
   String get palmHandNotFound =>
@@ -2384,7 +2454,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get childrenTitle => 'संतान (संतान भाव)';
 
   @override
-  String get childrenSubtitle => 'एक व्यक्ति या दंपति के लिए संतान के संकेत और समय';
+  String get childrenSubtitle =>
+      'एक व्यक्ति या दंपति के लिए संतान के संकेत और समय';
 
   @override
   String get childrenIntro =>
@@ -2409,7 +2480,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get childrenNeedProfiles => 'पहले जन्म तिथि वाली एक प्रोफ़ाइल जोड़ें।';
 
   @override
-  String get childrenNeedTwo => 'दंपति का पठन देखने के लिए दूसरी प्रोफ़ाइल जोड़ें।';
+  String get childrenNeedTwo =>
+      'दंपति का पठन देखने के लिए दूसरी प्रोफ़ाइल जोड़ें।';
 
   @override
   String get childrenAdultsOnly => 'यह पठन केवल वयस्कों के लिए उपलब्ध है।';
@@ -2428,7 +2500,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get childrenTradTitle => 'लड़का या लड़की? पुराने ग्रंथ क्या कहते हैं';
 
   @override
-  String get childrenTradSubtitle => 'इतिहास और विज्ञान, बिना किसी भविष्यवाणी के';
+  String get childrenTradSubtitle =>
+      'इतिहास और विज्ञान, बिना किसी भविष्यवाणी के';
 
   @override
   String get matchAdviceTitle => 'समग्र सलाह';
@@ -2444,4 +2517,13 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get matchAdviceRemedies => 'पारंपरिक उपाय (वैकल्पिक)';
+
+  @override
+  String get exitTitle => 'ऐप बंद करें?';
+
+  @override
+  String get exitBody => 'क्या आप सच में ऐप बंद करना चाहते हैं?';
+
+  @override
+  String get exitConfirm => 'बंद करें';
 }

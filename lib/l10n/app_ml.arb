@@ -742,5 +742,8 @@
   "matchAdviceStrengths": "ശക്തമായ കാര്യങ്ങൾ",
   "matchAdviceCautions": "ശ്രദ്ധ വേണ്ട കാര്യങ്ങൾ",
   "matchAdviceSteps": "നിങ്ങൾക്ക് ചെയ്യാവുന്നത്",
-  "matchAdviceRemedies": "പരമ്പരാഗത പരിഹാരങ്ങൾ (ഐച്ഛികം)"
+  "matchAdviceRemedies": "പരമ്പരാഗത പരിഹാരങ്ങൾ (ഐച്ഛികം)",
+  "exitTitle": "ആപ്പ് അടയ്ക്കണോ?",
+  "exitBody": "ആപ്പ് അടയ്ക്കണമെന്ന് ഉറപ്പാണോ?",
+  "exitConfirm": "അടയ്ക്കുക"
 }

@@ -742,5 +742,8 @@
   "matchAdviceStrengths": "ಯಾವುದು ಬಲವಾಗಿದೆ",
   "matchAdviceCautions": "ಯಾವುದಕ್ಕೆ ಕಾಳಜಿ ಬೇಕು",
   "matchAdviceSteps": "ನೀವು ಏನು ಮಾಡಬಹುದು",
-  "matchAdviceRemedies": "ಸಾಂಪ್ರದಾಯಿಕ ಪರಿಹಾರಗಳು (ಐಚ್ಛಿಕ)"
+  "matchAdviceRemedies": "ಸಾಂಪ್ರದಾಯಿಕ ಪರಿಹಾರಗಳು (ಐಚ್ಛಿಕ)",
+  "exitTitle": "ಆ್ಯಪ್ ಮುಚ್ಚಬೇಕೆ?",
+  "exitBody": "ನೀವು ನಿಜವಾಗಿಯೂ ಆ್ಯಪ್ ಮುಚ್ಚಲು ಬಯಸುವಿರಾ?",
+  "exitConfirm": "ಮುಚ್ಚಿ"
 }

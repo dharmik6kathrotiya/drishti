@@ -742,5 +742,8 @@
   "matchAdviceStrengths": "কী দৃঢ়",
   "matchAdviceCautions": "কীসে যত্ন দরকার",
   "matchAdviceSteps": "আপনি কী করতে পারেন",
-  "matchAdviceRemedies": "প্রথাগত প্রতিকার (ঐচ্ছিক)"
+  "matchAdviceRemedies": "প্রথাগত প্রতিকার (ঐচ্ছিক)",
+  "exitTitle": "অ্যাপ বন্ধ করবেন?",
+  "exitBody": "আপনি কি সত্যিই অ্যাপটি বন্ধ করতে চান?",
+  "exitConfirm": "বন্ধ করুন"
 }

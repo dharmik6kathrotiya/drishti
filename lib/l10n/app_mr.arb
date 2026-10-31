@@ -742,5 +742,8 @@
   "matchAdviceStrengths": "काय मजबूत आहे",
   "matchAdviceCautions": "कशाकडे लक्ष द्यावे",
   "matchAdviceSteps": "तुम्ही काय करू शकता",
-  "matchAdviceRemedies": "पारंपरिक उपाय (ऐच्छिक)"
+  "matchAdviceRemedies": "पारंपरिक उपाय (ऐच्छिक)",
+  "exitTitle": "ॲप बंद करायचे?",
+  "exitBody": "तुम्हाला खरोखर ॲप बंद करायचे आहे का?",
+  "exitConfirm": "बंद करा"
 }
