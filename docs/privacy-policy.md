@@ -51,4 +51,4 @@ Changes to this policy will be published in the app's open-source repository, an
 
 ## Contact
 
-Open an issue in the project's public repository.
+Open an issue at https://github.com/dharmik6kathrotiya/drishti/issues.
