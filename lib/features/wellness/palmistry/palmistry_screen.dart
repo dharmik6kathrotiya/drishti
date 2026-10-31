@@ -28,17 +28,33 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
   /// Questions whose answer was suggested from the user's tracing.
   final Set<String> _suggested = {};
 
+  /// After a photo, Next skips the questions the photo already answered;
+  /// they can still be changed from the reading.
+  bool _skipAnswered = false;
+
+  /// The step after [from] (1-based question steps, total + 1 = reading).
+  int _nextStep(int from, int total, List<String> ids) {
+    var s = from + 1;
+    while (_skipAnswered && s <= total && _suggested.contains(ids[s - 1])) {
+      s++;
+    }
+    return s;
+  }
+
   Future<void> _trace() async {
     final result = await Navigator.of(context)
         .push<Map<String, int?>>(MaterialPageRoute(builder: (_) => PalmTraceScreen(photoPath: _photoPath!)));
     if (result == null || !mounted) return;
+    final ids = [for (final q in palmistryFor(Localizations.localeOf(context).languageCode).questions) q.id];
     setState(() {
       for (final e in result.entries) {
         if (e.value == null) continue;
         _answers[e.key] = e.value!;
         _suggested.add(e.key);
       }
-      _step = 1;
+      // Straight to the first question the photo could not answer.
+      _skipAnswered = true;
+      _step = _nextStep(0, ids.length, ids);
     });
   }
 
@@ -48,7 +64,10 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
     if (source == ImageSource.camera && !(await Permission.camera.request()).isGranted) return;
     try {
       final x = await ImagePicker().pickImage(source: source, maxWidth: 1600, imageQuality: 85);
-      if (x != null) setState(() => _photoPath = x.path);
+      if (x == null || !mounted) return;
+      setState(() => _photoPath = x.path);
+      // Finding the hand and lines starts at once; no extra tap.
+      await _trace();
     } catch (e) {
       if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('$e')));
     }
@@ -163,8 +182,10 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
               OutlinedButton(onPressed: () => setState(() => _step--), child: Text(l.palmBack)),
               const Spacer(),
               FilledButton(
-                onPressed: () => setState(() => _step++),
-                child: Text(_step == total ? l.palmSeeReading : l.palmNext),
+                onPressed: () => setState(() => _step = _nextStep(_step, total, [for (final q in qs) q.id])),
+                child: Text(
+                  _nextStep(_step, total, [for (final q in qs) q.id]) > total ? l.palmSeeReading : l.palmNext,
+                ),
               ),
             ],
           ),
@@ -189,6 +210,22 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
                       Text(q.options[_answers[q.id]!].label, style: theme.textTheme.bodySmall),
                       const SizedBox(height: 4),
                       Text(q.options[_answers[q.id]!].meaning),
+                      // Answers read from the photo can be checked and changed.
+                      if (_suggested.contains(q.id))
+                        Row(
+                          children: [
+                            Icon(Icons.photo_outlined, size: 16, color: theme.colorScheme.outline),
+                            const SizedBox(width: 4),
+                            Expanded(child: Text(l.palmFromPhoto, style: theme.textTheme.bodySmall)),
+                            TextButton(
+                              onPressed: () => setState(() {
+                                _skipAnswered = false;
+                                _step = qs.indexOf(q) + 1;
+                              }),
+                              child: Text(l.palmChange),
+                            ),
+                          ],
+                        ),
                     ],
                   ),
                 ),
@@ -201,6 +238,7 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
             onPressed: () => setState(() {
               _answers.clear();
               _suggested.clear();
+              _skipAnswered = false;
               _step = 0;
             }),
           ),

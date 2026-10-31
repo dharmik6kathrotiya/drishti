@@ -86,7 +86,7 @@ Open source (AGPL-3.0): https://github.com/dharmik6kathrotiya/drishti
 |---|---|
 | App category | Lifestyle |
 | Tags | Astrology |
-| Contact email | (your email, shown publicly on Play) |
+| Contact email | help.kaal@gmail.com |
 | Website | https://github.com/dharmik6kathrotiya/drishti |
 | Privacy policy | https://dharmik6kathrotiya.github.io/drishti/privacy-policy.html |
 | Contains ads | Yes |

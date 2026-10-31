@@ -9,13 +9,18 @@ import '../../../l10n/app_localizations.dart';
 import '../../../ui/widgets/common.dart';
 import 'palm_auto.dart';
 
-/// Guided tracing on the user's own palm photo: three reference taps, then
-/// each main line traced by finger over a dotted guide. Returns the
-/// suggested option per question id ('heart', 'head', 'life', 'fate'),
-/// which the reading then shows for the user to confirm or change.
+/// The lines on the user's own palm photo. When the hand is found, every
+/// line found is shown at once for one check ("Looks right"), and any line
+/// can be fixed by drawing it. Otherwise: three reference taps, then each
+/// main line traced by finger over a dotted guide. Returns the suggested
+/// option per question id ('heart', 'head', 'life', 'fate'), which the
+/// reading then shows for the user to confirm or change.
 class PalmTraceScreen extends StatefulWidget {
-  const PalmTraceScreen({super.key, required this.photoPath});
+  const PalmTraceScreen({super.key, required this.photoPath, this.detect = PalmAuto.run});
   final String photoPath;
+
+  /// Finds the hand and lines (replaceable in tests).
+  final Future<PalmAutoResult?> Function(String path) detect;
 
   @override
   State<PalmTraceScreen> createState() => _PalmTraceScreenState();
@@ -39,18 +44,33 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
   /// Lines drawn by the detector and not changed by the user.
   final _auto = <String>{};
 
+  /// All lines are shown together for one check.
+  bool _review = false;
+
+  /// One line is being redrawn from the review.
+  bool _fixing = false;
+
+  /// Each line's colour, so they can be told apart in the review.
+  static const lineColors = {
+    'heart': Color(0xFFE53935),
+    'head': Color(0xFF1E88E5),
+    'life': Color(0xFF43A047),
+    'fate': Color(0xFFFFB300),
+  };
+
   @override
   void initState() {
     super.initState();
     File(widget.photoPath).readAsBytes().then(ui.instantiateImageCodec).then((c) => c.getNextFrame()).then((f) {
       if (mounted) setState(() => _aspect = f.image.width / f.image.height);
     });
-    PalmAuto.run(widget.photoPath).then((found) {
+    widget.detect(widget.photoPath).then((found) {
       if (!mounted) return;
       setState(() {
         _detecting = false;
         if (found == null) return;
         _handFound = true;
+        _review = true;
         _taps
           ..clear()
           ..addAll([found.frame.indexBase, found.frame.littleBase, found.frame.wrist]);
@@ -90,7 +110,12 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
   }
 
   void _next() {
-    if (_line < _lines.length - 1) {
+    if (_fixing) {
+      setState(() {
+        _fixing = false;
+        _review = true;
+      });
+    } else if (_line < _lines.length - 1) {
       setState(() => _line++);
     } else {
       _finish();
@@ -104,8 +129,18 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
     final texts = palmistryFor(Localizations.localeOf(context).languageCode);
     final title = {for (final q in texts.questions) q.id: q.title};
     final name = title[_current] ?? _current;
+    final found = [
+      for (final id in _lines)
+        if (_traced[id]!.any((s) => s.length > 1)) id,
+    ];
+    final missing = [
+      for (final id in _lines)
+        if (!found.contains(id)) title[id] ?? id,
+    ];
     final instruction = _detecting
         ? l.palmDetecting
+        : _review
+        ? [l.palmReviewFound, if (missing.isNotEmpty) l.palmReviewMissing(missing.join(', '))].join('\n')
         : _calibrating
         ? [l.palmTapIndex, l.palmTapLittle, l.palmTapWrist][_taps.length]
         : _auto.contains(_current)
@@ -144,13 +179,13 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
                                 ? (d) => setState(() => _taps.add(_toImage(d.localPosition, size)))
                                 : null,
                             // Drawing over a line found automatically replaces it.
-                            onPanStart: _calibrating || _detecting
+                            onPanStart: _calibrating || _detecting || _review
                                 ? null
                                 : (d) => setState(() {
                                     if (_auto.remove(_current)) _traced[_current]!.clear();
                                     _traced[_current]!.add([_toImage(d.localPosition, size)]);
                                   }),
-                            onPanUpdate: _calibrating || _detecting
+                            onPanUpdate: _calibrating || _detecting || _review
                                 ? null
                                 : (d) => setState(() => _traced[_current]!.last.add(_toImage(d.localPosition, size))),
                             child: Stack(
@@ -162,7 +197,7 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
                                     aspect: _aspect!,
                                     taps: _taps,
                                     frame: _calibrating ? null : _frame,
-                                    current: _calibrating ? null : _current,
+                                    current: _calibrating || _review ? null : _current,
                                     traced: _traced,
                                     color: theme.colorScheme.primary,
                                   ),
@@ -184,47 +219,104 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
                       children: [
                         SourceNote(l.palmTraceNote),
                         const SizedBox(height: 6),
-                        Row(
-                          children: [
-                            IconButton.outlined(
-                              tooltip: l.palmUndo,
-                              icon: const Icon(Icons.undo),
-                              onPressed: () => setState(() {
-                                if (!_calibrating && _traced[_current]!.isNotEmpty) {
-                                  _traced[_current]!.removeLast();
-                                  _auto.remove(_current);
-                                } else if (!_calibrating && _line > 0) {
-                                  _line--;
-                                } else if (_taps.isNotEmpty) {
-                                  _taps.removeLast();
-                                  _handFound = false;
-                                }
-                              }),
-                            ),
-                            const SizedBox(width: 4),
-                            Expanded(
-                              child: TextButton(
-                                onPressed: _calibrating
-                                    ? null
-                                    : () {
-                                        _skipped.add(_current);
-                                        _traced[_current]!.clear();
-                                        _next();
-                                      },
-                                child: Text(l.palmCantSee, maxLines: 2, textAlign: TextAlign.center),
+                        if (_review) ...[
+                          Wrap(
+                            spacing: 12,
+                            runSpacing: 4,
+                            children: [
+                              for (final id in _lines)
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      found.contains(id) ? Icons.circle : Icons.circle_outlined,
+                                      size: 14,
+                                      color: lineColors[id],
+                                    ),
+                                    const SizedBox(width: 4),
+                                    Text(title[id] ?? id, style: theme.textTheme.bodySmall),
+                                  ],
+                                ),
+                            ],
+                          ),
+                          const SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: PopupMenuButton<int>(
+                                  tooltip: l.palmFixLine,
+                                  onSelected: (i) => setState(() {
+                                    _line = i;
+                                    _review = false;
+                                    _fixing = true;
+                                  }),
+                                  itemBuilder: (_) => [
+                                    for (final (i, id) in _lines.indexed)
+                                      PopupMenuItem(value: i, child: Text(title[id] ?? id)),
+                                  ],
+                                  child: IgnorePointer(
+                                    child: OutlinedButton.icon(
+                                      icon: const Icon(Icons.edit_outlined),
+                                      label: Text(l.palmFixLine),
+                                      onPressed: () {},
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
-                            FilledButton(
-                              onPressed: !_calibrating && _traced[_current]!.any((s) => s.length > 1)
-                                  ? () {
-                                      _skipped.remove(_current);
-                                      _next();
-                                    }
-                                  : null,
-                              child: Text(_line == _lines.length - 1 ? l.palmUseTracing : l.palmNext),
-                            ),
-                          ],
-                        ),
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: FilledButton.icon(
+                                  icon: const Icon(Icons.check),
+                                  label: Text(l.palmLooksRight),
+                                  onPressed: _finish,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ] else
+                          Row(
+                            children: [
+                              IconButton.outlined(
+                                tooltip: l.palmUndo,
+                                icon: const Icon(Icons.undo),
+                                onPressed: () => setState(() {
+                                  if (!_calibrating && _traced[_current]!.isNotEmpty) {
+                                    _traced[_current]!.removeLast();
+                                    _auto.remove(_current);
+                                  } else if (!_calibrating && !_fixing && _line > 0) {
+                                    _line--;
+                                  } else if (_taps.isNotEmpty && !_fixing) {
+                                    _taps.removeLast();
+                                    _handFound = false;
+                                  }
+                                }),
+                              ),
+                              const SizedBox(width: 4),
+                              Expanded(
+                                child: TextButton(
+                                  onPressed: _calibrating
+                                      ? null
+                                      : () {
+                                          _skipped.add(_current);
+                                          _traced[_current]!.clear();
+                                          _next();
+                                        },
+                                  child: Text(l.palmCantSee, maxLines: 2, textAlign: TextAlign.center),
+                                ),
+                              ),
+                              FilledButton(
+                                onPressed: !_calibrating && _traced[_current]!.any((s) => s.length > 1)
+                                    ? () {
+                                        _skipped.remove(_current);
+                                        _next();
+                                      }
+                                    : null,
+                                child: Text(
+                                  _fixing ? l.palmDone : (_line == _lines.length - 1 ? l.palmUseTracing : l.palmNext),
+                                ),
+                              ),
+                            ],
+                          ),
                       ],
                     ),
                   ),
@@ -268,7 +360,7 @@ class _TracePainter extends CustomPainter {
     if (f == null) return;
 
     // Dotted guide for the current line: where it usually runs.
-    final guide = PalmFrame.guides[current]!;
+    final guide = current == null ? const <Offset>[] : PalmFrame.guides[current]!;
     final guidePaint = Paint()
       ..color = Colors.white.withValues(alpha: 0.85)
       ..strokeWidth = 3
@@ -283,9 +375,12 @@ class _TracePainter extends CustomPainter {
 
     // Lines traced so far; the current one is drawn brighter.
     for (final e in traced.entries) {
+      // In the review (no current line) each line has its own colour.
       final paint = Paint()
-        ..color = e.key == current ? color : color.withValues(alpha: 0.45)
-        ..strokeWidth = e.key == current ? 4 : 3
+        ..color = current == null
+            ? _PalmTraceScreenState.lineColors[e.key]!
+            : (e.key == current ? color : color.withValues(alpha: 0.45))
+        ..strokeWidth = current == null || e.key == current ? 4 : 3
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..strokeJoin = StrokeJoin.round;

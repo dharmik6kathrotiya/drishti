@@ -2549,4 +2549,28 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get exitConfirm => 'അടയ്ക്കുക';
+
+  @override
+  String get palmReviewFound =>
+      'നിങ്ങളുടെ ഫോട്ടോയിൽ Drishti ഈ രേഖകൾ കണ്ടെത്തി, ഓരോന്നും വേറെ നിറത്തിൽ. ഓരോ രേഖയും നിങ്ങളുടെ ഉള്ളംകൈയിലെ ഒരു മടക്കിലൂടെ പോകുന്നുണ്ടോ എന്ന് നോക്കുക. ഏതെങ്കിലും തെറ്റാണെങ്കിൽ \"രേഖ ശരിയാക്കുക\" തൊട്ട് അത് വരയ്ക്കുക.';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'കണ്ടെത്തിയില്ല: $lines. ഇവ \"രേഖ ശരിയാക്കുക\" വഴി വരയ്ക്കാം, അല്ലെങ്കിൽ അടുത്തതായി ഇവയുടെ ചോദ്യങ്ങൾക്ക് നിങ്ങൾ തന്നെ ഉത്തരം നൽകാം.';
+  }
+
+  @override
+  String get palmLooksRight => 'ശരിയാണ്';
+
+  @override
+  String get palmFixLine => 'രേഖ ശരിയാക്കുക';
+
+  @override
+  String get palmDone => 'കഴിഞ്ഞു';
+
+  @override
+  String get palmFromPhoto => 'നിങ്ങളുടെ ഫോട്ടോയിൽ നിന്ന്';
+
+  @override
+  String get palmChange => 'മാറ്റുക';
 }

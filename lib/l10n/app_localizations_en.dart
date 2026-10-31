@@ -2533,4 +2533,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get exitConfirm => 'Exit';
+
+  @override
+  String get palmReviewFound =>
+      'Drishti found these lines in your photo, each in its own colour. Check that each one follows a crease on your palm. If one is wrong, tap Fix a line and draw it.';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'Not found: $lines. You can draw them with Fix a line, or answer those questions yourself next.';
+  }
+
+  @override
+  String get palmLooksRight => 'Looks right';
+
+  @override
+  String get palmFixLine => 'Fix a line';
+
+  @override
+  String get palmDone => 'Done';
+
+  @override
+  String get palmFromPhoto => 'From your photo';
+
+  @override
+  String get palmChange => 'Change';
 }

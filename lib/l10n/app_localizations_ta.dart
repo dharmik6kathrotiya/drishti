@@ -2554,4 +2554,28 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get exitConfirm => 'மூடு';
+
+  @override
+  String get palmReviewFound =>
+      'உங்கள் புகைப்படத்தில் Drishti இந்த ரேகைகளைக் கண்டறிந்தது, ஒவ்வொன்றும் தனி நிறத்தில். ஒவ்வொரு ரேகையும் உங்கள் உள்ளங்கையின் ஒரு மடிப்பின் மேல் செல்கிறதா என்று பாருங்கள். ஏதேனும் தவறாக இருந்தால் \"ரேகையைத் திருத்து\" என்பதைத் தட்டி வரையுங்கள்.';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'கிடைக்கவில்லை: $lines. இவற்றை \"ரேகையைத் திருத்து\" மூலம் வரையலாம், அல்லது அடுத்து இவற்றின் கேள்விகளுக்கு நீங்களே பதில் அளிக்கலாம்.';
+  }
+
+  @override
+  String get palmLooksRight => 'சரியாக உள்ளது';
+
+  @override
+  String get palmFixLine => 'ரேகையைத் திருத்து';
+
+  @override
+  String get palmDone => 'முடிந்தது';
+
+  @override
+  String get palmFromPhoto => 'உங்கள் புகைப்படத்திலிருந்து';
+
+  @override
+  String get palmChange => 'மாற்று';
 }

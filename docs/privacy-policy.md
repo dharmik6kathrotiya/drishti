@@ -51,4 +51,4 @@ Changes to this policy will be published in the app's open-source repository, an
 
 ## Contact
 
-Open an issue at https://github.com/dharmik6kathrotiya/drishti/issues.
+Email help.kaal@gmail.com, or open an issue at https://github.com/dharmik6kathrotiya/drishti/issues.

@@ -1341,5 +1341,19 @@
   "matchAdviceRemedies": "Traditional remedies (optional)",
   "exitTitle": "Exit the app?",
   "exitBody": "Are you sure you want to close the app?",
-  "exitConfirm": "Exit"
+  "exitConfirm": "Exit",
+  "palmReviewFound": "Drishti found these lines in your photo, each in its own colour. Check that each one follows a crease on your palm. If one is wrong, tap Fix a line and draw it.",
+  "palmReviewMissing": "Not found: {lines}. You can draw them with Fix a line, or answer those questions yourself next.",
+  "palmLooksRight": "Looks right",
+  "palmFixLine": "Fix a line",
+  "palmDone": "Done",
+  "palmFromPhoto": "From your photo",
+  "palmChange": "Change",
+  "@palmReviewMissing": {
+    "placeholders": {
+      "lines": {
+        "type": "String"
+      }
+    }
+  }
 }

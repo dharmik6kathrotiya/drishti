@@ -2527,4 +2527,28 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get exitConfirm => 'बंद करा';
+
+  @override
+  String get palmReviewFound =>
+      'Drishti ला तुमच्या फोटोमध्ये या रेषा सापडल्या, प्रत्येक वेगळ्या रंगात. प्रत्येक रेषा तुमच्या तळहातावरील एखाद्या घडीवरून जाते का ते पाहा. एखादी चुकीची असल्यास \"रेषा दुरुस्त करा\" वर टॅप करून ती काढा.';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'सापडल्या नाहीत: $lines. तुम्ही त्या \"रेषा दुरुस्त करा\" ने काढू शकता, किंवा पुढे त्यांच्या प्रश्नांची उत्तरे स्वतः देऊ शकता.';
+  }
+
+  @override
+  String get palmLooksRight => 'बरोबर आहे';
+
+  @override
+  String get palmFixLine => 'रेषा दुरुस्त करा';
+
+  @override
+  String get palmDone => 'झाले';
+
+  @override
+  String get palmFromPhoto => 'तुमच्या फोटोवरून';
+
+  @override
+  String get palmChange => 'बदला';
 }

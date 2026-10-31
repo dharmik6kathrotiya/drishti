@@ -4597,6 +4597,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Exit'**
   String get exitConfirm;
+
+  /// No description provided for @palmReviewFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Drishti found these lines in your photo, each in its own colour. Check that each one follows a crease on your palm. If one is wrong, tap Fix a line and draw it.'**
+  String get palmReviewFound;
+
+  /// No description provided for @palmReviewMissing.
+  ///
+  /// In en, this message translates to:
+  /// **'Not found: {lines}. You can draw them with Fix a line, or answer those questions yourself next.'**
+  String palmReviewMissing(String lines);
+
+  /// No description provided for @palmLooksRight.
+  ///
+  /// In en, this message translates to:
+  /// **'Looks right'**
+  String get palmLooksRight;
+
+  /// No description provided for @palmFixLine.
+  ///
+  /// In en, this message translates to:
+  /// **'Fix a line'**
+  String get palmFixLine;
+
+  /// No description provided for @palmDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get palmDone;
+
+  /// No description provided for @palmFromPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'From your photo'**
+  String get palmFromPhoto;
+
+  /// No description provided for @palmChange.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get palmChange;
 }
 
 class _AppLocalizationsDelegate

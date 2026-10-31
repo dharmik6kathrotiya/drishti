@@ -2523,4 +2523,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get exitConfirm => 'বন্ধ করুন';
+
+  @override
+  String get palmReviewFound =>
+      'Drishti আপনার ছবিতে এই রেখাগুলো খুঁজে পেয়েছে, প্রতিটি আলাদা রঙে। দেখুন প্রতিটি রেখা আপনার হাতের তালুর কোনো ভাঁজ বরাবর গেছে কি না। কোনোটি ভুল হলে \"রেখা ঠিক করুন\" ট্যাপ করে সেটি আঁকুন।';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'পাওয়া যায়নি: $lines। আপনি এগুলো \"রেখা ঠিক করুন\" দিয়ে আঁকতে পারেন, অথবা পরে এগুলোর প্রশ্নের উত্তর নিজেই দিতে পারেন।';
+  }
+
+  @override
+  String get palmLooksRight => 'ঠিক আছে';
+
+  @override
+  String get palmFixLine => 'রেখা ঠিক করুন';
+
+  @override
+  String get palmDone => 'হয়ে গেছে';
+
+  @override
+  String get palmFromPhoto => 'আপনার ছবি থেকে';
+
+  @override
+  String get palmChange => 'বদলান';
 }

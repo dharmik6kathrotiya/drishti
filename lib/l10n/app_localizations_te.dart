@@ -2533,4 +2533,28 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get exitConfirm => 'మూసివేయి';
+
+  @override
+  String get palmReviewFound =>
+      'మీ ఫోటోలో Drishti ఈ రేఖలను కనుగొంది, ఒక్కొక్కటి వేరే రంగులో. ప్రతి రేఖ మీ అరచేతిలోని ఒక ముడత మీదుగా వెళ్తుందో లేదో చూడండి. ఏదైనా తప్పుగా ఉంటే \"రేఖను సరిచేయండి\" నొక్కి దాన్ని గీయండి.';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'కనుగొనబడలేదు: $lines. వీటిని \"రేఖను సరిచేయండి\" తో గీయవచ్చు, లేదా తర్వాత వీటి ప్రశ్నలకు మీరే సమాధానం ఇవ్వవచ్చు.';
+  }
+
+  @override
+  String get palmLooksRight => 'సరిగ్గా ఉంది';
+
+  @override
+  String get palmFixLine => 'రేఖను సరిచేయండి';
+
+  @override
+  String get palmDone => 'పూర్తయింది';
+
+  @override
+  String get palmFromPhoto => 'మీ ఫోటో నుండి';
+
+  @override
+  String get palmChange => 'మార్చండి';
 }

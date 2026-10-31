@@ -2535,4 +2535,28 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get exitConfirm => 'ಮುಚ್ಚಿ';
+
+  @override
+  String get palmReviewFound =>
+      'ನಿಮ್ಮ ಫೋಟೋದಲ್ಲಿ Drishti ಈ ರೇಖೆಗಳನ್ನು ಕಂಡುಹಿಡಿದಿದೆ, ಪ್ರತಿಯೊಂದೂ ಬೇರೆ ಬಣ್ಣದಲ್ಲಿ. ಪ್ರತಿಯೊಂದು ರೇಖೆಯೂ ನಿಮ್ಮ ಅಂಗೈಯ ಒಂದು ಮಡಿಕೆಯ ಮೇಲೆ ಸಾಗುತ್ತದೆಯೇ ಎಂದು ನೋಡಿ. ಯಾವುದಾದರೂ ತಪ್ಪಾಗಿದ್ದರೆ \"ರೇಖೆ ಸರಿಪಡಿಸಿ\" ಒತ್ತಿ ಅದನ್ನು ಬರೆಯಿರಿ.';
+
+  @override
+  String palmReviewMissing(String lines) {
+    return 'ಸಿಗಲಿಲ್ಲ: $lines. ಇವುಗಳನ್ನು \"ರೇಖೆ ಸರಿಪಡಿಸಿ\" ಮೂಲಕ ಬರೆಯಬಹುದು, ಅಥವಾ ಮುಂದೆ ಇವುಗಳ ಪ್ರಶ್ನೆಗಳಿಗೆ ನೀವೇ ಉತ್ತರಿಸಬಹುದು.';
+  }
+
+  @override
+  String get palmLooksRight => 'ಸರಿಯಾಗಿದೆ';
+
+  @override
+  String get palmFixLine => 'ರೇಖೆ ಸರಿಪಡಿಸಿ';
+
+  @override
+  String get palmDone => 'ಮುಗಿಯಿತು';
+
+  @override
+  String get palmFromPhoto => 'ನಿಮ್ಮ ಫೋಟೋದಿಂದ';
+
+  @override
+  String get palmChange => 'ಬದಲಿಸಿ';
 }
