@@ -15,10 +15,12 @@ class AdsService {
   AdsService._();
   static final instance = AdsService._();
 
-  // Google's public test units; real ids come from --dart-define at release.
+  // The app's real AdMob units, so every build (Android Studio or the command
+  // line) shows real ads. iOS has no units yet, so it keeps Google's test ids.
+  // Any unit can still be overridden with --dart-define.
   static const _bannerAndroid = String.fromEnvironment(
     'ADMOB_BANNER_ANDROID',
-    defaultValue: 'ca-app-pub-3940256099942544/9214589741',
+    defaultValue: 'ca-app-pub-5828307858131272/9358575644',
   );
   static const _bannerIos = String.fromEnvironment(
     'ADMOB_BANNER_IOS',
@@ -26,7 +28,7 @@ class AdsService {
   );
   static const _interstitialAndroid = String.fromEnvironment(
     'ADMOB_INTERSTITIAL_ANDROID',
-    defaultValue: 'ca-app-pub-3940256099942544/1033173712',
+    defaultValue: 'ca-app-pub-5828307858131272/8045493979',
   );
   static const _interstitialIos = String.fromEnvironment(
     'ADMOB_INTERSTITIAL_IOS',
@@ -34,7 +36,7 @@ class AdsService {
   );
   static const _appOpenAndroid = String.fromEnvironment(
     'ADMOB_APP_OPEN_ANDROID',
-    defaultValue: 'ca-app-pub-3940256099942544/9257395921',
+    defaultValue: 'ca-app-pub-5828307858131272/3213511683',
   );
   static const _appOpenIos = String.fromEnvironment(
     'ADMOB_APP_OPEN_IOS',
@@ -42,11 +44,11 @@ class AdsService {
   );
   static const _rewardedAndroid = String.fromEnvironment(
     'ADMOB_REWARDED_ANDROID',
-    defaultValue: 'ca-app-pub-3940256099942544/5224354917',
+    defaultValue: 'ca-app-pub-5828307858131272/2227733071',
   );
   static const _nativeAndroid = String.fromEnvironment(
     'ADMOB_NATIVE_ANDROID',
-    defaultValue: 'ca-app-pub-3940256099942544/2247696110',
+    defaultValue: 'ca-app-pub-5828307858131272/9481808070',
   );
   static const _nativeIos = String.fromEnvironment(
     'ADMOB_NATIVE_IOS',
@@ -55,7 +57,10 @@ class AdsService {
 
   /// Hashed ids of the developers' own phones (comma separated). They get
   /// test ads even with the real units, so testing never counts as traffic.
-  static const _testDevices = String.fromEnvironment('ADMOB_TEST_DEVICES');
+  static const _testDevices = String.fromEnvironment(
+    'ADMOB_TEST_DEVICES',
+    defaultValue: 'B89AE5ECF59A2FED57F52ED72C9AA863',
+  );
   static const _rewardedIos = String.fromEnvironment(
     'ADMOB_REWARDED_IOS',
     defaultValue: 'ca-app-pub-3940256099942544/1712485313',

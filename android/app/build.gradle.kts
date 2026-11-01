@@ -51,11 +51,11 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
 
-        // AdMob app id. Defaults to Google's public test id; set ADMOB_APP_ID in
-        // android/local.properties (or the environment) for real releases.
+        // The app's real AdMob app id; android/local.properties or the
+        // environment can override it.
         manifestPlaceholders["admobAppId"] = localProps.getProperty("ADMOB_APP_ID")
             ?: System.getenv("ADMOB_APP_ID")
-            ?: "ca-app-pub-3940256099942544~3347511713"
+            ?: "ca-app-pub-5828307858131272~6278658721"
     }
 
     signingConfigs {

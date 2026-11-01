@@ -12,7 +12,10 @@ import 'package:path_provider/path_provider.dart';
 class FeedService {
   FeedService._();
 
-  static const url = String.fromEnvironment('FEED_URL');
+  static const url = String.fromEnvironment(
+    'FEED_URL',
+    defaultValue: 'https://dharmik6kathrotiya.github.io/drishti/feed/latest.json',
+  );
   static const _maxAge = Duration(hours: 6);
 
   static Future<File> _cacheFile() async => File('${(await getApplicationSupportDirectory()).path}/feed_latest.json');
