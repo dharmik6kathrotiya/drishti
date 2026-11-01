@@ -23,6 +23,14 @@ android {
     compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
+    // The Vulkan validation layer from the llama.cpp package is a debugging
+    // tool (15 MB per ABI); users never need it.
+    packaging {
+        jniLibs {
+            excludes += "**/libVkLayer_khronos_validation.so"
+        }
+    }
+
     compileOptions {
         // Required by flutter_local_notifications for scheduled notifications.
         isCoreLibraryDesugaringEnabled = true
@@ -90,5 +98,5 @@ flutter {
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
     // On-device hand landmarks for palm photos (Apache-2.0).
-    implementation("com.google.mediapipe:tasks-vision:0.10.20")
+    implementation("com.google.mediapipe:tasks-vision:0.10.35")
 }
