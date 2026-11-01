@@ -1,6 +1,9 @@
 import '../../ui/widgets/reward_gate.dart';
 
 import 'package:flutter/material.dart';
+
+import '../../core/services/ads_service.dart';
+
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -183,6 +186,17 @@ class SettingsScreen extends ConsumerWidget {
             title: Text(l.privacyPromiseTitle),
             subtitle: Text(l.privacyPromise),
           ),
+          FutureBuilder<bool>(
+            future: AdsService.instance.privacyOptionsRequired(),
+            builder: (context, snap) => snap.data == true
+                ? ListTile(
+                    leading: const Icon(Icons.privacy_tip_outlined),
+                    title: Text(l.adPrivacyChoices),
+                    subtitle: Text(l.adPrivacyChoicesInfo),
+                    onTap: AdsService.instance.showPrivacyOptions,
+                  )
+                : const SizedBox.shrink(),
+          ),
           ListTile(
             leading: const Icon(Icons.download_outlined),
             title: Text(l.exportData),
@@ -190,6 +204,7 @@ class SettingsScreen extends ConsumerWidget {
             onTap: () async {
               if (!await watchAdToContinue(context)) return;
               final json = ref.read(localStoreProvider).exportAll();
+              AdsService.instance.skipNextAppOpen();
               SharePlus.instance.share(ShareParams(text: json, subject: 'Drishti backup'));
             },
           ),

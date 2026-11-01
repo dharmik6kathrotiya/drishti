@@ -1358,5 +1358,7 @@
   },
   "palmEnhance": "Make lines clearer",
   "palmZoomHint": "Pinch with two fingers to zoom. Tap the contrast button at the top to make fine lines easier to see.",
-  "palmResetZoom": "Reset zoom"
+  "palmResetZoom": "Reset zoom",
+  "adPrivacyChoices": "Ad privacy choices",
+  "adPrivacyChoicesInfo": "Review or change your consent for personalised ads."
 }

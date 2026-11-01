@@ -60,6 +60,7 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
   Future<void> _pick(ImageSource source) async {
     // The app declares CAMERA (for QR scanning), so Android requires the
     // runtime permission before handing off to the camera app.
+    AdsService.instance.skipNextAppOpen();
     if (source == ImageSource.camera && !(await Permission.camera.request()).isGranted) return;
     try {
       final x = await ImagePicker().pickImage(source: source, maxWidth: 1600, imageQuality: 85);
@@ -206,7 +207,8 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
               ),
             ],
           ),
-          const SizedBox(height: 28),
+          // Well away from Back/Next so the ad is never tapped by mistake.
+          const SizedBox(height: 48),
           const NativeSlot(medium: false),
         ],
       );

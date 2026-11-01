@@ -1,6 +1,9 @@
 import '../../../ui/widgets/reward_gate.dart';
 
 import 'package:flutter/material.dart';
+
+import '../../../core/services/ads_service.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
@@ -53,6 +56,7 @@ class JournalScreen extends ConsumerWidget {
               final n = ref.read(journalProvider.notifier);
               if (v == 'export') {
                 if (!await watchAdToContinue(context)) return;
+                AdsService.instance.skipNextAppOpen();
                 await SharePlus.instance.share(ShareParams(text: n.exportJson(), subject: 'Drishti journal'));
               } else if (v == 'delete') {
                 final ok = await showDialog<bool>(

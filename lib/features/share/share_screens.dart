@@ -1,6 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+
+import '../../core/services/ads_service.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
@@ -82,7 +85,10 @@ class ShareProfileScreen extends ConsumerWidget {
           FilledButton.icon(
             icon: const Icon(Icons.share),
             label: Text(l.shareAsText),
-            onPressed: () => SharePlus.instance.share(ShareParams(text: l.shareText(profile.name, code))),
+            onPressed: () {
+              AdsService.instance.skipNextAppOpen();
+              SharePlus.instance.share(ShareParams(text: l.shareText(profile.name, code)));
+            },
           ),
           const SizedBox(height: 12),
           SourceNote(l.sharePrivacyNote),

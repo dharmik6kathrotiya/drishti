@@ -104,8 +104,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get ageUnder13 => 'Under 13';
 
   @override
-  String get teenModeInfo =>
-      'Teen mode hides marriage matching and adult topics, and shows only non-personalised ads.';
+  String get teenModeInfo => 'Teen mode hides marriage matching and adult topics, and shows only non-personalised ads.';
 
   @override
   String get under13Message =>
@@ -121,48 +120,40 @@ class AppLocalizationsEn extends AppLocalizations {
   String get systemVedic => 'Vedic (Jyotish)';
 
   @override
-  String get systemVedicInfo =>
-      'Indian sidereal astrology: Kundli, Rashi, Nakshatra, Dasha, Panchang and Guna Milan.';
+  String get systemVedicInfo => 'Indian sidereal astrology: Kundli, Rashi, Nakshatra, Dasha, Panchang and Guna Milan.';
 
   @override
   String get systemWestern => 'Western';
 
   @override
-  String get systemWesternInfo =>
-      'Tropical zodiac astrology: Sun sign, birth chart wheel, aspects and transits.';
+  String get systemWesternInfo => 'Tropical zodiac astrology: Sun sign, birth chart wheel, aspects and transits.';
 
   @override
-  String get changeLaterHint =>
-      'Every setting can be changed later in Settings.';
+  String get changeLaterHint => 'Every setting can be changed later in Settings.';
 
   @override
   String get themeTitle => 'Pick a look';
 
   @override
-  String get themeBody =>
-      'Choose the theme you like. You can change it any time.';
+  String get themeBody => 'Choose the theme you like. You can change it any time.';
 
   @override
   String get profileIntroTitle => 'Create your profile';
 
   @override
-  String get profileIntroBody =>
-      'Add only what you know. Each detail unlocks more.';
+  String get profileIntroBody => 'Add only what you know. Each detail unlocks more.';
 
   @override
   String get profileIntroName => 'Name: numerology';
 
   @override
-  String get profileIntroDate =>
-      'Date of birth: Moon sign, daily horoscope, dashas';
+  String get profileIntroDate => 'Date of birth: Moon sign, daily horoscope, dashas';
 
   @override
-  String get profileIntroTime =>
-      'Time of birth: Ascendant, houses and the full Kundli';
+  String get profileIntroTime => 'Time of birth: Ascendant, houses and the full Kundli';
 
   @override
-  String get profileIntroPlace =>
-      'Place of birth: exact timezone and accurate houses';
+  String get profileIntroPlace => 'Place of birth: exact timezone and accurate houses';
 
   @override
   String get privacyPromiseTitle => 'Your data stays with you';
@@ -187,15 +178,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scanProfile => 'Scan a profile';
 
   @override
-  String get scanProfileSubtitle =>
-      'Add a friend\'s profile from their QR code';
+  String get scanProfileSubtitle => 'Add a friend\'s profile from their QR code';
 
   @override
   String get noProfilesTitle => 'No profiles yet';
 
   @override
-  String get noProfilesBody =>
-      'Create profiles for yourself, family and friends. Add only the details you have.';
+  String get noProfilesBody => 'Create profiles for yourself, family and friends. Add only the details you have.';
 
   @override
   String get onlyName => 'Name only';
@@ -242,8 +231,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get otherGender => 'Other';
 
   @override
-  String get optionalDetailsHint =>
-      'All details below are optional. Add what you have.';
+  String get optionalDetailsHint => 'All details below are optional. Add what you have.';
 
   @override
   String get birthDate => 'Date of birth';
@@ -286,16 +274,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get unlockPlace => 'Correct timezone for your birth date';
 
   @override
-  String get unlockFullChart =>
-      'Full Kundli: Lagna, houses, divisional charts and KP';
+  String get unlockFullChart => 'Full Kundli: Lagna, houses, divisional charts and KP';
 
   @override
   String get unknownTimeNote =>
       'Without a birth time we use a Moon-based chart at noon. The Ascendant and houses are not shown, and the Moon\'s position may be off by a few degrees.';
 
   @override
-  String get noPlaceNote =>
-      'Without a birthplace we cannot calculate the Ascendant and houses.';
+  String get noPlaceNote => 'Without a birthplace we cannot calculate the Ascendant and houses.';
 
   @override
   String get searchPlaceHint => 'Search city, town or village';
@@ -305,8 +291,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Type at least 2 letters. Add a comma to narrow it down, e.g. \"Aurangabad, Maharashtra\". Works offline.';
 
   @override
-  String get noPlacesFound =>
-      'No places found. Try another spelling, or enter coordinates.';
+  String get noPlacesFound => 'No places found. Try another spelling, or enter coordinates.';
 
   @override
   String get enterCoordinates => 'Enter coordinates';
@@ -477,12 +462,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Yogas are planetary combinations described in classical texts. Their effects depend on the strength of the planets involved and on the whole chart.';
 
   @override
-  String get noYogasFound =>
-      'None of the yogas we check were found in this chart.';
+  String get noYogasFound => 'None of the yogas we check were found in this chart.';
 
   @override
-  String get kpIntro =>
-      'Krishnamurti Paddhati (KP) uses the KP ayanamsa and Placidus cusps, and focuses on sub lords.';
+  String get kpIntro => 'Krishnamurti Paddhati (KP) uses the KP ayanamsa and Placidus cusps, and focuses on sub lords.';
 
   @override
   String get kpNeedsTime => 'KP needs an exact birth time and place.';
@@ -584,8 +567,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get matchTitle => 'Kundli Matching';
 
   @override
-  String get matchIntro =>
-      'Choose two profiles. Matching uses the Moon positions of both people.';
+  String get matchIntro => 'Choose two profiles. Matching uses the Moon positions of both people.';
 
   @override
   String get groom => 'Groom';
@@ -597,15 +579,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get matchNeedProfilesTitle => 'Add two profiles';
 
   @override
-  String get matchNeedProfilesBody =>
-      'Matching needs at least two profiles with birth dates.';
+  String get matchNeedProfilesBody => 'Matching needs at least two profiles with birth dates.';
 
   @override
   String get matchTeenTitle => 'Available at 18+';
 
   @override
-  String get matchTeenBody =>
-      'Marriage matching is shown only to adults. You can still explore your own chart.';
+  String get matchTeenBody => 'Marriage matching is shown only to adults. You can still explore your own chart.';
 
   @override
   String get kootaDetails => 'Ashtakoot (8 kootas)';
@@ -629,8 +609,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Guna Milan is one traditional tool, and point tables vary slightly between almanacs. It cannot predict the success of a relationship. Mutual respect, values and communication matter most.';
 
   @override
-  String get matchApproxNote =>
-      'One or both birth times are unknown, so the result is approximate.';
+  String get matchApproxNote => 'One or both birth times are unknown, so the result is approximate.';
 
   @override
   String get synastry => 'Synastry';
@@ -664,8 +643,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settings => 'Settings';
 
   @override
-  String get settingsSubtitle =>
-      'Language, theme, calculation options and privacy';
+  String get settingsSubtitle => 'Language, theme, calculation options and privacy';
 
   @override
   String get appearance => 'Appearance';
@@ -686,8 +664,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifications => 'Notifications';
 
   @override
-  String get notificationsInfo =>
-      'All notifications are off by default. Turn on only what you want.';
+  String get notificationsInfo => 'All notifications are off by default. Turn on only what you want.';
 
   @override
   String get privacyData => 'Privacy and data';
@@ -696,8 +673,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exportData => 'Export my data';
 
   @override
-  String get exportDataInfo =>
-      'Share a backup of all profiles and settings as text';
+  String get exportDataInfo => 'Share a backup of all profiles and settings as text';
 
   @override
   String get importData => 'Import from clipboard';
@@ -714,8 +690,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deleteAllData => 'Delete all data';
 
   @override
-  String get deleteAllDataConfirm =>
-      'This permanently deletes all profiles and settings from this phone.';
+  String get deleteAllDataConfirm => 'This permanently deletes all profiles and settings from this phone.';
 
   @override
   String get about => 'About Drishti';
@@ -758,8 +733,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get welcome => 'Welcome';
 
   @override
-  String get homeNoProfile =>
-      'Create your profile to see your personal horoscope, chart and dashas.';
+  String get homeNoProfile => 'Create your profile to see your personal horoscope, chart and dashas.';
 
   @override
   String hello(String name) {
@@ -779,8 +753,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get horoscopeTitle => 'Your horoscope';
 
   @override
-  String get pickSignForHoroscope =>
-      'Add a birth date for a personal reading, or pick a sign for a general one:';
+  String get pickSignForHoroscope => 'Add a birth date for a personal reading, or pick a sign for a general one:';
 
   @override
   String get periodDay => 'Today';
@@ -795,8 +768,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get periodYear => 'Year';
 
   @override
-  String get horoscopeUnavailable =>
-      'A horoscope cannot be made with the available details.';
+  String get horoscopeUnavailable => 'A horoscope cannot be made with the available details.';
 
   @override
   String get keyEvents => 'Key sky events';
@@ -805,8 +777,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get whyThisReading => 'Why this reading?';
 
   @override
-  String get horoscopeApproxNote =>
-      'Some birth details are approximate, so parts of this reading are approximate too.';
+  String get horoscopeApproxNote => 'Some birth details are approximate, so parts of this reading are approximate too.';
 
   @override
   String get changeSign => 'Change sign';
@@ -874,8 +845,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get remedyTitle => 'Remedies';
 
   @override
-  String get remedySubtitle =>
-      'Mantras, charity, fasting and other traditional practices';
+  String get remedySubtitle => 'Mantras, charity, fasting and other traditional practices';
 
   @override
   String get remedyTabForYou => 'For you';
@@ -962,8 +932,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get remedyReasonManglik =>
-      'Mangal dosha is present by the traditional rule.';
+  String get remedyReasonManglik => 'Mangal dosha is present by the traditional rule.';
 
   @override
   String get remedyNoSuggestions =>
@@ -1000,22 +969,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tarotSpreadThree => 'Past, present, future';
 
   @override
-  String get tarotSpreadThreeInfo =>
-      'Three cards for reflecting on how a situation has developed.';
+  String get tarotSpreadThreeInfo => 'Three cards for reflecting on how a situation has developed.';
 
   @override
   String get tarotSpreadCeltic => 'Celtic Cross';
 
   @override
-  String get tarotSpreadCelticInfo =>
-      'A ten-card spread for looking at a question in depth.';
+  String get tarotSpreadCelticInfo => 'A ten-card spread for looking at a question in depth.';
 
   @override
   String get tarotSpreadRelationship => 'Relationship';
 
   @override
-  String get tarotSpreadRelationshipInfo =>
-      'Five cards about you, the other person and the connection between you.';
+  String get tarotSpreadRelationshipInfo => 'Five cards about you, the other person and the connection between you.';
 
   @override
   String get tarotQuestionHint => 'Your question (optional)';
@@ -1027,8 +993,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tarotHistory => 'Past readings';
 
   @override
-  String get tarotNoHistory =>
-      'Your readings will be saved here, only on this phone.';
+  String get tarotNoHistory => 'Your readings will be saved here, only on this phone.';
 
   @override
   String get tarotClearHistory => 'Clear history';
@@ -1121,8 +1086,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journalSaved => 'Saved';
 
   @override
-  String get journalEmpty =>
-      'No entries yet. Add one a day to see patterns over time.';
+  String get journalEmpty => 'No entries yet. Add one a day to see patterns over time.';
 
   @override
   String get journalHistory => 'History';
@@ -1146,8 +1110,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journalAvgShukla => 'Average mood in Shukla paksha (waxing Moon)';
 
   @override
-  String get journalAvgKrishna =>
-      'Average mood in Krishna paksha (waning Moon)';
+  String get journalAvgKrishna => 'Average mood in Krishna paksha (waning Moon)';
 
   @override
   String get journalAvgByElement => 'Average mood by the Moon\'s element';
@@ -1162,8 +1125,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journalDeleteAll => 'Delete all entries';
 
   @override
-  String get journalDeleteAllConfirm =>
-      'This permanently deletes all journal entries from this phone.';
+  String get journalDeleteAllConfirm => 'This permanently deletes all journal entries from this phone.';
 
   @override
   String get journalDeleteEntry => 'Delete entry';
@@ -1172,15 +1134,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journalSky => 'Sky that day';
 
   @override
-  String get journalPrivacy =>
-      'Your journal never leaves this phone unless you export it.';
+  String get journalPrivacy => 'Your journal never leaves this phone unless you export it.';
 
   @override
   String get wellnessMeditationTitle => 'Meditation and breathing';
 
   @override
-  String get wellnessMeditationSubtitle =>
-      'Guided breathing, nadi shodhana and Om chanting';
+  String get wellnessMeditationSubtitle => 'Guided breathing, nadi shodhana and Om chanting';
 
   @override
   String get wellnessBreathIn => 'Breathe in';
@@ -1224,15 +1184,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get wellnessPatternBox => 'Box breathing (4-4-4-4)';
 
   @override
-  String get wellnessPatternBoxInfo =>
-      'Equal counts of inhaling, holding, exhaling and holding. Steadies the mind.';
+  String get wellnessPatternBoxInfo => 'Equal counts of inhaling, holding, exhaling and holding. Steadies the mind.';
 
   @override
   String get wellnessPattern478 => '4-7-8 breathing';
 
   @override
-  String get wellnessPattern478Info =>
-      'Inhale for 4, hold for 7, exhale for 8. Often used to relax before sleep.';
+  String get wellnessPattern478Info => 'Inhale for 4, hold for 7, exhale for 8. Often used to relax before sleep.';
 
   @override
   String get wellnessPatternNadi => 'Nadi shodhana';
@@ -1245,8 +1203,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get wellnessPatternOm => 'Om chanting';
 
   @override
-  String get wellnessPatternOmInfo =>
-      'Inhale deeply, then chant a long \"Ommm\" on the exhale, feeling the vibration.';
+  String get wellnessPatternOmInfo => 'Inhale deeply, then chant a long \"Ommm\" on the exhale, feeling the vibration.';
 
   @override
   String wellnessDayTheme(String planet, String theme) {
@@ -1331,14 +1288,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String advShadbalaParts(
-    String sthana,
-    String dig,
-    String kala,
-    String chesta,
-    String nai,
-    String drik,
-  ) {
+  String advShadbalaParts(String sthana, String dig, String kala, String chesta, String nai, String drik) {
     return 'Sthana $sthana · Dig $dig · Kala $kala · Chesta $chesta · Naisargika $nai · Drik $drik';
   }
 
@@ -1461,8 +1411,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get advPersonB => 'Second person';
 
   @override
-  String get advCompositeNeedProfiles =>
-      'Add at least two profiles with birth dates to make a composite chart.';
+  String get advCompositeNeedProfiles => 'Add at least two profiles with birth dates to make a composite chart.';
 
   @override
   String get advPositions => 'Positions';
@@ -1471,8 +1420,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiAskTitle => 'Ask Drishti';
 
   @override
-  String get aiAskSubtitle =>
-      'Questions about your chart, answered from its calculations';
+  String get aiAskSubtitle => 'Questions about your chart, answered from its calculations';
 
   @override
   String get aiAskHint => 'Ask about career, studies, relationships…';
@@ -1493,8 +1441,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiImproveWith => 'Make this more accurate';
 
   @override
-  String get aiNoProfile =>
-      'Create a profile with a birth date to ask questions about a chart.';
+  String get aiNoProfile => 'Create a profile with a birth date to ask questions about a chart.';
 
   @override
   String aiProfileFor(String name) {
@@ -1506,16 +1453,14 @@ class AppLocalizationsEn extends AppLocalizations {
       'Answers come from Drishti\'s built-in rules, which work offline on every phone. Download the on-phone AI model for conversational answers.';
 
   @override
-  String get aiModelMode =>
-      'Using the on-phone AI model. Every answer is checked against your calculated chart.';
+  String get aiModelMode => 'Using the on-phone AI model. Every answer is checked against your calculated chart.';
 
   @override
   String get aiReplaced =>
       'The AI\'s draft did not pass Drishti\'s safety and accuracy check, so the rule-based answer is shown instead.';
 
   @override
-  String get aiLoadFailed =>
-      'The AI model could not be loaded on this phone, so rule-based answers are used.';
+  String get aiLoadFailed => 'The AI model could not be loaded on this phone, so rule-based answers are used.';
 
   @override
   String get aiExplain => 'Explain';
@@ -1628,8 +1573,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiClearAll => 'Clear all AI memory';
 
   @override
-  String get aiClearConfirm =>
-      'This deletes the remembered questions and notes from this phone.';
+  String get aiClearConfirm => 'This deletes the remembered questions and notes from this phone.';
 
   @override
   String get aiCancel => 'Cancel';
@@ -1644,16 +1588,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get rectTitle => 'Birth time rectification';
 
   @override
-  String get rectSubtitle =>
-      'Estimate an uncertain birth time from life events';
+  String get rectSubtitle => 'Estimate an uncertain birth time from life events';
 
   @override
   String get rectIntro =>
       'If you know your birth time only roughly, Drishti can check which times in a range fit your major life events best, using traditional dasha and transit rules.';
 
   @override
-  String get rectNeedsDatePlace =>
-      'Rectification needs a birth date and birthplace in this profile.';
+  String get rectNeedsDatePlace => 'Rectification needs a birth date and birthplace in this profile.';
 
   @override
   String get rectChooseProfile => 'Profile';
@@ -1671,8 +1613,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get rectEvents => 'Life events';
 
   @override
-  String get rectEventsInfo =>
-      'Add dated events you are sure about. Three or more give more meaningful results.';
+  String get rectEventsInfo => 'Add dated events you are sure about. Three or more give more meaningful results.';
 
   @override
   String get rectAddEvent => 'Add event';
@@ -1762,8 +1703,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get festTitle => 'Festivals & Vrats';
 
   @override
-  String get festSubtitle =>
-      'Festivals, Ekadashis, sankrantis and eclipses for your place';
+  String get festSubtitle => 'Festivals, Ekadashis, sankrantis and eclipses for your place';
 
   @override
   String get festAll => 'All';
@@ -2016,12 +1956,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get wellnessThemeJupiter => 'gratitude and wisdom; try Om chanting';
 
   @override
-  String get wellnessThemeVenus =>
-      'gentleness and harmony; try 4-7-8 breathing';
+  String get wellnessThemeVenus => 'gentleness and harmony; try 4-7-8 breathing';
 
   @override
-  String get wellnessThemeSaturn =>
-      'patience and grounding; try a longer box breathing session';
+  String get wellnessThemeSaturn => 'patience and grounding; try a longer box breathing session';
 
   @override
   String untilDate(String date) {
@@ -2068,8 +2006,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get aiWifiOnlyInfo =>
-      'Large downloads start only on Wi‑Fi. On mobile data, Drishti asks you first.';
+  String get aiWifiOnlyInfo => 'Large downloads start only on Wi‑Fi. On mobile data, Drishti asks you first.';
 
   @override
   String get aiNotOnWifiTitle => 'Not on Wi‑Fi';
@@ -2162,8 +2099,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get numeroTapForDetails =>
-      'Tap to see how it is calculated and what it means';
+  String get numeroTapForDetails => 'Tap to see how it is calculated and what it means';
 
   @override
   String get numeroHowCalculated => 'How it is calculated';
@@ -2227,8 +2163,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get numeroAlwaysReduced =>
-      'This number is always reduced to a single digit; master numbers are not kept.';
+  String get numeroAlwaysReduced => 'This number is always reduced to a single digit; master numbers are not kept.';
 
   @override
   String numeroResult(int number) {
@@ -2242,12 +2177,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get numeroPairTitle => 'Mulank and Bhagyank pair';
 
   @override
-  String numeroPairNumbers(
-    int mulank,
-    String mulankPlanet,
-    int bhagyank,
-    String bhagyankPlanet,
-  ) {
+  String numeroPairNumbers(int mulank, String mulankPlanet, int bhagyank, String bhagyankPlanet) {
     return 'Mulank $mulank ($mulankPlanet) and Bhagyank $bhagyank ($bhagyankPlanet)';
   }
 
@@ -2281,8 +2211,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get numeroLoShuTitle => 'Lo Shu grid';
 
   @override
-  String get numeroLoShuAddMB =>
-      'Add Mulank and Bhagyank (usual Indian practice)';
+  String get numeroLoShuAddMB => 'Add Mulank and Bhagyank (usual Indian practice)';
 
   @override
   String numeroLoShuDigits(String digits) {
@@ -2381,8 +2310,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get kootaNotApplies => 'does not apply';
 
   @override
-  String get kootaTapHint =>
-      'Tap any line to see what it is, your result and why.';
+  String get kootaTapHint => 'Tap any line to see what it is, your result and why.';
 
   @override
   String get compConclusion => 'What it means for you';
@@ -2409,12 +2337,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get palmTraceTitle => 'Trace your palm lines';
 
   @override
-  String get palmTapIndex =>
-      'Step 1 of 3: tap the base of your index finger (where it joins the palm).';
+  String get palmTapIndex => 'Step 1 of 3: tap the base of your index finger (where it joins the palm).';
 
   @override
-  String get palmTapLittle =>
-      'Step 2 of 3: tap the base of your little finger.';
+  String get palmTapLittle => 'Step 2 of 3: tap the base of your little finger.';
 
   @override
   String get palmTapWrist => 'Step 3 of 3: tap the middle of your wrist.';
@@ -2442,8 +2368,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Drishti thinks it is this, from your photo. If you think it is wrong, please choose another option.';
 
   @override
-  String get palmDetecting =>
-      'Looking for your hand and palm lines in the photo…';
+  String get palmDetecting => 'Looking for your hand and palm lines in the photo…';
 
   @override
   String get palmHandNotFound =>
@@ -2463,8 +2388,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get childrenTitle => 'Children (Santana)';
 
   @override
-  String get childrenSubtitle =>
-      'Signs and timing for children, for one person or a couple';
+  String get childrenSubtitle => 'Signs and timing for children, for one person or a couple';
 
   @override
   String get childrenIntro =>
@@ -2567,4 +2491,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get palmResetZoom => 'Reset zoom';
+
+  @override
+  String get adPrivacyChoices => 'Ad privacy choices';
+
+  @override
+  String get adPrivacyChoicesInfo => 'Review or change your consent for personalised ads.';
 }

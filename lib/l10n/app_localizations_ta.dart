@@ -121,47 +121,40 @@ class AppLocalizationsTa extends AppLocalizations {
   String get systemVedic => 'வேத ஜோதிடம்';
 
   @override
-  String get systemVedicInfo =>
-      'இந்திய நிராயன ஜோதிடம்: ஜாதகம், ராசி, நட்சத்திரம், தசை, பஞ்சாங்கம், பொருத்தம்.';
+  String get systemVedicInfo => 'இந்திய நிராயன ஜோதிடம்: ஜாதகம், ராசி, நட்சத்திரம், தசை, பஞ்சாங்கம், பொருத்தம்.';
 
   @override
   String get systemWestern => 'மேற்கத்திய';
 
   @override
-  String get systemWesternInfo =>
-      'சாயன ராசிச் சக்கர ஜோதிடம்: சூரிய ராசி, பிறப்பு ஜாதகச் சக்கரம், பார்வைகள், கோசாரம்.';
+  String get systemWesternInfo => 'சாயன ராசிச் சக்கர ஜோதிடம்: சூரிய ராசி, பிறப்பு ஜாதகச் சக்கரம், பார்வைகள், கோசாரம்.';
 
   @override
-  String get changeLaterHint =>
-      'ஒவ்வொரு அமைப்பையும் பிறகு அமைப்புகளில் மாற்றலாம்.';
+  String get changeLaterHint => 'ஒவ்வொரு அமைப்பையும் பிறகு அமைப்புகளில் மாற்றலாம்.';
 
   @override
   String get themeTitle => 'ஒரு தோற்றத்தைத் தேர்ந்தெடுங்கள்';
 
   @override
-  String get themeBody =>
-      'உங்களுக்குப் பிடித்த தீமைத் தேர்ந்தெடுங்கள். எப்போது வேண்டுமானாலும் மாற்றலாம்.';
+  String get themeBody => 'உங்களுக்குப் பிடித்த தீமைத் தேர்ந்தெடுங்கள். எப்போது வேண்டுமானாலும் மாற்றலாம்.';
 
   @override
   String get profileIntroTitle => 'உங்கள் சுயவிவரத்தை உருவாக்குங்கள்';
 
   @override
-  String get profileIntroBody =>
-      'தெரிந்ததை மட்டும் சேருங்கள். ஒவ்வொரு விவரமும் மேலும் பலன்களைத் திறக்கும்.';
+  String get profileIntroBody => 'தெரிந்ததை மட்டும் சேருங்கள். ஒவ்வொரு விவரமும் மேலும் பலன்களைத் திறக்கும்.';
 
   @override
   String get profileIntroName => 'பெயர்: எண் கணிதம்';
 
   @override
-  String get profileIntroDate =>
-      'பிறந்த தேதி: சந்திர ராசி, தினசரி ராசிபலன், தசைகள்';
+  String get profileIntroDate => 'பிறந்த தேதி: சந்திர ராசி, தினசரி ராசிபலன், தசைகள்';
 
   @override
   String get profileIntroTime => 'பிறந்த நேரம்: லக்னம், பாவங்கள், முழு ஜாதகம்';
 
   @override
-  String get profileIntroPlace =>
-      'பிறந்த இடம்: சரியான நேர மண்டலம், துல்லியமான பாவங்கள்';
+  String get profileIntroPlace => 'பிறந்த இடம்: சரியான நேர மண்டலம், துல்லியமான பாவங்கள்';
 
   @override
   String get privacyPromiseTitle => 'உங்கள் தரவு உங்களிடமே இருக்கும்';
@@ -186,8 +179,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get scanProfile => 'சுயவிவரத்தை ஸ்கேன் செய்';
 
   @override
-  String get scanProfileSubtitle =>
-      'நண்பரின் QR குறியீட்டிலிருந்து அவரது சுயவிவரத்தைச் சேருங்கள்';
+  String get scanProfileSubtitle => 'நண்பரின் QR குறியீட்டிலிருந்து அவரது சுயவிவரத்தைச் சேருங்கள்';
 
   @override
   String get noProfilesTitle => 'இன்னும் சுயவிவரங்கள் இல்லை';
@@ -241,8 +233,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get otherGender => 'மற்றவை';
 
   @override
-  String get optionalDetailsHint =>
-      'கீழே உள்ள அனைத்து விவரங்களும் விருப்பத்திற்குரியவை. உங்களிடம் உள்ளதைச் சேருங்கள்.';
+  String get optionalDetailsHint => 'கீழே உள்ள அனைத்து விவரங்களும் விருப்பத்திற்குரியவை. உங்களிடம் உள்ளதைச் சேருங்கள்.';
 
   @override
   String get birthDate => 'பிறந்த தேதி';
@@ -285,16 +276,14 @@ class AppLocalizationsTa extends AppLocalizations {
   String get unlockPlace => 'உங்கள் பிறந்த தேதிக்கான சரியான நேர மண்டலம்';
 
   @override
-  String get unlockFullChart =>
-      'முழு ஜாதகம்: லக்னம், பாவங்கள், வர்க்கச் சக்கரங்கள், KP';
+  String get unlockFullChart => 'முழு ஜாதகம்: லக்னம், பாவங்கள், வர்க்கச் சக்கரங்கள், KP';
 
   @override
   String get unknownTimeNote =>
       'பிறந்த நேரம் இல்லாமல், நண்பகல் 12 மணிக்கான சந்திர அடிப்படையிலான ஜாதகத்தைப் பயன்படுத்துகிறோம். லக்னமும் பாவங்களும் காட்டப்படாது; சந்திரனின் நிலை சில பாகைகள் மாறுபடலாம்.';
 
   @override
-  String get noPlaceNote =>
-      'பிறந்த இடம் இல்லாமல் லக்னத்தையும் பாவங்களையும் கணக்கிட முடியாது.';
+  String get noPlaceNote => 'பிறந்த இடம் இல்லாமல் லக்னத்தையும் பாவங்களையும் கணக்கிட முடியாது.';
 
   @override
   String get searchPlaceHint => 'நகரம், ஊர் அல்லது கிராமத்தைத் தேடுங்கள்';
@@ -338,8 +327,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get needBirthDateTitle => 'பிறந்த தேதியைச் சேருங்கள்';
 
   @override
-  String get needBirthDateBody =>
-      'ஜாதகம் கணிக்க பிறந்த தேதி தேவை. முழு ஜாதகத்திற்கு நேரத்தையும் இடத்தையும் சேருங்கள்.';
+  String get needBirthDateBody => 'ஜாதகம் கணிக்க பிறந்த தேதி தேவை. முழு ஜாதகத்திற்கு நேரத்தையும் இடத்தையும் சேருங்கள்.';
 
   @override
   String get addBirthDetails => 'பிறப்பு விவரங்களைச் சேர்';
@@ -476,8 +464,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'யோகங்கள் என்பவை சாஸ்திர நூல்களில் விவரிக்கப்பட்ட கிரகச் சேர்க்கைகள். அவற்றின் பலன் சம்பந்தப்பட்ட கிரகங்களின் பலத்தையும் முழு ஜாதகத்தையும் சார்ந்தது.';
 
   @override
-  String get noYogasFound =>
-      'நாங்கள் சரிபார்க்கும் யோகங்களில் எதுவும் இந்த ஜாதகத்தில் இல்லை.';
+  String get noYogasFound => 'நாங்கள் சரிபார்க்கும் யோகங்களில் எதுவும் இந்த ஜாதகத்தில் இல்லை.';
 
   @override
   String get kpIntro =>
@@ -596,8 +583,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get matchNeedProfilesTitle => 'இரண்டு சுயவிவரங்களைச் சேருங்கள்';
 
   @override
-  String get matchNeedProfilesBody =>
-      'பொருத்தத்திற்கு பிறந்த தேதியுடன் குறைந்தது இரண்டு சுயவிவரங்கள் தேவை.';
+  String get matchNeedProfilesBody => 'பொருத்தத்திற்கு பிறந்த தேதியுடன் குறைந்தது இரண்டு சுயவிவரங்கள் தேவை.';
 
   @override
   String get matchTeenTitle => '18+ வயதினருக்கு மட்டும்';
@@ -616,8 +602,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get manglikComparison => 'செவ்வாய் தோஷம்';
 
   @override
-  String get manglikBalanced =>
-      'இரு ஜாதகங்களிலும் செவ்வாய் தோஷ நிலை ஒன்றே; இது மரபுப்படி சமநிலையாகக் கருதப்படுகிறது.';
+  String get manglikBalanced => 'இரு ஜாதகங்களிலும் செவ்வாய் தோஷ நிலை ஒன்றே; இது மரபுப்படி சமநிலையாகக் கருதப்படுகிறது.';
 
   @override
   String get manglikUnbalanced =>
@@ -628,8 +613,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'பொருத்தம் பார்ப்பது ஒரு மரபு சார்ந்த கருவி; பஞ்சாங்கங்களுக்கிடையே மதிப்பெண் அட்டவணைகள் சற்று வேறுபடுகின்றன. இது ஒரு உறவின் வெற்றியைக் கணிக்க முடியாது. பரஸ்பர மரியாதை, மதிப்பீடுகள், உரையாடல் ஆகியவையே மிக முக்கியம்.';
 
   @override
-  String get matchApproxNote =>
-      'ஒருவரின் அல்லது இருவரின் பிறந்த நேரம் தெரியாததால் முடிவு தோராயமானது.';
+  String get matchApproxNote => 'ஒருவரின் அல்லது இருவரின் பிறந்த நேரம் தெரியாததால் முடிவு தோராயமானது.';
 
   @override
   String get synastry => 'சினாஸ்ட்ரி';
@@ -650,8 +634,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get numerology => 'எண் கணிதம்';
 
   @override
-  String get numerologySubtitle =>
-      'வாழ்க்கைப் பாதை, விதி, மூலாங்கம், பாக்யாங்கம்';
+  String get numerologySubtitle => 'வாழ்க்கைப் பாதை, விதி, மூலாங்கம், பாக்யாங்கம்';
 
   @override
   String get numerologyEmpty => 'பெயர் அல்லது பிறந்த தேதியை உள்ளிடுங்கள்.';
@@ -664,8 +647,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get settings => 'அமைப்புகள்';
 
   @override
-  String get settingsSubtitle =>
-      'மொழி, தீம், கணக்கீட்டு விருப்பங்கள், தனியுரிமை';
+  String get settingsSubtitle => 'மொழி, தீம், கணக்கீட்டு விருப்பங்கள், தனியுரிமை';
 
   @override
   String get appearance => 'தோற்றம்';
@@ -696,8 +678,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get exportData => 'என் தரவை ஏற்றுமதி செய்';
 
   @override
-  String get exportDataInfo =>
-      'அனைத்து சுயவிவரங்கள் மற்றும் அமைப்புகளின் காப்புப்பிரதியை உரையாகப் பகிருங்கள்';
+  String get exportDataInfo => 'அனைத்து சுயவிவரங்கள் மற்றும் அமைப்புகளின் காப்புப்பிரதியை உரையாகப் பகிருங்கள்';
 
   @override
   String get importData => 'கிளிப்போர்டிலிருந்து இறக்குமதி செய்';
@@ -708,8 +689,7 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get importFailed =>
-      'கிளிப்போர்டிலிருந்து காப்புப்பிரதியைப் படிக்க முடியவில்லை.';
+  String get importFailed => 'கிளிப்போர்டிலிருந்து காப்புப்பிரதியைப் படிக்க முடியவில்லை.';
 
   @override
   String get deleteAllData => 'அனைத்துத் தரவையும் நீக்கு';
@@ -759,8 +739,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get welcome => 'வரவேற்கிறோம்';
 
   @override
-  String get homeNoProfile =>
-      'உங்கள் தனிப்பட்ட ராசிபலன், ஜாதகம், தசைகளைப் பார்க்க உங்கள் சுயவிவரத்தை உருவாக்குங்கள்.';
+  String get homeNoProfile => 'உங்கள் தனிப்பட்ட ராசிபலன், ஜாதகம், தசைகளைப் பார்க்க உங்கள் சுயவிவரத்தை உருவாக்குங்கள்.';
 
   @override
   String hello(String name) {
@@ -796,8 +775,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get periodYear => 'ஆண்டு';
 
   @override
-  String get horoscopeUnavailable =>
-      'கிடைக்கும் விவரங்களைக் கொண்டு ராசிபலன் உருவாக்க முடியவில்லை.';
+  String get horoscopeUnavailable => 'கிடைக்கும் விவரங்களைக் கொண்டு ராசிபலன் உருவாக்க முடியவில்லை.';
 
   @override
   String get keyEvents => 'முக்கிய வான நிகழ்வுகள்';
@@ -806,8 +784,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get whyThisReading => 'இந்தப் பலன் ஏன்?';
 
   @override
-  String get horoscopeApproxNote =>
-      'சில பிறப்பு விவரங்கள் தோராயமானவை, எனவே இந்தப் பலனின் சில பகுதிகளும் தோராயமானவை.';
+  String get horoscopeApproxNote => 'சில பிறப்பு விவரங்கள் தோராயமானவை, எனவே இந்தப் பலனின் சில பகுதிகளும் தோராயமானவை.';
 
   @override
   String get changeSign => 'ராசியை மாற்று';
@@ -875,8 +852,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get remedyTitle => 'பரிகாரங்கள்';
 
   @override
-  String get remedySubtitle =>
-      'மந்திரங்கள், தானம், விரதம் மற்றும் பிற மரபு வழிபாடுகள்';
+  String get remedySubtitle => 'மந்திரங்கள், தானம், விரதம் மற்றும் பிற மரபு வழிபாடுகள்';
 
   @override
   String get remedyTabForYou => 'உங்களுக்காக';
@@ -1000,22 +976,19 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tarotSpreadThree => 'கடந்தகாலம், நிகழ்காலம், எதிர்காலம்';
 
   @override
-  String get tarotSpreadThreeInfo =>
-      'ஒரு சூழ்நிலை எப்படி வளர்ந்தது என்று சிந்திக்க மூன்று அட்டைகள்.';
+  String get tarotSpreadThreeInfo => 'ஒரு சூழ்நிலை எப்படி வளர்ந்தது என்று சிந்திக்க மூன்று அட்டைகள்.';
 
   @override
   String get tarotSpreadCeltic => 'செல்டிக் கிராஸ்';
 
   @override
-  String get tarotSpreadCelticInfo =>
-      'ஒரு கேள்வியை ஆழமாகப் பார்க்க பத்து அட்டை அமைப்பு.';
+  String get tarotSpreadCelticInfo => 'ஒரு கேள்வியை ஆழமாகப் பார்க்க பத்து அட்டை அமைப்பு.';
 
   @override
   String get tarotSpreadRelationship => 'உறவு';
 
   @override
-  String get tarotSpreadRelationshipInfo =>
-      'நீங்கள், மற்றவர், உங்களுக்கிடையிலான தொடர்பு பற்றிய ஐந்து அட்டைகள்.';
+  String get tarotSpreadRelationshipInfo => 'நீங்கள், மற்றவர், உங்களுக்கிடையிலான தொடர்பு பற்றிய ஐந்து அட்டைகள்.';
 
   @override
   String get tarotQuestionHint => 'உங்கள் கேள்வி (விருப்பத்திற்குரியது)';
@@ -1027,8 +1000,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tarotHistory => 'முந்தைய வாசிப்புகள்';
 
   @override
-  String get tarotNoHistory =>
-      'உங்கள் வாசிப்புகள் இங்கே இந்த போனில் மட்டுமே சேமிக்கப்படும்.';
+  String get tarotNoHistory => 'உங்கள் வாசிப்புகள் இங்கே இந்த போனில் மட்டுமே சேமிக்கப்படும்.';
 
   @override
   String get tarotClearHistory => 'வரலாற்றை அழி';
@@ -1094,8 +1066,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get journalTitle => 'நாட்குறிப்பும் மனநிலையும்';
 
   @override
-  String get journalSubtitle =>
-      'சந்திரச் சுழற்சியுடன் உங்கள் மனநிலையைக் கவனியுங்கள்';
+  String get journalSubtitle => 'சந்திரச் சுழற்சியுடன் உங்கள் மனநிலையைக் கவனியுங்கள்';
 
   @override
   String get journalToday => 'இன்று நீங்கள் எப்படி இருக்கிறீர்கள்?';
@@ -1122,8 +1093,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get journalSaved => 'சேமிக்கப்பட்டது';
 
   @override
-  String get journalEmpty =>
-      'இன்னும் பதிவுகள் இல்லை. காலப்போக்கில் முறைகளைக் காண தினமும் ஒன்றைச் சேருங்கள்.';
+  String get journalEmpty => 'இன்னும் பதிவுகள் இல்லை. காலப்போக்கில் முறைகளைக் காண தினமும் ஒன்றைச் சேருங்கள்.';
 
   @override
   String get journalHistory => 'வரலாறு';
@@ -1172,15 +1142,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get journalSky => 'அன்றைய வானம்';
 
   @override
-  String get journalPrivacy =>
-      'நீங்கள் ஏற்றுமதி செய்யாத வரை உங்கள் நாட்குறிப்பு இந்த போனை விட்டு வெளியே செல்லாது.';
+  String get journalPrivacy => 'நீங்கள் ஏற்றுமதி செய்யாத வரை உங்கள் நாட்குறிப்பு இந்த போனை விட்டு வெளியே செல்லாது.';
 
   @override
   String get wellnessMeditationTitle => 'தியானமும் சுவாசமும்';
 
   @override
-  String get wellnessMeditationSubtitle =>
-      'வழிகாட்டப்பட்ட சுவாசம், நாடி சோதனம், ஓம் ஜபம்';
+  String get wellnessMeditationSubtitle => 'வழிகாட்டப்பட்ட சுவாசம், நாடி சோதனம், ஓம் ஜபம்';
 
   @override
   String get wellnessBreathIn => 'மூச்சை உள்ளிழுங்கள்';
@@ -1218,8 +1186,7 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get wellnessSessionDone =>
-      'அமர்வு முடிந்தது. நீங்கள் எப்படி உணர்கிறீர்கள் என்று கவனியுங்கள்.';
+  String get wellnessSessionDone => 'அமர்வு முடிந்தது. நீங்கள் எப்படி உணர்கிறீர்கள் என்று கவனியுங்கள்.';
 
   @override
   String get wellnessPatternBox => 'பாக்ஸ் சுவாசம் (4-4-4-4)';
@@ -1262,12 +1229,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get palmTitle => 'கைரேகை வழிகாட்டி';
 
   @override
-  String get palmSubtitle =>
-      'உங்கள் கையை நீங்களே படிக்க ஒரு வழிகாட்டப்பட்ட, நேர்மையான முறை';
+  String get palmSubtitle => 'உங்கள் கையை நீங்களே படிக்க ஒரு வழிகாட்டப்பட்ட, நேர்மையான முறை';
 
   @override
-  String get palmAddPhoto =>
-      'உங்கள் உள்ளங்கையின் புகைப்படத்தைச் சேருங்கள் (விருப்பத்திற்குரியது)';
+  String get palmAddPhoto => 'உங்கள் உள்ளங்கையின் புகைப்படத்தைச் சேருங்கள் (விருப்பத்திற்குரியது)';
 
   @override
   String get palmTakePhoto => 'கேமரா';
@@ -1334,14 +1299,7 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String advShadbalaParts(
-    String sthana,
-    String dig,
-    String kala,
-    String chesta,
-    String nai,
-    String drik,
-  ) {
+  String advShadbalaParts(String sthana, String dig, String kala, String chesta, String nai, String drik) {
     return 'ஸ்தான $sthana · திக் $dig · கால $kala · சேஷ்டா $chesta · நைசர்கிக $nai · த்ருக் $drik';
   }
 
@@ -1474,8 +1432,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiAskTitle => 'த்ருஷ்டியிடம் கேளுங்கள்';
 
   @override
-  String get aiAskSubtitle =>
-      'உங்கள் ஜாதகம் பற்றிய கேள்விகள், அதன் கணக்கீடுகளிலிருந்து பதில்கள்';
+  String get aiAskSubtitle => 'உங்கள் ஜாதகம் பற்றிய கேள்விகள், அதன் கணக்கீடுகளிலிருந்து பதில்கள்';
 
   @override
   String get aiAskHint => 'தொழில், படிப்பு, உறவுகள் பற்றிக் கேளுங்கள்…';
@@ -1496,8 +1453,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiImproveWith => 'இதை மேலும் துல்லியமாக்க';
 
   @override
-  String get aiNoProfile =>
-      'ஜாதகம் பற்றிக் கேள்வி கேட்க பிறந்த தேதியுடன் ஒரு சுயவிவரத்தை உருவாக்குங்கள்.';
+  String get aiNoProfile => 'ஜாதகம் பற்றிக் கேள்வி கேட்க பிறந்த தேதியுடன் ஒரு சுயவிவரத்தை உருவாக்குங்கள்.';
 
   @override
   String aiProfileFor(String name) {
@@ -1536,8 +1492,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiSuggestCareer => 'தொழிலுக்கு என் ஜாதகம் எப்படி?';
 
   @override
-  String get aiSuggestPersonality =>
-      'என் ஜாதகம் என் இயல்பைப் பற்றி என்ன சொல்கிறது?';
+  String get aiSuggestPersonality => 'என் ஜாதகம் என் இயல்பைப் பற்றி என்ன சொல்கிறது?';
 
   @override
   String get aiSuggestPeriod => 'என் நடப்புத் தசையின் பொருள் என்ன?';
@@ -1552,8 +1507,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiModelTitle => 'போனில் இயங்கும் AI மாதிரி';
 
   @override
-  String get aiModelSubtitle =>
-      'AI மாதிரியைப் பதிவிறக்கு, பயன்படுத்து அல்லது நீக்கு';
+  String get aiModelSubtitle => 'AI மாதிரியைப் பதிவிறக்கு, பயன்படுத்து அல்லது நீக்கு';
 
   @override
   String get aiModelIntro =>
@@ -1608,8 +1562,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiMemoryTitle => 'AI நினைவகம்';
 
   @override
-  String get aiMemorySubtitle =>
-      'த்ருஷ்டி நினைவில் வைத்திருப்பதைப் பார்க்க அல்லது நீக்க';
+  String get aiMemorySubtitle => 'த்ருஷ்டி நினைவில் வைத்திருப்பதைப் பார்க்க அல்லது நீக்க';
 
   @override
   String get aiMemoryEmpty => 'இன்னும் எதுவும் நினைவில் வைக்கப்படவில்லை.';
@@ -1634,8 +1587,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aiClearAll => 'அனைத்து AI நினைவகத்தையும் அழி';
 
   @override
-  String get aiClearConfirm =>
-      'இது நினைவில் வைக்கப்பட்ட கேள்விகளையும் குறிப்புகளையும் இந்த போனிலிருந்து நீக்கும்.';
+  String get aiClearConfirm => 'இது நினைவில் வைக்கப்பட்ட கேள்விகளையும் குறிப்புகளையும் இந்த போனிலிருந்து நீக்கும்.';
 
   @override
   String get aiCancel => 'ரத்து செய்';
@@ -1650,16 +1602,14 @@ class AppLocalizationsTa extends AppLocalizations {
   String get rectTitle => 'பிறந்த நேரத் திருத்தம்';
 
   @override
-  String get rectSubtitle =>
-      'வாழ்க்கை நிகழ்வுகளைக் கொண்டு உறுதியற்ற பிறந்த நேரத்தை மதிப்பிடுதல்';
+  String get rectSubtitle => 'வாழ்க்கை நிகழ்வுகளைக் கொண்டு உறுதியற்ற பிறந்த நேரத்தை மதிப்பிடுதல்';
 
   @override
   String get rectIntro =>
       'உங்கள் பிறந்த நேரம் தோராயமாக மட்டுமே தெரிந்தால், மரபுத் தசை மற்றும் கோசார விதிகளைப் பயன்படுத்தி ஒரு வரம்பில் எந்த நேரங்கள் உங்கள் முக்கிய வாழ்க்கை நிகழ்வுகளுடன் சிறப்பாகப் பொருந்துகின்றன என்று த்ருஷ்டி சரிபார்க்கலாம்.';
 
   @override
-  String get rectNeedsDatePlace =>
-      'திருத்தத்திற்கு இந்தச் சுயவிவரத்தில் பிறந்த தேதியும் பிறந்த இடமும் தேவை.';
+  String get rectNeedsDatePlace => 'திருத்தத்திற்கு இந்தச் சுயவிவரத்தில் பிறந்த தேதியும் பிறந்த இடமும் தேவை.';
 
   @override
   String get rectChooseProfile => 'சுயவிவரம்';
@@ -1732,8 +1682,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'திருத்தம் என்பது மரபு விதிகளை அடிப்படையாகக் கொண்ட மதிப்பீடு, அளவீடு அல்ல. வெவ்வேறு ஜோதிடர்கள் வெவ்வேறு முறைகளைப் பயன்படுத்தி வெவ்வேறு நேரங்களுக்கு வரலாம். பதிவுசெய்யப்பட்ட பிறந்த நேரம் (மருத்துவமனை அல்லது குடும்பப் பதிவுகள்) இருந்தால் அதையே முன்னுரிமையாகக் கொள்ளுங்கள்.';
 
   @override
-  String get rectNoMatch =>
-      'இந்த நேரத்தில் இந்த நிகழ்வுக்குக் காரணங்கள் எதுவும் கிடைக்கவில்லை.';
+  String get rectNoMatch => 'இந்த நேரத்தில் இந்த நிகழ்வுக்குக் காரணங்கள் எதுவும் கிடைக்கவில்லை.';
 
   @override
   String get rectEventMarriage => 'திருமணம்';
@@ -1769,8 +1718,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get festTitle => 'பண்டிகைகளும் விரதங்களும்';
 
   @override
-  String get festSubtitle =>
-      'உங்கள் இடத்திற்கான பண்டிகைகள், ஏகாதசிகள், சங்கராந்திகள், கிரகணங்கள்';
+  String get festSubtitle => 'உங்கள் இடத்திற்கான பண்டிகைகள், ஏகாதசிகள், சங்கராந்திகள், கிரகணங்கள்';
 
   @override
   String get festAll => 'அனைத்தும்';
@@ -1791,8 +1739,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get festNoEventsDay => 'இந்த நாளில் பண்டிகையோ விரதமோ இல்லை.';
 
   @override
-  String get festNoEventsMonth =>
-      'இந்த மாதத்தில் இந்த வடிகட்டியுடன் எதுவும் பொருந்தவில்லை.';
+  String get festNoEventsMonth => 'இந்த மாதத்தில் இந்த வடிகட்டியுடன் எதுவும் பொருந்தவில்லை.';
 
   @override
   String get festHowDecided => 'இந்தத் தேதி எப்படி முடிவு செய்யப்பட்டது';
@@ -1888,8 +1835,7 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get muhuratRangeTooLong =>
-      'அதிகபட்சம் 180 நாட்கள் வரம்பைத் தேர்ந்தெடுங்கள்.';
+  String get muhuratRangeTooLong => 'அதிகபட்சம் 180 நாட்கள் வரம்பைத் தேர்ந்தெடுங்கள்.';
 
   @override
   String get muhuratRulesMet => 'பூர்த்தியான விதிகள்';
@@ -2010,32 +1956,25 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get wellnessThemeSun =>
-      'நிலையான தன்னம்பிக்கை; சூரிய உதய நேரப் பயிற்சியை முயற்சிக்கவும்';
+  String get wellnessThemeSun => 'நிலையான தன்னம்பிக்கை; சூரிய உதய நேரப் பயிற்சியை முயற்சிக்கவும்';
 
   @override
-  String get wellnessThemeMoon =>
-      'அமைதியும் இதமும்; 4-7-8 சுவாசத்தை முயற்சிக்கவும்';
+  String get wellnessThemeMoon => 'அமைதியும் இதமும்; 4-7-8 சுவாசத்தை முயற்சிக்கவும்';
 
   @override
-  String get wellnessThemeMars =>
-      'ஆற்றலும் துணிவும்; பாக்ஸ் சுவாசத்தை முயற்சிக்கவும்';
+  String get wellnessThemeMars => 'ஆற்றலும் துணிவும்; பாக்ஸ் சுவாசத்தை முயற்சிக்கவும்';
 
   @override
-  String get wellnessThemeMercury =>
-      'தெளிவும் கவனமும்; நாடி சோதனத்தை முயற்சிக்கவும்';
+  String get wellnessThemeMercury => 'தெளிவும் கவனமும்; நாடி சோதனத்தை முயற்சிக்கவும்';
 
   @override
-  String get wellnessThemeJupiter =>
-      'நன்றியுணர்வும் ஞானமும்; ஓம் ஜபத்தை முயற்சிக்கவும்';
+  String get wellnessThemeJupiter => 'நன்றியுணர்வும் ஞானமும்; ஓம் ஜபத்தை முயற்சிக்கவும்';
 
   @override
-  String get wellnessThemeVenus =>
-      'மென்மையும் இணக்கமும்; 4-7-8 சுவாசத்தை முயற்சிக்கவும்';
+  String get wellnessThemeVenus => 'மென்மையும் இணக்கமும்; 4-7-8 சுவாசத்தை முயற்சிக்கவும்';
 
   @override
-  String get wellnessThemeSaturn =>
-      'பொறுமையும் நிலைத்தன்மையும்; சற்று நீண்ட பாக்ஸ் சுவாச அமர்வை முயற்சிக்கவும்';
+  String get wellnessThemeSaturn => 'பொறுமையும் நிலைத்தன்மையும்; சற்று நீண்ட பாக்ஸ் சுவாச அமர்வை முயற்சிக்கவும்';
 
   @override
   String untilDate(String date) {
@@ -2176,8 +2115,7 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get numeroTapForDetails =>
-      'கணக்கிடும் முறையையும் பொருளையும் காணத் தட்டுங்கள்';
+  String get numeroTapForDetails => 'கணக்கிடும் முறையையும் பொருளையும் காணத் தட்டுங்கள்';
 
   @override
   String get numeroHowCalculated => 'கணக்கிடும் முறை';
@@ -2227,8 +2165,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get numeroPartVowels => 'உயிரெழுத்துகள் (A, E, I, O, U)';
 
   @override
-  String get numeroPartConsonants =>
-      'மெய்யெழுத்துகள் (Y மெய்யெழுத்தாகக் கணக்கிடப்படுகிறது)';
+  String get numeroPartConsonants => 'மெய்யெழுத்துகள் (Y மெய்யெழுத்தாகக் கணக்கிடப்படுகிறது)';
 
   @override
   String get numeroLetterTablePy => 'பித்தாகரஸ் முறை எழுத்து மதிப்புகள்';
@@ -2257,12 +2194,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get numeroPairTitle => 'மூல எண் – விதி எண் இணை';
 
   @override
-  String numeroPairNumbers(
-    int mulank,
-    String mulankPlanet,
-    int bhagyank,
-    String bhagyankPlanet,
-  ) {
+  String numeroPairNumbers(int mulank, String mulankPlanet, int bhagyank, String bhagyankPlanet) {
     return 'மூல எண் $mulank ($mulankPlanet), விதி எண் $bhagyank ($bhagyankPlanet)';
   }
 
@@ -2296,8 +2228,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get numeroLoShuTitle => 'லோ ஷு கட்டம்';
 
   @override
-  String get numeroLoShuAddMB =>
-      'மூல எண், விதி எண்ணைச் சேர் (வழக்கமான இந்திய முறை)';
+  String get numeroLoShuAddMB => 'மூல எண், விதி எண்ணைச் சேர் (வழக்கமான இந்திய முறை)';
 
   @override
   String numeroLoShuDigits(String digits) {
@@ -2320,8 +2251,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get numeroLoShuNoMissing => '1 முதல் 9 வரை எல்லா எண்களும் உள்ளன.';
 
   @override
-  String get numeroLoShuNoPlanes =>
-      'எந்த வரிசையும் நெடுவரிசையும் மூலைவிட்டமும் முழுமையாக இல்லை.';
+  String get numeroLoShuNoPlanes => 'எந்த வரிசையும் நெடுவரிசையும் மூலைவிட்டமும் முழுமையாக இல்லை.';
 
   @override
   String get numeroCompoundTitle => 'கல்தேய கூட்டு எண்';
@@ -2397,8 +2327,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get kootaNotApplies => 'பொருந்தாது';
 
   @override
-  String get kootaTapHint =>
-      'இது என்ன, உங்கள் முடிவு, ஏன் என்பதைப் பார்க்க எந்த வரியையும் தட்டவும்.';
+  String get kootaTapHint => 'இது என்ன, உங்கள் முடிவு, ஏன் என்பதைப் பார்க்க எந்த வரியையும் தட்டவும்.';
 
   @override
   String get compConclusion => 'உங்களுக்கு இதன் பொருள்';
@@ -2429,8 +2358,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'படி 1/3: உங்கள் ஆள்காட்டி விரலின் அடிப்பகுதியைத் தட்டவும் (அது உள்ளங்கையுடன் சேரும் இடம்).';
 
   @override
-  String get palmTapLittle =>
-      'படி 2/3: உங்கள் சுண்டு விரலின் அடிப்பகுதியைத் தட்டவும்.';
+  String get palmTapLittle => 'படி 2/3: உங்கள் சுண்டு விரலின் அடிப்பகுதியைத் தட்டவும்.';
 
   @override
   String get palmTapWrist => 'படி 3/3: உங்கள் மணிக்கட்டின் நடுவில் தட்டவும்.';
@@ -2458,8 +2386,7 @@ class AppLocalizationsTa extends AppLocalizations {
       'உங்கள் புகைப்படத்தின்படி இது இதுதான் என்று Drishti கருதுகிறது. இது தவறு என்று நீங்கள் நினைத்தால், வேறு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.';
 
   @override
-  String get palmDetecting =>
-      'புகைப்படத்தில் உங்கள் கையையும் உள்ளங்கை ரேகைகளையும் தேடுகிறது…';
+  String get palmDetecting => 'புகைப்படத்தில் உங்கள் கையையும் உள்ளங்கை ரேகைகளையும் தேடுகிறது…';
 
   @override
   String get palmHandNotFound =>
@@ -2479,8 +2406,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get childrenTitle => 'குழந்தைகள் (சந்தானம்)';
 
   @override
-  String get childrenSubtitle =>
-      'ஒருவருக்கோ தம்பதிக்கோ குழந்தைகளுக்கான குறிகளும் காலமும்';
+  String get childrenSubtitle => 'ஒருவருக்கோ தம்பதிக்கோ குழந்தைகளுக்கான குறிகளும் காலமும்';
 
   @override
   String get childrenIntro =>
@@ -2502,23 +2428,19 @@ class AppLocalizationsTa extends AppLocalizations {
   String get childrenMother => 'வருங்காலத் தாய்';
 
   @override
-  String get childrenNeedProfiles =>
-      'முதலில் பிறந்த தேதியுடன் ஒரு சுயவிவரத்தைச் சேர்க்கவும்.';
+  String get childrenNeedProfiles => 'முதலில் பிறந்த தேதியுடன் ஒரு சுயவிவரத்தைச் சேர்க்கவும்.';
 
   @override
-  String get childrenNeedTwo =>
-      'தம்பதியைப் படிக்க இரண்டாவது சுயவிவரத்தைச் சேர்க்கவும்.';
+  String get childrenNeedTwo => 'தம்பதியைப் படிக்க இரண்டாவது சுயவிவரத்தைச் சேர்க்கவும்.';
 
   @override
-  String get childrenAdultsOnly =>
-      'இந்த வாசிப்பு பெரியவர்களுக்கு மட்டுமே கிடைக்கும்.';
+  String get childrenAdultsOnly => 'இந்த வாசிப்பு பெரியவர்களுக்கு மட்டுமே கிடைக்கும்.';
 
   @override
   String get childrenWindows => 'குழந்தைகளுக்காக முறை குறிக்கும் காலங்கள்';
 
   @override
-  String get childrenSharedWindows =>
-      'உங்கள் இருவருக்கும் குறிக்கப்பட்ட காலங்கள்';
+  String get childrenSharedWindows => 'உங்கள் இருவருக்கும் குறிக்கப்பட்ட காலங்கள்';
 
   @override
   String get childrenApproxNote =>
@@ -2528,8 +2450,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get childrenTradTitle => 'பழைய நூல்களில் மகனும் மகளும்';
 
   @override
-  String get childrenTradSubtitle =>
-      'வரலாறு, அறிவியல், சட்டம். Drishti குழந்தையின் பாலினத்தை ஒருபோதும் கணிப்பதில்லை.';
+  String get childrenTradSubtitle => 'வரலாறு, அறிவியல், சட்டம். Drishti குழந்தையின் பாலினத்தை ஒருபோதும் கணிப்பதில்லை.';
 
   @override
   String get matchAdviceTitle => 'ஒட்டுமொத்த ஆலோசனை';
@@ -2544,8 +2465,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get matchAdviceSteps => 'நீங்கள் என்ன செய்யலாம்';
 
   @override
-  String get matchAdviceRemedies =>
-      'பாரம்பரியப் பரிகாரங்கள் (விருப்பத்துக்குரியவை)';
+  String get matchAdviceRemedies => 'பாரம்பரியப் பரிகாரங்கள் (விருப்பத்துக்குரியவை)';
 
   @override
   String get exitTitle => 'செயலியை மூடவா?';
@@ -2589,4 +2509,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get palmResetZoom => 'பெரிதாக்கத்தை நீக்கு';
+
+  @override
+  String get adPrivacyChoices => 'விளம்பர தனியுரிமைத் தேர்வுகள்';
+
+  @override
+  String get adPrivacyChoicesInfo => 'தனிப்பயனாக்கிய விளம்பரங்களுக்கான உங்கள் ஒப்புதலைப் பார்க்கவும் அல்லது மாற்றவும்.';
 }

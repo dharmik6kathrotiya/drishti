@@ -152,7 +152,12 @@ class AdsService {
       await ConsentForm.loadAndShowConsentFormIfRequired((_) {});
       done.complete(await ConsentInformation.instance.canRequestAds());
     }, (_) async => done.complete(await ConsentInformation.instance.canRequestAds()));
-    return done.future.timeout(const Duration(seconds: 10), onTimeout: () => true);
+    // A slow network never counts as consent: fall back to what the SDK
+    // already knows (false until consent is known where it is required).
+    return done.future.timeout(
+      const Duration(seconds: 10),
+      onTimeout: () => ConsentInformation.instance.canRequestAds(),
+    );
   }
 
   void _loadInterstitial() {
@@ -259,7 +264,27 @@ class AdsService {
     );
   }
 
+  /// Call before opening another app (camera, gallery, share sheet): coming
+  /// back from it is part of the task, not a return to the app, so no
+  /// app-open ad is shown then.
+  void skipNextAppOpen() => _skipAppOpen = true;
+  bool _skipAppOpen = false;
+
+  /// Whether the law requires a way to change ad consent (EEA, UK and
+  /// similar); the Settings screen then shows "Ad privacy choices".
+  Future<bool> privacyOptionsRequired() async =>
+      supported &&
+      await ConsentInformation.instance.getPrivacyOptionsRequirementStatus() ==
+          PrivacyOptionsRequirementStatus.required;
+
+  /// Google's consent form, to review or change ad consent.
+  void showPrivacyOptions() => ConsentForm.showPrivacyOptionsForm((_) {});
+
   void _maybeShowAppOpen() {
+    if (_skipAppOpen) {
+      _skipAppOpen = false;
+      return;
+    }
     if (!enabled || _showingFullScreen) return;
     final now = DateTime.now();
     _rollDay(now);
