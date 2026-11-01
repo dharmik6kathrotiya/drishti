@@ -42,7 +42,24 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   bool _underThirteen = false;
   static const _pageCount = 5;
 
+  /// The user picked an astrology system themselves.
+  bool _systemChosen = false;
+
+  /// Western is recommended only for English phones set to a region other
+  /// than India; everyone else gets Vedic. Uses the phone's own region (the
+  /// app's language setting has none).
+  static bool get _westernFirst {
+    final device = WidgetsBinding.instance.platformDispatcher.locale;
+    return device.languageCode == 'en' && device.countryCode != null && device.countryCode != 'IN';
+  }
+
   void _next() {
+    // The system step opens with the recommended option already selected.
+    if (_page == 1 && !_systemChosen) {
+      ref
+          .read(settingsProvider.notifier)
+          .updateCalc((c) => c.copyWith(system: _westernFirst ? AstroSystem.western : AstroSystem.vedic));
+    }
     if (_page < _pageCount - 1) {
       _pages.nextPage(duration: const Duration(milliseconds: 280), curve: Curves.easeOut);
     }
@@ -158,20 +175,26 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                             value: AstroSystem.vedic,
                             label: l.systemVedic,
                             description: l.systemVedicInfo,
-                            recommended: deviceLang != 'en' || Localizations.localeOf(context).countryCode == 'IN',
+                            recommended: !_westernFirst,
                           ),
                           selected: settings.calc.system == AstroSystem.vedic,
-                          onTap: () => notifier.updateCalc((c) => c.copyWith(system: AstroSystem.vedic)),
+                          onTap: () {
+                            _systemChosen = true;
+                            notifier.updateCalc((c) => c.copyWith(system: AstroSystem.vedic));
+                          },
                         ),
                         OptionCard<AstroSystem>(
                           option: PickOption(
                             value: AstroSystem.western,
                             label: l.systemWestern,
                             description: l.systemWesternInfo,
-                            recommended: deviceLang == 'en' && Localizations.localeOf(context).countryCode != 'IN',
+                            recommended: _westernFirst,
                           ),
                           selected: settings.calc.system == AstroSystem.western,
-                          onTap: () => notifier.updateCalc((c) => c.copyWith(system: AstroSystem.western)),
+                          onTap: () {
+                            _systemChosen = true;
+                            notifier.updateCalc((c) => c.copyWith(system: AstroSystem.western));
+                          },
                         ),
                         const SizedBox(height: 8),
                         Text(l.changeLaterHint, style: theme.textTheme.bodySmall),

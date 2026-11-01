@@ -2499,10 +2499,11 @@ class AppLocalizationsMr extends AppLocalizations {
       'जन्मवेळ नसल्यास स्थाने चंद्र राशीपासून मोजली जातात आणि चंद्राची स्थिती अंदाजे असते.';
 
   @override
-  String get childrenTradTitle => 'मुलगा की मुलगी? जुने ग्रंथ काय सांगतात';
+  String get childrenTradTitle => 'जुन्या ग्रंथांतील पुत्र आणि कन्या';
 
   @override
-  String get childrenTradSubtitle => 'इतिहास आणि विज्ञान, कोणतेही भाकीत नाही';
+  String get childrenTradSubtitle =>
+      'इतिहास, विज्ञान आणि कायदा. Drishti कधीही बाळाच्या लिंगाचा अंदाज सांगत नाही.';
 
   @override
   String get matchAdviceTitle => 'एकूण सल्ला';

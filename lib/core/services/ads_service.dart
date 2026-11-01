@@ -90,7 +90,11 @@ class AdsService {
   RewardedAd? _rewarded;
   DateTime? _rewardedAt;
 
-  bool get supported => !kIsWeb && (Platform.isAndroid || Platform.isIOS);
+  /// Store screenshots are taken with `--dart-define=SCREENSHOT_MODE=true`,
+  /// which shows no ads at all.
+  static const _screenshotMode = bool.fromEnvironment('SCREENSHOT_MODE');
+
+  bool get supported => !_screenshotMode && !kIsWeb && (Platform.isAndroid || Platform.isIOS);
   bool get enabled => supported && _initialised && _canRequest;
 
   /// Becomes true once ads may be requested, so slots built before the SDK

@@ -2525,10 +2525,11 @@ class AppLocalizationsTa extends AppLocalizations {
       'பிறந்த நேரம் இல்லாததால், பாவங்கள் சந்திர ராசியிலிருந்து எண்ணப்படுகின்றன; சந்திரனின் நிலை தோராயமானது.';
 
   @override
-  String get childrenTradTitle => 'ஆணா பெண்ணா? பழைய நூல்கள் என்ன சொல்கின்றன';
+  String get childrenTradTitle => 'பழைய நூல்களில் மகனும் மகளும்';
 
   @override
-  String get childrenTradSubtitle => 'வரலாறும் அறிவியலும், கணிப்பு இல்லாமல்';
+  String get childrenTradSubtitle =>
+      'வரலாறு, அறிவியல், சட்டம். Drishti குழந்தையின் பாலினத்தை ஒருபோதும் கணிப்பதில்லை.';
 
   @override
   String get matchAdviceTitle => 'ஒட்டுமொத்த ஆலோசனை';

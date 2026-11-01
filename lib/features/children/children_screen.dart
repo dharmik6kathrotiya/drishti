@@ -310,8 +310,13 @@ class ChildrenCoupleResult extends StatelessWidget {
               _bullet('${father.name}: ${et.raw('children.tone.${c.father.tone}')}'),
               _bullet('${mother.name}: ${et.raw('children.tone.${c.mother.tone}')}'),
               if (c.nadiDosha) _bullet(et.raw('children.nadi')),
+              _heading(context, l.childrenWindows),
+              for (final (p, r) in [(father, c.father), (mother, c.mother)])
+                _bullet(
+                  '${p.name}: ${r.windows.isEmpty ? et.raw('children.noWindows') : _merge(r.windows.map((w) => (w.start, w.end))).map((w) => _range(context, w)).join('; ')}',
+                ),
               _heading(context, l.childrenSharedWindows),
-              if (shared.isEmpty) Text(et.raw('children.noWindows')),
+              if (shared.isEmpty) Text(et.raw('children.noShared')),
               for (final w in shared) _bullet(_range(context, w)),
               const SizedBox(height: 10),
               SourceNote(et.raw('children.health')),

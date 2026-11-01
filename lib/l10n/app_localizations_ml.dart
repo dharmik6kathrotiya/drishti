@@ -2521,10 +2521,11 @@ class AppLocalizationsMl extends AppLocalizations {
       'ജനന സമയമില്ലാതെ, ഭാവങ്ങൾ ചന്ദ്ര രാശിയിൽ നിന്നാണ് എണ്ണുന്നത്, ചന്ദ്രന്റെ സ്ഥാനം ഏകദേശമാണ്.';
 
   @override
-  String get childrenTradTitle => 'ആണോ പെണ്ണോ? പ്രാചീന ഗ്രന്ഥങ്ങൾ പറയുന്നത്';
+  String get childrenTradTitle => 'പ്രാചീന ഗ്രന്ഥങ്ങളിലെ പുത്രനും പുത്രിയും';
 
   @override
-  String get childrenTradSubtitle => 'ചരിത്രവും ശാസ്ത്രവും, പ്രവചനമില്ല';
+  String get childrenTradSubtitle =>
+      'ചരിത്രം, ശാസ്ത്രം, നിയമം. Drishti ഒരിക്കലും കുഞ്ഞിന്റെ ലിംഗം പ്രവചിക്കുന്നില്ല.';
 
   @override
   String get matchAdviceTitle => 'മൊത്തത്തിലുള്ള ഉപദേശം';

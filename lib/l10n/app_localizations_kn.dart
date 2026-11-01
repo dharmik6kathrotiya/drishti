@@ -2506,11 +2506,11 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಜನ್ಮ ಸಮಯವಿಲ್ಲದೆ, ಭಾವಗಳನ್ನು ಚಂದ್ರ ರಾಶಿಯಿಂದ ಎಣಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಚಂದ್ರನ ಸ್ಥಾನ ಅಂದಾಜು.';
 
   @override
-  String get childrenTradTitle => 'ಗಂಡೋ ಹೆಣ್ಣೋ? ಹಳೆಯ ಗ್ರಂಥಗಳು ಏನು ಹೇಳುತ್ತವೆ';
+  String get childrenTradTitle => 'ಹಳೆಯ ಗ್ರಂಥಗಳಲ್ಲಿ ಮಗ ಮತ್ತು ಮಗಳು';
 
   @override
   String get childrenTradSubtitle =>
-      'ಇತಿಹಾಸ ಮತ್ತು ವಿಜ್ಞಾನ, ಯಾವುದೇ ಭವಿಷ್ಯ ಇಲ್ಲದೆ';
+      'ಇತಿಹಾಸ, ವಿಜ್ಞಾನ ಮತ್ತು ಕಾನೂನು. Drishti ಎಂದಿಗೂ ಮಗುವಿನ ಲಿಂಗವನ್ನು ಊಹಿಸುವುದಿಲ್ಲ.';
 
   @override
   String get matchAdviceTitle => 'ಒಟ್ಟಾರೆ ಸಲಹೆ';

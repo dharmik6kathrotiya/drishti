@@ -2497,11 +2497,11 @@ class AppLocalizationsHi extends AppLocalizations {
       'जन्म समय के बिना भाव चंद्र राशि से गिने जाते हैं और चंद्र की स्थिति अनुमानित होती है।';
 
   @override
-  String get childrenTradTitle => 'लड़का या लड़की? पुराने ग्रंथ क्या कहते हैं';
+  String get childrenTradTitle => 'पुराने ग्रंथों में पुत्र और पुत्री';
 
   @override
   String get childrenTradSubtitle =>
-      'इतिहास और विज्ञान, बिना किसी भविष्यवाणी के';
+      'इतिहास, विज्ञान और कानून। Drishti कभी भी शिशु के लिंग का अनुमान नहीं लगाता।';
 
   @override
   String get matchAdviceTitle => 'समग्र सलाह';

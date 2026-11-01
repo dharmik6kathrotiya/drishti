@@ -62,6 +62,7 @@ class MatchAdvice {
     final summary = TextRef(conclusion == 'weak' || conclusion == 'dosha' ? 'advice.v.$conclusion' : 'advice.v.ok', {
       'total': _fmt(r.total),
       'verdict': TextRef('match.verdict.$verdict'),
+      'manglik': groomManglik != brideManglik,
       'doshas': [for (final k in counted) TextRef('match.dosha.${k.doshaId}.name')],
     });
 

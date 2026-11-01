@@ -2505,10 +2505,11 @@ class AppLocalizationsTe extends AppLocalizations {
       'పుట్టిన సమయం లేకుండా, భావాలను చంద్ర రాశి నుండి లెక్కిస్తారు, చంద్రుడి స్థానం సుమారుగా ఉంటుంది.';
 
   @override
-  String get childrenTradTitle => 'అబ్బాయా, అమ్మాయా? పాత గ్రంథాలు ఏమి చెబుతాయి';
+  String get childrenTradTitle => 'పాత గ్రంథాల్లో కొడుకులు, కూతుళ్లు';
 
   @override
-  String get childrenTradSubtitle => 'చరిత్ర, సైన్స్, ఎలాంటి అంచనా లేకుండా';
+  String get childrenTradSubtitle =>
+      'చరిత్ర, సైన్స్, చట్టం. Drishti శిశువు లింగాన్ని ఎప్పుడూ అంచనా వేయదు.';
 
   @override
   String get matchAdviceTitle => 'మొత్తం సలహా';

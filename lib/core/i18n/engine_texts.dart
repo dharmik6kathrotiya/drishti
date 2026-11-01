@@ -535,16 +535,19 @@ const engineTextsEn = <String, String>{
 
   // Match: overall advice (Vedic)
   'advice.v.ok':
-      'According to this calculation the result is: {verdict}, {total} of 36, above the traditional minimum of '
-      '18, with no counted Nadi or Bhakoot dosha. By the traditional rules this match is approved.',
+      'According to this calculation the result is: {verdict}, {total} of 36, at or above the traditional '
+      'minimum of 18, with no counted Nadi or Bhakoot dosha. By the Guna Milan rules this match is approved.'
+      '{manglik? Only one of you has Manglik dosha, which many families weigh separately (see below).|}',
   'advice.v.dosha':
-      'The total of {total} of 36 is above the traditional minimum of 18, but {doshas|and} is counted: no '
+      'The total of {total} of 36 is at or above the traditional minimum of 18, but {doshas|and} is counted: no '
       'classical exception applies. Many astrologers treat this as serious and would not approve the match on '
-      'the points alone without studying both full charts.',
+      'the points alone without studying both full charts.'
+      '{manglik? Only one of you has Manglik dosha, which many families weigh separately (see below).|}',
   'advice.v.weak':
       'According to this calculation this match is below the traditional minimum: {total} of 36, under 18. By '
       'the strict rule tradition does not recommend it. Many astrologers still study both full charts before '
-      'deciding.',
+      'deciding.'
+      '{manglik? Only one of you has Manglik dosha, which many families weigh separately (see below).|}',
   'advice.s.nadi': 'Health and family plans: the most weighted part of the match is fully in your favour.',
   'advice.s.bhakoot': 'Family life, money and growing together go well by tradition.',
   'advice.s.gana': 'Your temperaments are alike, which makes daily life together easier.',
@@ -561,8 +564,8 @@ const engineTextsEn = <String, String>{
       'Bhakoot dosha (family welfare and money): {cancelled?a classical exception applies, so tradition treats '
       'it as cancelled.|counted, so tradition expects strain on family matters and finances.}',
   'advice.c.gana':
-      'Gana dosha (temperament): {cancelled?reduced by a classical exception, but|counted:} one of you is more '
-      'intense and the other gentler, which can lead to clashes.',
+      'Gana dosha (temperament): one of you is more intense and the other gentler, which can lead to clashes.'
+      '{cancelled? A classical exception reduces it.|}',
   'advice.c.maitri': 'Your ways of thinking differ, so understanding each other takes conscious effort.',
   'advice.c.yoni': 'Physical and emotional needs differ; tradition advises patience and care in intimacy.',
   'advice.c.tara': 'Your birth stars do not support each other; tradition advises looking after each other\'s health.',
@@ -667,6 +670,8 @@ const engineTextsEn = <String, String>{
   'children.kshetra.-1': 'Mother\'s traditional fertility indicator (Kshetra Sphuta): weak.',
   'children.nadi': 'Your Moon nakshatras share the same nadi (Nadi dosha), which tradition links with children.',
   'children.noWindows': 'The method marks no period for children in the next 12 years.',
+  'children.noShared':
+      'Your marked periods do not overlap in the next 12 years. Each person\'s own periods are shown above.',
   'children.health':
       'This is a traditional reading of the chart, not a medical assessment. Having children depends on health; '
       'a doctor can check what really matters, and treatment helps many couples.',

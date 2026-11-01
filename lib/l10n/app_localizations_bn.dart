@@ -2495,10 +2495,11 @@ class AppLocalizationsBn extends AppLocalizations {
       'জন্মসময় ছাড়া ভাবগুলি চন্দ্র রাশি থেকে গোনা হয় এবং চন্দ্রের অবস্থান আনুমানিক।';
 
   @override
-  String get childrenTradTitle => 'ছেলে না মেয়ে? প্রাচীন গ্রন্থ কী বলে';
+  String get childrenTradTitle => 'প্রাচীন গ্রন্থে পুত্র ও কন্যা';
 
   @override
-  String get childrenTradSubtitle => 'ইতিহাস ও বিজ্ঞান, কোনো ভবিষ্যদ্বাণী নয়';
+  String get childrenTradSubtitle =>
+      'ইতিহাস, বিজ্ঞান ও আইন। Drishti কখনো শিশুর লিঙ্গ সম্পর্কে ভবিষ্যদ্বাণী করে না।';
 
   @override
   String get matchAdviceTitle => 'সামগ্রিক পরামর্শ';
