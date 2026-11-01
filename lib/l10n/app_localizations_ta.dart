@@ -2455,7 +2455,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get palmSuggested =>
-      'உங்கள் வரைவிலிருந்து பரிந்துரைக்கப்பட்டது. உங்கள் கையுடன் ஒப்பிட்டுப் பார்த்து, பொருந்தவில்லை என்றால் மாற்றவும்.';
+      'உங்கள் புகைப்படத்தின்படி இது இதுதான் என்று Drishti கருதுகிறது. இது தவறு என்று நீங்கள் நினைத்தால், வேறு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.';
 
   @override
   String get palmDetecting =>

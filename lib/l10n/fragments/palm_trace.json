@@ -9,7 +9,6 @@
   "palmCantSee": "I can't see this line",
   "palmUseTracing": "Use my tracing",
   "palmTraceNote": "Drishti suggests the hand points and lines it finds in your photo. They can be wrong, so check each one and redraw any that does not match. The photo stays on your phone. Palmistry is a symbolic tradition, not a prediction.",
-  "palmSuggested": "Suggested from your tracing. Compare it with your hand and change it if it does not match.",
   "@palmTraceLine": {
     "description": "Instruction to trace one palm line; {line} is the line's name.",
     "placeholders": {

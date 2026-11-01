@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import '../../../core/content/palmistry/palmistry_content.dart';
+import '../../../core/services/ads_service.dart';
 import '../../../l10n/app_localizations.dart';
 import '../../../ui/widgets/common.dart';
 import 'palm_diagram.dart';
@@ -45,16 +46,14 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
     final result = await Navigator.of(context)
         .push<Map<String, int?>>(MaterialPageRoute(builder: (_) => PalmTraceScreen(photoPath: _photoPath!)));
     if (result == null || !mounted) return;
-    final ids = [for (final q in palmistryFor(Localizations.localeOf(context).languageCode).questions) q.id];
     setState(() {
       for (final e in result.entries) {
         if (e.value == null) continue;
         _answers[e.key] = e.value!;
         _suggested.add(e.key);
       }
-      // Straight to the first question the photo could not answer.
-      _skipAnswered = true;
-      _step = _nextStep(0, ids.length, ids);
+      // Every step is shown, with the photo's answers already selected.
+      _step = 1;
     });
   }
 
@@ -161,7 +160,25 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
           ),
           const SizedBox(height: 8),
           Text(q.help, style: theme.textTheme.bodyMedium),
-          if (_suggested.contains(q.id)) ...[const SizedBox(height: 8), SourceNote(l.palmSuggested)],
+          if (_suggested.contains(q.id)) ...[
+            const SizedBox(height: 10),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.primaryContainer.withValues(alpha: 0.35),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: theme.colorScheme.primary.withValues(alpha: 0.6)),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Icons.auto_awesome, size: 20, color: theme.colorScheme.primary),
+                  const SizedBox(width: 10),
+                  Expanded(child: Text(l.palmSuggested, style: theme.textTheme.bodyMedium)),
+                ],
+              ),
+            ),
+          ],
           const SizedBox(height: 12),
           RadioGroup<int>(
             groupValue: selected,
@@ -189,6 +206,8 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
               ),
             ],
           ),
+          const SizedBox(height: 28),
+          const NativeSlot(medium: false),
         ],
       );
     } else {
@@ -231,6 +250,8 @@ class _PalmistryScreenState extends State<PalmistryScreen> {
                 ),
               ),
           SourceNote(texts.closing),
+          const SizedBox(height: 16),
+          const NativeSlot(),
           const SizedBox(height: 16),
           OutlinedButton.icon(
             icon: const Icon(Icons.refresh),

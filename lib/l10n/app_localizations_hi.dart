@@ -2430,7 +2430,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get palmSuggested =>
-      'आपकी खींची रेखा से सुझाया गया। इसे अपने हाथ से मिलाएँ और मेल न खाए तो बदल दें।';
+      'आपकी फ़ोटो के आधार पर Drishti को लगता है कि यह यही है। अगर आपको यह गलत लगे, तो कृपया दूसरा विकल्प चुनें।';
 
   @override
   String get palmDetecting =>

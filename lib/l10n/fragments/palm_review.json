@@ -15,5 +15,6 @@
   },
   "palmEnhance": "Make lines clearer",
   "palmZoomHint": "Pinch with two fingers to zoom. Tap the contrast button at the top to make fine lines easier to see.",
-  "palmResetZoom": "Reset zoom"
+  "palmResetZoom": "Reset zoom",
+  "palmSuggested": "Drishti thinks it is this, from your photo. If you think it is wrong, please choose another option."
 }

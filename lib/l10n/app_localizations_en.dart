@@ -2439,7 +2439,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get palmSuggested =>
-      'Suggested from your tracing. Compare it with your hand and change it if it does not match.';
+      'Drishti thinks it is this, from your photo. If you think it is wrong, please choose another option.';
 
   @override
   String get palmDetecting =>

@@ -2438,7 +2438,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get palmSuggested =>
-      'మీ గీత నుండి సూచించబడింది. మీ చేతితో పోల్చి చూసి, సరిపోకపోతే మార్చండి.';
+      'మీ ఫోటో ఆధారంగా ఇది ఇదే అని Drishti భావిస్తోంది. ఇది తప్పు అని మీకు అనిపిస్తే, దయచేసి వేరే ఎంపికను ఎంచుకోండి.';
 
   @override
   String get palmDetecting => 'ఫోటోలో మీ చేతిని, అరచేతి రేఖలను వెతుకుతోంది…';

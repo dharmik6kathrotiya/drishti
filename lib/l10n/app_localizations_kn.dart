@@ -2440,7 +2440,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get palmSuggested =>
-      'ನೀವು ಎಳೆದ ರೇಖೆಯಿಂದ ಸೂಚಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಕೈಯೊಂದಿಗೆ ಹೋಲಿಸಿ, ಹೊಂದಿಕೆಯಾಗದಿದ್ದರೆ ಬದಲಾಯಿಸಿ.';
+      'ನಿಮ್ಮ ಫೋಟೋ ಆಧಾರದಲ್ಲಿ ಇದು ಇದೇ ಎಂದು Drishti ಭಾವಿಸುತ್ತದೆ. ಇದು ತಪ್ಪು ಎನಿಸಿದರೆ, ದಯವಿಟ್ಟು ಬೇರೆ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ.';
 
   @override
   String get palmDetecting =>

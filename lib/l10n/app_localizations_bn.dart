@@ -2430,7 +2430,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get palmSuggested =>
-      'আপনার আঁকা রেখা থেকে প্রস্তাবিত। নিজের হাতের সঙ্গে মিলিয়ে দেখুন, না মিললে বদলে দিন।';
+      'আপনার ছবি দেখে Drishti মনে করে এটি এই রকম। আপনার ভুল মনে হলে অনুগ্রহ করে অন্য বিকল্প বেছে নিন।';
 
   @override
   String get palmDetecting => 'ছবিতে আপনার হাত ও হাতের রেখাগুলো খোঁজা হচ্ছে…';
