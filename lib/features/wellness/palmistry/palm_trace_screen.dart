@@ -179,7 +179,11 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
       'heart': line('heart') == null ? null : PalmMeasure.heart(f, line('heart')!).option,
       'head': line('head') == null ? null : PalmMeasure.head(f, line('head')!, life: life).option,
       'life': life == null ? null : PalmMeasure.life(f, life).option,
-      'fate': PalmMeasure.fate(f, line('fate'), life: life).option,
+      // A fate line the detector simply missed is not reported as absent;
+      // only the user's own "I can't see this line" says that.
+      'fate': line('fate') == null && !_skipped.contains('fate')
+          ? null
+          : PalmMeasure.fate(f, line('fate'), life: life).option,
     };
     Navigator.of(context).pop(out);
   }
