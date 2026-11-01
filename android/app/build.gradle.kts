@@ -18,7 +18,7 @@ plugins {
 }
 
 android {
-    namespace = "app.drishti.drishti"
+    namespace = "com.kaal.drishti"
     // permission_handler_android requires compiling against SDK 37.
     compileSdk = 37
     ndkVersion = flutter.ndkVersion
@@ -31,7 +31,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "app.drishti"
+        applicationId = "com.kaal.drishti"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 24

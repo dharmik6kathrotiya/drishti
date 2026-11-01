@@ -10,7 +10,21 @@ import 'palmistry_te.dart';
 /// Guided, honest self-reading of the palm. A photo can pre-fill the line
 /// questions (see PalmLineDetector), but the user confirms every answer:
 /// the user looks at their own hand (or a photo of it) and answers questions.
-enum PalmArea { hand, heartLine, headLine, lifeLine, fateLine, mounts, fingers, thumb }
+enum PalmArea {
+  hand,
+  heartLine,
+  headLine,
+  lifeLine,
+  fateLine,
+  sunLine,
+  mercuryLine,
+  marriageLines,
+  girdle,
+  bracelets,
+  mounts,
+  fingers,
+  thumb,
+}
 
 class PalmOption {
   const PalmOption(this.label, this.meaning);

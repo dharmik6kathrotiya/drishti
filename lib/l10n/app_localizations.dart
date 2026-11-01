@@ -4639,6 +4639,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Change'**
   String get palmChange;
+
+  /// No description provided for @palmEnhance.
+  ///
+  /// In en, this message translates to:
+  /// **'Make lines clearer'**
+  String get palmEnhance;
+
+  /// No description provided for @palmZoomHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Pinch with two fingers to zoom. Tap the contrast button at the top to make fine lines easier to see.'**
+  String get palmZoomHint;
+
+  /// No description provided for @palmResetZoom.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset zoom'**
+  String get palmResetZoom;
 }
 
 class _AppLocalizationsDelegate

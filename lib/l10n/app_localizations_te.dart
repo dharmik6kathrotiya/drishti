@@ -2557,4 +2557,14 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get palmChange => 'మార్చండి';
+
+  @override
+  String get palmEnhance => 'రేఖలను స్పష్టంగా చూపించు';
+
+  @override
+  String get palmZoomHint =>
+      'జూమ్ చేయడానికి రెండు వేళ్లతో విస్తరించండి. సన్నని రేఖలు సులభంగా కనిపించడానికి పైన ఉన్న కాంట్రాస్ట్ బటన్ నొక్కండి.';
+
+  @override
+  String get palmResetZoom => 'జూమ్ తీసివేయి';
 }

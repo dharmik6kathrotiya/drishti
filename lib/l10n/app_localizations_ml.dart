@@ -2573,4 +2573,14 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get palmChange => 'മാറ്റുക';
+
+  @override
+  String get palmEnhance => 'രേഖകൾ വ്യക്തമാക്കുക';
+
+  @override
+  String get palmZoomHint =>
+      'സൂം ചെയ്യാൻ രണ്ട് വിരലുകൾ കൊണ്ട് വിടർത്തുക. നേർത്ത രേഖകൾ എളുപ്പം കാണാൻ മുകളിലെ കോൺട്രാസ്റ്റ് ബട്ടൺ തൊടുക.';
+
+  @override
+  String get palmResetZoom => 'സൂം മാറ്റുക';
 }

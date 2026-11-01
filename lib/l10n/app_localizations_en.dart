@@ -2557,4 +2557,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get palmChange => 'Change';
+
+  @override
+  String get palmEnhance => 'Make lines clearer';
+
+  @override
+  String get palmZoomHint =>
+      'Pinch with two fingers to zoom. Tap the contrast button at the top to make fine lines easier to see.';
+
+  @override
+  String get palmResetZoom => 'Reset zoom';
 }

@@ -5,5 +5,8 @@
   "palmFixLine": "रेषा दुरुस्त करा",
   "palmDone": "झाले",
   "palmFromPhoto": "तुमच्या फोटोवरून",
-  "palmChange": "बदला"
+  "palmChange": "बदला",
+  "palmEnhance": "रेषा स्पष्ट दाखवा",
+  "palmZoomHint": "झूम करण्यासाठी दोन बोटांनी पसरवा. बारीक रेषा सहज दिसण्यासाठी वरचे कॉन्ट्रास्ट बटण दाबा.",
+  "palmResetZoom": "झूम काढा"
 }

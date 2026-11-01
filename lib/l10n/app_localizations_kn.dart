@@ -2559,4 +2559,14 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get palmChange => 'ಬದಲಿಸಿ';
+
+  @override
+  String get palmEnhance => 'ರೇಖೆಗಳನ್ನು ಸ್ಪಷ್ಟಗೊಳಿಸಿ';
+
+  @override
+  String get palmZoomHint =>
+      'ಜೂಮ್ ಮಾಡಲು ಎರಡು ಬೆರಳುಗಳಿಂದ ಹಿಗ್ಗಿಸಿ. ಸೂಕ್ಷ್ಮ ರೇಖೆಗಳು ಸುಲಭವಾಗಿ ಕಾಣಲು ಮೇಲಿನ ಕಾಂಟ್ರಾಸ್ಟ್ ಬಟನ್ ಒತ್ತಿ.';
+
+  @override
+  String get palmResetZoom => 'ಜೂಮ್ ತೆಗೆಯಿರಿ';
 }

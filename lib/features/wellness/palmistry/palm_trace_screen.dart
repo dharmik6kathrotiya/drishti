@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
@@ -50,6 +51,26 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
   /// One line is being redrawn from the review.
   bool _fixing = false;
 
+  /// The 21 hand points found, drawn as the hand's outline.
+  List<Offset> _hand = const [];
+
+  /// The photo with its creases made clearer, when switched on.
+  bool _enhanced = false;
+  Uint8List? _enhancedBytes;
+
+  /// Two-finger zoom: the photo is scaled by [_zoom] and moved by [_pan]
+  /// (in screen pixels); one finger draws.
+  double _zoom = 1;
+  Offset _pan = Offset.zero;
+  double _zoomStart = 1;
+  Offset _panStart = Offset.zero;
+  Offset _focalStart = Offset.zero;
+
+  /// The stroke being drawn; it becomes part of the line only after a few
+  /// points, so starting a two-finger zoom never erases a line.
+  List<Offset>? _stroke;
+  bool _committed = false;
+
   /// Each line's colour, so they can be told apart in the review.
   static const lineColors = {
     'heart': Color(0xFFE53935),
@@ -71,6 +92,7 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
         if (found == null) return;
         _handFound = true;
         _review = true;
+        _hand = found.hand;
         _taps
           ..clear()
           ..addAll([found.frame.indexBase, found.frame.littleBase, found.frame.wrist]);
@@ -92,8 +114,61 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
   PalmFrame get _frame => PalmFrame(indexBase: _taps[0], littleBase: _taps[1], wrist: _taps[2]);
 
   /// Points are kept in image units: y from 0 to 1, x from 0 to the aspect
-  /// ratio, so distances are the same in both directions.
-  Offset _toImage(Offset local, Size box) => Offset(local.dx / box.width * _aspect!, local.dy / box.height);
+  /// ratio, so distances are the same in both directions. [local] is where
+  /// the finger is on screen; the zoom is undone first.
+  Offset _toImage(Offset local, Size box) {
+    final p = (local - _pan) / _zoom;
+    return Offset(p.dx / box.width * _aspect!, p.dy / box.height);
+  }
+
+  bool get _canDraw => !_calibrating && !_detecting && !_review;
+
+  void _scaleStart(ScaleStartDetails d, Size box) {
+    _zoomStart = _zoom;
+    _panStart = _pan;
+    _focalStart = d.localFocalPoint;
+    _committed = false;
+    _stroke = _canDraw && d.pointerCount == 1 ? [_toImage(d.localFocalPoint, box)] : null;
+  }
+
+  void _scaleUpdate(ScaleUpdateDetails d, Size box) {
+    final stroke = _stroke;
+    if (stroke != null && d.pointerCount == 1) {
+      setState(() {
+        stroke.add(_toImage(d.localFocalPoint, box));
+        if (!_committed && stroke.length >= 4) {
+          // A real stroke: drawing over a line found automatically replaces it.
+          _committed = true;
+          if (_auto.remove(_current)) _traced[_current]!.clear();
+          _traced[_current]!.add(stroke);
+        }
+      });
+      return;
+    }
+    if (stroke != null) {
+      // A second finger: this is a zoom, not a stroke.
+      setState(() {
+        if (_committed) _traced[_current]!.remove(stroke);
+        _stroke = null;
+      });
+    }
+    final z = (_zoomStart * d.scale).clamp(1.0, 6.0);
+    final pan = d.localFocalPoint - (_focalStart - _panStart) * (z / _zoomStart);
+    setState(() {
+      _zoom = z;
+      // Keep the photo covering its box.
+      _pan = Offset(pan.dx.clamp(box.width * (1 - z), 0.0), pan.dy.clamp(box.height * (1 - z), 0.0));
+    });
+  }
+
+  Future<void> _toggleEnhanced() async {
+    if (!_enhanced && _enhancedBytes == null) {
+      final bytes = await enhancedPalmPhoto(widget.photoPath);
+      if (!mounted || bytes == null) return;
+      _enhancedBytes = bytes;
+    }
+    setState(() => _enhanced = !_enhanced);
+  }
 
   void _finish() {
     final f = _frame;
@@ -137,6 +212,7 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
       for (final id in _lines)
         if (!found.contains(id)) title[id] ?? id,
     ];
+    final hint = _detecting ? '' : '\n${l.palmZoomHint}';
     final instruction = _detecting
         ? l.palmDetecting
         : _review
@@ -153,7 +229,17 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
         MediaQuery.textScalerOf(context).scale(instructionStyle.fontSize!) * (instructionStyle.height ?? 1.3) * 4 + 20;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l.palmTraceTitle)),
+      appBar: AppBar(
+        title: Text(l.palmTraceTitle),
+        actions: [
+          IconButton(
+            tooltip: l.palmEnhance,
+            isSelected: _enhanced,
+            icon: const Icon(Icons.contrast),
+            onPressed: _toggleEnhanced,
+          ),
+        ],
+      ),
       body: _aspect == null
           ? const Center(child: CircularProgressIndicator())
           : Column(
@@ -164,7 +250,13 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
                   height: instructionHeight,
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-                    child: Text(instruction, style: instructionStyle),
+                    child: Text.rich(
+                      TextSpan(
+                        text: instruction,
+                        style: instructionStyle,
+                        children: [TextSpan(text: hint, style: theme.textTheme.bodySmall)],
+                      ),
+                    ),
                   ),
                 ),
                 Expanded(
@@ -174,35 +266,59 @@ class _PalmTraceScreenState extends State<PalmTraceScreen> {
                       child: LayoutBuilder(
                         builder: (context, box) {
                           final size = box.biggest;
-                          return GestureDetector(
-                            onTapUp: _calibrating && !_detecting
-                                ? (d) => setState(() => _taps.add(_toImage(d.localPosition, size)))
-                                : null,
-                            // Drawing over a line found automatically replaces it.
-                            onPanStart: _calibrating || _detecting || _review
-                                ? null
-                                : (d) => setState(() {
-                                    if (_auto.remove(_current)) _traced[_current]!.clear();
-                                    _traced[_current]!.add([_toImage(d.localPosition, size)]);
-                                  }),
-                            onPanUpdate: _calibrating || _detecting || _review
-                                ? null
-                                : (d) => setState(() => _traced[_current]!.last.add(_toImage(d.localPosition, size))),
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [
-                                Image.file(File(widget.photoPath), fit: BoxFit.fill),
-                                CustomPaint(
-                                  painter: _TracePainter(
-                                    aspect: _aspect!,
-                                    taps: _taps,
-                                    frame: _calibrating ? null : _frame,
-                                    current: _calibrating || _review ? null : _current,
-                                    traced: _traced,
-                                    color: theme.colorScheme.primary,
+                          return ClipRect(
+                            child: GestureDetector(
+                              onTapUp: _calibrating && !_detecting
+                                  ? (d) => setState(() => _taps.add(_toImage(d.localPosition, size)))
+                                  : null,
+                              onScaleStart: _detecting ? null : (d) => _scaleStart(d, size),
+                              onScaleUpdate: _detecting ? null : (d) => _scaleUpdate(d, size),
+                              onScaleEnd: (_) => _stroke = null,
+                              child: Stack(
+                                fit: StackFit.expand,
+                                children: [
+                                  Transform.translate(
+                                    offset: _pan,
+                                    child: Transform.scale(
+                                      scale: _zoom,
+                                      alignment: Alignment.topLeft,
+                                      child: Stack(
+                                        fit: StackFit.expand,
+                                        children: [
+                                          if (_enhanced && _enhancedBytes != null)
+                                            Image.memory(_enhancedBytes!, fit: BoxFit.fill, gaplessPlayback: true)
+                                          else
+                                            Image.file(File(widget.photoPath), fit: BoxFit.fill),
+                                          CustomPaint(
+                                            painter: _TracePainter(
+                                              aspect: _aspect!,
+                                              taps: _taps,
+                                              frame: _calibrating ? null : _frame,
+                                              current: _calibrating || _review ? null : _current,
+                                              traced: _traced,
+                                              hand: _review ? _hand : const [],
+                                              color: theme.colorScheme.primary,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                  if (_zoom > 1)
+                                    Positioned(
+                                      right: 6,
+                                      top: 6,
+                                      child: IconButton.filledTonal(
+                                        tooltip: l.palmResetZoom,
+                                        icon: const Icon(Icons.zoom_out_map),
+                                        onPressed: () => setState(() {
+                                          _zoom = 1;
+                                          _pan = Offset.zero;
+                                        }),
+                                      ),
+                                    ),
+                                ],
+                              ),
                             ),
                           );
                         },
@@ -335,6 +451,7 @@ class _TracePainter extends CustomPainter {
     required this.current,
     required this.traced,
     required this.color,
+    this.hand = const [],
   });
 
   final double aspect;
@@ -343,6 +460,9 @@ class _TracePainter extends CustomPainter {
   final String? current;
   final Map<String, List<List<Offset>>> traced;
   final Color color;
+
+  /// The hand's 21 points, drawn as a faint outline (review only).
+  final List<Offset> hand;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -355,6 +475,18 @@ class _TracePainter extends CustomPainter {
     for (final t in taps) {
       canvas.drawCircle(px(t), 7, dot);
       canvas.drawCircle(px(t), 7, ring);
+    }
+    if (hand.length == 21) {
+      final bone = Paint()
+        ..color = Colors.white.withValues(alpha: 0.55)
+        ..strokeWidth = 2
+        ..strokeCap = StrokeCap.round;
+      for (final (a, b) in PalmAutoResult.bones) {
+        canvas.drawLine(px(hand[a]), px(hand[b]), bone);
+      }
+      for (final h in hand) {
+        canvas.drawCircle(px(h), 3, Paint()..color = Colors.white.withValues(alpha: 0.8));
+      }
     }
     final f = frame;
     if (f == null) return;

@@ -2551,4 +2551,14 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get palmChange => 'बदला';
+
+  @override
+  String get palmEnhance => 'रेषा स्पष्ट दाखवा';
+
+  @override
+  String get palmZoomHint =>
+      'झूम करण्यासाठी दोन बोटांनी पसरवा. बारीक रेषा सहज दिसण्यासाठी वरचे कॉन्ट्रास्ट बटण दाबा.';
+
+  @override
+  String get palmResetZoom => 'झूम काढा';
 }

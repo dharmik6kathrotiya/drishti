@@ -2547,4 +2547,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get palmChange => 'বদলান';
+
+  @override
+  String get palmEnhance => 'রেখাগুলো স্পষ্ট করুন';
+
+  @override
+  String get palmZoomHint =>
+      'জুম করতে দুই আঙুল দিয়ে ছড়ান। সূক্ষ্ম রেখা সহজে দেখতে ওপরের কনট্রাস্ট বোতাম চাপুন।';
+
+  @override
+  String get palmResetZoom => 'জুম সরান';
 }

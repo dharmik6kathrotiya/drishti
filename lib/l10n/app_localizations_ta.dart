@@ -2578,4 +2578,14 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get palmChange => 'மாற்று';
+
+  @override
+  String get palmEnhance => 'ரேகைகளைத் தெளிவாக்கு';
+
+  @override
+  String get palmZoomHint =>
+      'பெரிதாக்க இரண்டு விரல்களால் விரியுங்கள். நுண்ணிய ரேகைகளை எளிதாகக் காண மேலே உள்ள கான்ட்ராஸ்ட் பொத்தானைத் தட்டுங்கள்.';
+
+  @override
+  String get palmResetZoom => 'பெரிதாக்கத்தை நீக்கு';
 }

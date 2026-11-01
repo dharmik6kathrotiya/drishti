@@ -19,7 +19,7 @@ class WidgetService {
   WidgetService._();
 
   // The Kotlin package differs from the application id, so use the full name.
-  static const _qualifiedAndroidName = 'app.drishti.drishti.TodayWidgetProvider';
+  static const _qualifiedAndroidName = 'com.kaal.drishti.TodayWidgetProvider';
 
   static Future<void> refresh({
     required Profile? profile,

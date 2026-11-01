@@ -2550,4 +2550,14 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get palmChange => 'बदलें';
+
+  @override
+  String get palmEnhance => 'रेखाएँ साफ़ दिखाएँ';
+
+  @override
+  String get palmZoomHint =>
+      'ज़ूम करने के लिए दो उँगलियों से फैलाएँ। बारीक रेखाएँ आसानी से देखने के लिए ऊपर कंट्रास्ट बटन दबाएँ।';
+
+  @override
+  String get palmResetZoom => 'ज़ूम हटाएँ';
 }

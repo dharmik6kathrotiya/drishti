@@ -135,6 +135,103 @@ const palmistryEn = PalmistryTexts(
       ],
     ),
     PalmQuestion(
+      id: 'sun',
+      area: PalmArea.sunLine,
+      title: 'Sun line (Apollo line)',
+      help: 'A line running up the palm towards the ring finger. Many hands have only a short one, or none.',
+      options: [
+        PalmOption(
+          'Long and clear, rising towards the ring finger',
+          'Traditionally linked with recognition, creativity and success that others notice.',
+        ),
+        PalmOption(
+          'Short, only near the ring finger',
+          'Traditionally linked with success and contentment that come later in life.',
+        ),
+        PalmOption(
+          'Several small lines instead of one',
+          'Traditionally linked with many talents and interests, with energy spread between them.',
+        ),
+        PalmOption(
+          'Not visible',
+          'Very common. Tradition does not read its absence as bad; success is then read from the other lines.',
+        ),
+      ],
+    ),
+    PalmQuestion(
+      id: 'mercury',
+      area: PalmArea.mercuryLine,
+      title: 'Mercury line (health line)',
+      help: 'A slanting line from the lower palm towards the little finger. Many hands do not have it.',
+      options: [
+        PalmOption(
+          'Not visible',
+          'Common. Many traditional palmistry books read its absence as a sign of a strong constitution.',
+        ),
+        PalmOption(
+          'Clear and straight',
+          'Traditionally linked with good business sense, clear communication and steady health.',
+        ),
+        PalmOption(
+          'Wavy or broken',
+          'Traditionally read as nervous tension or a need for rest and care with digestion. It is not a medical '
+              'sign; see a doctor for any health concern.',
+        ),
+      ],
+    ),
+    PalmQuestion(
+      id: 'marriage',
+      area: PalmArea.marriageLines,
+      title: 'Relationship lines (marriage lines)',
+      help:
+          'Short lines across the outer edge of the palm, below the little finger and above the heart line. Turn '
+          'your hand a little sideways to see them.',
+      options: [
+        PalmOption('One clear line', 'Traditionally linked with one deep, lasting relationship.'),
+        PalmOption(
+          'Two or more clear lines',
+          'Traditionally linked with more than one important relationship or bond in life.',
+        ),
+        PalmOption(
+          'Only faint lines, or none',
+          'Common. Tradition reads short or faint lines as affections and attachments; they do not decide whether '
+              'or when you marry.',
+        ),
+        PalmOption(
+          'The line forks at its end',
+          'Tradition reads a fork as distance or separation within a relationship. Lines change over time, and '
+              'this does not decide the future.',
+        ),
+      ],
+    ),
+    PalmQuestion(
+      id: 'girdle',
+      area: PalmArea.girdle,
+      title: 'Girdle of Venus',
+      help:
+          'A curved line above the heart line, from between the index and middle fingers to between the ring and '
+          'little fingers. Most hands do not have it.',
+      options: [
+        PalmOption('Clear and unbroken', 'Traditionally linked with strong sensitivity and emotional intensity.'),
+        PalmOption('Broken into pieces', 'Traditionally linked with sensitivity that comes and goes with mood.'),
+        PalmOption('Not visible', 'Most hands do not have it. Its absence means nothing negative.'),
+      ],
+    ),
+    PalmQuestion(
+      id: 'bracelets',
+      area: PalmArea.bracelets,
+      title: 'Wrist lines (bracelets)',
+      help: 'The lines across the inside of the wrist, just below the palm.',
+      options: [
+        PalmOption('Three clear, unbroken lines', 'Traditionally read as good health, steady fortune and a long life.'),
+        PalmOption('One or two clear lines', 'Very common. Traditionally read as a steady, ordinary constitution.'),
+        PalmOption(
+          'Chained or broken lines',
+          'Traditionally read as a life that asks for more effort and care. It is not a medical sign.',
+        ),
+      ],
+    ),
+    PalmQuestion(
       id: 'mounts',
       area: PalmArea.mounts,
       title: 'Most prominent mount',

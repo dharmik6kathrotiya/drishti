@@ -12,5 +12,8 @@
         "type": "String"
       }
     }
-  }
+  },
+  "palmEnhance": "Make lines clearer",
+  "palmZoomHint": "Pinch with two fingers to zoom. Tap the contrast button at the top to make fine lines easier to see.",
+  "palmResetZoom": "Reset zoom"
 }

@@ -5,5 +5,8 @@
   "palmFixLine": "রেখা ঠিক করুন",
   "palmDone": "হয়ে গেছে",
   "palmFromPhoto": "আপনার ছবি থেকে",
-  "palmChange": "বদলান"
+  "palmChange": "বদলান",
+  "palmEnhance": "রেখাগুলো স্পষ্ট করুন",
+  "palmZoomHint": "জুম করতে দুই আঙুল দিয়ে ছড়ান। সূক্ষ্ম রেখা সহজে দেখতে ওপরের কনট্রাস্ট বোতাম চাপুন।",
+  "palmResetZoom": "জুম সরান"
 }

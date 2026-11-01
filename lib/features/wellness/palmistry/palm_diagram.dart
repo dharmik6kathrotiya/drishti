@@ -92,6 +92,36 @@ class _PalmPainter extends CustomPainter {
     canvas.drawPath(life, area == PalmArea.lifeLine ? hi : faint);
     canvas.drawPath(fate, area == PalmArea.fateLine ? hi : faint);
 
+    // Minor lines: drawn only when asked about, so the picture stays clear.
+    void line(List<Offset> pts, {bool curve = false}) {
+      final path = Path()..moveTo(pts.first.dx, pts.first.dy);
+      if (curve) {
+        path.quadraticBezierTo(pts[1].dx, pts[1].dy, pts[2].dx, pts[2].dy);
+      } else {
+        for (final q in pts.skip(1)) {
+          path.lineTo(q.dx, q.dy);
+        }
+      }
+      canvas.drawPath(path, hi);
+    }
+
+    switch (area) {
+      case PalmArea.sunLine:
+        line([p(0.6, 0.86), p(0.585, 0.5)]);
+      case PalmArea.mercuryLine:
+        line([p(0.42, 0.9), p(0.72, 0.53)]);
+      case PalmArea.marriageLines:
+        line([p(0.8, 0.462), p(0.73, 0.462)]);
+        line([p(0.8, 0.484), p(0.74, 0.484)]);
+      case PalmArea.girdle:
+        line([p(0.35, 0.455), p(0.5, 0.53), p(0.66, 0.455)], curve: true);
+      case PalmArea.bracelets:
+        line([p(0.3, 0.97), p(0.7, 0.97)]);
+        line([p(0.32, 0.99), p(0.68, 0.99)]);
+      default:
+        break;
+    }
+
     if (area == PalmArea.mounts) {
       for (final c in [
         p(0.285, 0.47), p(0.435, 0.46), p(0.585, 0.47), p(0.73, 0.5), // finger mounts

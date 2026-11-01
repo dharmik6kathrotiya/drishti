@@ -1,4 +1,4 @@
-package app.drishti.drishti
+package com.kaal.drishti
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager

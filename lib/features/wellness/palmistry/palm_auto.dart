@@ -10,7 +10,7 @@ import '../../../core/content/palmistry/palm_trace.dart';
 /// What was found automatically in a palm photo, in the trace screen's
 /// units (the photo's height is 1).
 class PalmAutoResult {
-  const PalmAutoResult({required this.frame, required this.lines});
+  const PalmAutoResult({required this.frame, required this.lines, this.hand = const []});
 
   /// Finger bases and wrist from the hand detector.
   final PalmFrame frame;
@@ -18,6 +18,19 @@ class PalmAutoResult {
   /// Line id ('heart', 'head', 'life', 'fate') -> points, for the lines that
   /// stood out clearly enough.
   final Map<String, List<Offset>> lines;
+
+  /// The 21 hand points (wrist, every finger joint and tip, in MediaPipe's
+  /// order), so the user can see the whole hand was found.
+  final List<Offset> hand;
+
+  /// Pairs of [hand] indices joined by a bone (MediaPipe's hand connections).
+  static const bones = [
+    (0, 1), (1, 2), (2, 3), (3, 4), // thumb
+    (0, 5), (5, 6), (6, 7), (7, 8), // index
+    (5, 9), (9, 10), (10, 11), (11, 12), // middle
+    (9, 13), (13, 14), (14, 15), (15, 16), // ring
+    (13, 17), (0, 17), (17, 18), (18, 19), (19, 20), // little and palm edge
+  ];
 }
 
 /// Finds the hand with MediaPipe Hand Landmarker (Android, on the phone) and
@@ -26,7 +39,7 @@ class PalmAutoResult {
 class PalmAuto {
   PalmAuto._();
 
-  static const _channel = MethodChannel('app.drishti/hand');
+  static const _channel = MethodChannel('com.kaal.drishti/hand');
 
   static Future<PalmAutoResult?> run(String photoPath) async {
     if (kIsWeb || !Platform.isAndroid) return null;
@@ -57,6 +70,7 @@ class PalmAuto {
       lines: {
         for (final e in found.entries) e.key: [for (final p in e.value) unit(p)],
       },
+      hand: [for (var i = 0; i < pts.length ~/ 2; i++) unit(lm(i))],
     );
   }
 }
@@ -82,4 +96,27 @@ Map<String, List<Offset>> palmLinesInPhoto((String, Offset, Offset, Offset) args
     for (final e in PalmLineDetector.detect(gray, small.width, small.height, frame).entries)
       e.key: [for (final p in e.value) p / scale],
   };
+}
+
+/// The photo with its creases made easier to see: grey, with each point
+/// compared with its surroundings (local contrast), so fine lines stand out
+/// whatever the light. Runs in a background isolate; returns a JPEG.
+Future<Uint8List?> enhancedPalmPhoto(String path) => compute(_enhance, path);
+
+Uint8List? _enhance(String path) {
+  final decoded = img.decodeImage(File(path).readAsBytesSync());
+  if (decoded == null) return null;
+  var photo = img.bakeOrientation(decoded);
+  if (photo.height > 1200) photo = img.copyResize(photo, height: 1200);
+  final gray = img.grayscale(photo);
+  final around = img.gaussianBlur(gray.clone(), radius: (gray.height / 60).round().clamp(4, 30));
+  final out = img.Image(width: gray.width, height: gray.height);
+  for (var y = 0; y < gray.height; y++) {
+    for (var x = 0; x < gray.width; x++) {
+      final v = gray.getPixel(x, y).r - around.getPixel(x, y).r;
+      final g = (150 + 3.2 * v).round().clamp(0, 255);
+      out.setPixelRgb(x, y, g, g, g);
+    }
+  }
+  return img.encodeJpg(out, quality: 90);
 }

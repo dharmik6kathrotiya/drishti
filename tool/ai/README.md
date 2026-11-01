@@ -89,8 +89,8 @@ With a debug build installed (`flutter run`), copy the GGUF into the app's model
 
 ```bash
 adb push tool/ai/out/drishti-guide-0.5b-q4_k_m.gguf /data/local/tmp/
-adb shell run-as app.drishti mkdir -p files/models
-adb shell run-as app.drishti cp /data/local/tmp/drishti-guide-0.5b-q4_k_m.gguf files/models/
+adb shell run-as com.kaal.drishti mkdir -p files/models
+adb shell run-as com.kaal.drishti cp /data/local/tmp/drishti-guide-0.5b-q4_k_m.gguf files/models/
 adb shell rm /data/local/tmp/drishti-guide-0.5b-q4_k_m.gguf
 ```
 
